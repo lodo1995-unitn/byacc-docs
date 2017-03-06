@@ -1,5 +1,7 @@
-if [ "${PRIMARY}" = "true" ] && [ "${TRAVIS_BRANCH}" = "master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ]
+echo "make_docs.sh started"
+if [ $TRAVIS_BRANCH = "master" ] && [ $TRAVIS_PULL_REQUEST = "false" ]
 then
+    echo "documentation build started"
     doxygen
     git config --global user.email "lodo1995-unitn@users.noreply.github.com"
     git config --global user.name "travis-ci"
@@ -14,4 +16,6 @@ then
     git push https://${GH_TOKEN}@github.com/lodo1995-unitn/byacc-docs.git gh-pages
     cd ..
     rm README.bak
+    echo "documentation build ended"
 fi
+echo "make_docs.sh ended"
