@@ -10,4 +10,4 @@ addons:
             - doxygen
             
 script:
-    - make_docs.sh
+    - ./make_docs.sh
