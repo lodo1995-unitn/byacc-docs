@@ -1,5 +1,10 @@
 var defs_8h =
 [
+    [ "bucket", "structbucket.html", "structbucket" ],
+    [ "core", "structcore.html", "structcore" ],
+    [ "shifts", "structshifts.html", "structshifts" ],
+    [ "reductions", "structreductions.html", "structreductions" ],
+    [ "action", "structaction.html", "structaction" ],
     [ "BACKSLASH", "defs_8h.html#aec9714008f1dc970bbccc5cfb91be2d9", null ],
     [ "BIT", "defs_8h.html#a7c99d53e6fb8d4ae10e4b2d6c038697c", null ],
     [ "BITS_PER_WORD", "defs_8h.html#af859a98f57110e5243e8f0541319e43b", null ],
