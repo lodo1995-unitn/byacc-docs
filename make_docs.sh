@@ -1,4 +1,4 @@
-if [ ${PRIMARY} = "true" ] && [ ${TRAVIS_BRANCH} = "master" ] && [ ${TRAVIS_PULL_REQUEST} = "false" ]
+if [ "${PRIMARY}" = "true" ] && [ "${TRAVIS_BRANCH}" = "master" ] && [ "${TRAVIS_PULL_REQUEST}" = "false" ]
 then
     doxygen
     git config --global user.email "lodo1995-unitn@users.noreply.github.com"
