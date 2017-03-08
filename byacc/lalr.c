@@ -1,12 +1,12 @@
 #include "defs.h"
 
 typedef
-  struct shorts
+    struct shorts
     {
-      struct shorts *next;
-      short value;
+        struct shorts *next;
+        short value;
     }
-  shorts;
+    shorts;
 
 int tokensetsize;
 short *lookaheads;
@@ -59,7 +59,7 @@ set_state_table()
 
     state_table = NEW2(nstates, core *);
     for (sp = first_state; sp; sp = sp->next)
-	state_table[sp->number] = sp;
+        state_table[sp->number] = sp;
 }
 
 
@@ -70,7 +70,7 @@ set_accessing_symbol()
 
     accessing_symbol = NEW2(nstates, short);
     for (sp = first_state; sp; sp = sp->next)
-	accessing_symbol[sp->number] = sp->accessing_symbol;
+        accessing_symbol[sp->number] = sp->accessing_symbol;
 }
 
 
@@ -81,7 +81,7 @@ set_shift_table()
 
     shift_table = NEW2(nstates, shifts *);
     for (sp = first_shift; sp; sp = sp->next)
-	shift_table[sp->number] = sp;
+        shift_table[sp->number] = sp;
 }
 
 
@@ -92,144 +92,144 @@ set_reduction_table()
 
     reduction_table = NEW2(nstates, reductions *);
     for (rp = first_reduction; rp; rp = rp->next)
-	reduction_table[rp->number] = rp;
+        reduction_table[rp->number] = rp;
 }
 
 
 
 set_maxrhs()
 {
-  register short *itemp;
-  register short *item_end;
-  register int length;
-  register int max;
+    register short *itemp;
+    register short *item_end;
+    register int length;
+    register int max;
 
-  length = 0;
-  max = 0;
-  item_end = ritem + nitems;
-  for (itemp = ritem; itemp < item_end; itemp++)
+    length = 0;
+    max = 0;
+    item_end = ritem + nitems;
+    for (itemp = ritem; itemp < item_end; itemp++)
     {
-      if (*itemp >= 0)
-	{
-	  length++;
-	}
-      else
-	{
-	  if (length > max) max = length;
-	  length = 0;
-	}
+        if (*itemp >= 0)
+        {
+            length++;
+        }
+        else
+        {
+            if (length > max) max = length;
+            length = 0;
+        }
     }
 
-  maxrhs = max;
+    maxrhs = max;
 }
 
 
 
 initialize_LA()
 {
-  register int i, j, k;
-  register reductions *rp;
+    register int i, j, k;
+    register reductions *rp;
 
-  lookaheads = NEW2(nstates + 1, short);
+    lookaheads = NEW2(nstates + 1, short);
 
-  k = 0;
-  for (i = 0; i < nstates; i++)
+    k = 0;
+    for (i = 0; i < nstates; i++)
     {
-      lookaheads[i] = k;
-      rp = reduction_table[i];
-      if (rp)
-	k += rp->nreds;
+        lookaheads[i] = k;
+        rp = reduction_table[i];
+        if (rp)
+            k += rp->nreds;
     }
-  lookaheads[nstates] = k;
+    lookaheads[nstates] = k;
 
-  LA = NEW2(k * tokensetsize, unsigned);
-  LAruleno = NEW2(k, short);
-  lookback = NEW2(k, shorts *);
+    LA = NEW2(k * tokensetsize, unsigned);
+    LAruleno = NEW2(k, short);
+    lookback = NEW2(k, shorts *);
 
-  k = 0;
-  for (i = 0; i < nstates; i++)
+    k = 0;
+    for (i = 0; i < nstates; i++)
     {
-      rp = reduction_table[i];
-      if (rp)
-	{
-	  for (j = 0; j < rp->nreds; j++)
-	    {
-	      LAruleno[k] = rp->rules[j];
-	      k++;
-	    }
-	}
+        rp = reduction_table[i];
+        if (rp)
+        {
+            for (j = 0; j < rp->nreds; j++)
+            {
+                LAruleno[k] = rp->rules[j];
+                k++;
+            }
+        }
     }
 }
 
 
 set_goto_map()
 {
-  register shifts *sp;
-  register int i;
-  register int symbol;
-  register int k;
-  register short *temp_map;
-  register int state2;
-  register int state1;
+    register shifts *sp;
+    register int i;
+    register int symbol;
+    register int k;
+    register short *temp_map;
+    register int state2;
+    register int state1;
 
-  goto_map = NEW2(nvars + 1, short) - ntokens;
-  temp_map = NEW2(nvars + 1, short) - ntokens;
+    goto_map = NEW2(nvars + 1, short) - ntokens;
+    temp_map = NEW2(nvars + 1, short) - ntokens;
 
-  ngotos = 0;
-  for (sp = first_shift; sp; sp = sp->next)
+    ngotos = 0;
+    for (sp = first_shift; sp; sp = sp->next)
     {
-      for (i = sp->nshifts - 1; i >= 0; i--)
-	{
-	  symbol = accessing_symbol[sp->shift[i]];
+        for (i = sp->nshifts - 1; i >= 0; i--)
+        {
+            symbol = accessing_symbol[sp->shift[i]];
 
-	  if (ISTOKEN(symbol)) break;
+            if (ISTOKEN(symbol)) break;
 
-	  if (ngotos == MAXSHORT)
-	    fatal("too many gotos");
+            if (ngotos == MAXSHORT)
+            fatal("too many gotos");
 
-	  ngotos++;
-	  goto_map[symbol]++;
+            ngotos++;
+            goto_map[symbol]++;
         }
     }
 
-  k = 0;
-  for (i = ntokens; i < nsyms; i++)
+    k = 0;
+    for (i = ntokens; i < nsyms; i++)
     {
-      temp_map[i] = k;
-      k += goto_map[i];
+        temp_map[i] = k;
+        k += goto_map[i];
     }
 
-  for (i = ntokens; i < nsyms; i++)
+    for (i = ntokens; i < nsyms; i++)
     goto_map[i] = temp_map[i];
 
-  goto_map[nsyms] = ngotos;
-  temp_map[nsyms] = ngotos;
+    goto_map[nsyms] = ngotos;
+    temp_map[nsyms] = ngotos;
 
-  from_state = NEW2(ngotos, short);
-  to_state = NEW2(ngotos, short);
+    from_state = NEW2(ngotos, short);
+    to_state = NEW2(ngotos, short);
 
-  for (sp = first_shift; sp; sp = sp->next)
+    for (sp = first_shift; sp; sp = sp->next)
     {
-      state1 = sp->number;
-      for (i = sp->nshifts - 1; i >= 0; i--)
-	{
-	  state2 = sp->shift[i];
-	  symbol = accessing_symbol[state2];
+        state1 = sp->number;
+        for (i = sp->nshifts - 1; i >= 0; i--)
+        {
+            state2 = sp->shift[i];
+            symbol = accessing_symbol[state2];
 
-	  if (ISTOKEN(symbol)) break;
+            if (ISTOKEN(symbol)) break;
 
-	  k = temp_map[symbol]++;
-	  from_state[k] = state1;
-	  to_state[k] = state2;
-	}
+            k = temp_map[symbol]++;
+            from_state[k] = state1;
+            to_state[k] = state2;
+        }
     }
 
-  FREE(temp_map + ntokens);
+    FREE(temp_map + ntokens);
 }
 
 
 
-/*  Map_goto maps a state/symbol pair into its numeric representation.	*/
+/*  Map_goto maps a state/symbol pair into its numeric representation.  */
 
 int
 map_goto(state, symbol)
@@ -246,15 +246,15 @@ int symbol;
 
     for (;;)
     {
-	assert(low <= high);
-	middle = (low + high) >> 1;
-	s = from_state[middle];
-	if (s == state)
-	    return (middle);
-	else if (s < state)
-	    low = middle + 1;
-	else
-	    high = middle - 1;
+        assert(low <= high);
+        middle = (low + high) >> 1;
+        s = from_state[middle];
+        if (s == state)
+            return (middle);
+        else if (s < state)
+            low = middle + 1;
+        else
+            high = middle - 1;
     }
 }
 
@@ -262,170 +262,170 @@ int symbol;
 
 initialize_F()
 {
-  register int i;
-  register int j;
-  register int k;
-  register shifts *sp;
-  register short *edge;
-  register unsigned *rowp;
-  register short *rp;
-  register short **reads;
-  register int nedges;
-  register int stateno;
-  register int symbol;
-  register int nwords;
+    register int i;
+    register int j;
+    register int k;
+    register shifts *sp;
+    register short *edge;
+    register unsigned *rowp;
+    register short *rp;
+    register short **reads;
+    register int nedges;
+    register int stateno;
+    register int symbol;
+    register int nwords;
 
-  nwords = ngotos * tokensetsize;
-  F = NEW2(nwords, unsigned);
+    nwords = ngotos * tokensetsize;
+    F = NEW2(nwords, unsigned);
 
-  reads = NEW2(ngotos, short *);
-  edge = NEW2(ngotos + 1, short);
-  nedges = 0;
+    reads = NEW2(ngotos, short *);
+    edge = NEW2(ngotos + 1, short);
+    nedges = 0;
 
-  rowp = F;
-  for (i = 0; i < ngotos; i++)
+    rowp = F;
+    for (i = 0; i < ngotos; i++)
     {
-      stateno = to_state[i];
-      sp = shift_table[stateno];
+        stateno = to_state[i];
+        sp = shift_table[stateno];
 
-      if (sp)
-	{
-	  k = sp->nshifts;
+        if (sp)
+        {
+            k = sp->nshifts;
 
-	  for (j = 0; j < k; j++)
-	    {
-	      symbol = accessing_symbol[sp->shift[j]];
-	      if (ISVAR(symbol))
-		break;
-	      SETBIT(rowp, symbol);
-	    }
+            for (j = 0; j < k; j++)
+            {
+                symbol = accessing_symbol[sp->shift[j]];
+                if (ISVAR(symbol))
+                    break;
+                SETBIT(rowp, symbol);
+            }
 
-	  for (; j < k; j++)
-	    {
-	      symbol = accessing_symbol[sp->shift[j]];
-	      if (nullable[symbol])
-		edge[nedges++] = map_goto(stateno, symbol);
-	    }
-	
-	  if (nedges)
-	    {
-	      reads[i] = rp = NEW2(nedges + 1, short);
+            for (; j < k; j++)
+            {
+                symbol = accessing_symbol[sp->shift[j]];
+                if (nullable[symbol])
+                    edge[nedges++] = map_goto(stateno, symbol);
+            }
 
-	      for (j = 0; j < nedges; j++)
-		rp[j] = edge[j];
+            if (nedges)
+            {
+                reads[i] = rp = NEW2(nedges + 1, short);
 
-	      rp[nedges] = -1;
-	      nedges = 0;
-	    }
-	}
+                for (j = 0; j < nedges; j++)
+                    rp[j] = edge[j];
 
-      rowp += tokensetsize;
+                rp[nedges] = -1;
+                nedges = 0;
+            }
+        }
+
+        rowp += tokensetsize;
     }
 
-  SETBIT(F, 0);
-  digraph(reads);
+    SETBIT(F, 0);
+    digraph(reads);
 
-  for (i = 0; i < ngotos; i++)
+    for (i = 0; i < ngotos; i++)
     {
-      if (reads[i])
-	FREE(reads[i]);
+        if (reads[i])
+            FREE(reads[i]);
     }
 
-  FREE(reads);
-  FREE(edge);
+    FREE(reads);
+    FREE(edge);
 }
 
 
 
 build_relations()
 {
-  register int i;
-  register int j;
-  register int k;
-  register short *rulep;
-  register short *rp;
-  register shifts *sp;
-  register int length;
-  register int nedges;
-  register int done;
-  register int state1;
-  register int stateno;
-  register int symbol1;
-  register int symbol2;
-  register short *shortp;
-  register short *edge;
-  register short *states;
-  register short **new_includes;
+    register int i;
+    register int j;
+    register int k;
+    register short *rulep;
+    register short *rp;
+    register shifts *sp;
+    register int length;
+    register int nedges;
+    register int done;
+    register int state1;
+    register int stateno;
+    register int symbol1;
+    register int symbol2;
+    register short *shortp;
+    register short *edge;
+    register short *states;
+    register short **new_includes;
 
-  includes = NEW2(ngotos, short *);
-  edge = NEW2(ngotos + 1, short);
-  states = NEW2(maxrhs + 1, short);
+    includes = NEW2(ngotos, short *);
+    edge = NEW2(ngotos + 1, short);
+    states = NEW2(maxrhs + 1, short);
 
-  for (i = 0; i < ngotos; i++)
+    for (i = 0; i < ngotos; i++)
     {
-      nedges = 0;
-      state1 = from_state[i];
-      symbol1 = accessing_symbol[to_state[i]];
+        nedges = 0;
+        state1 = from_state[i];
+        symbol1 = accessing_symbol[to_state[i]];
 
-      for (rulep = derives[symbol1]; *rulep >= 0; rulep++)
-	{
-	  length = 1;
-	  states[0] = state1;
-	  stateno = state1;
+        for (rulep = derives[symbol1]; *rulep >= 0; rulep++)
+        {
+            length = 1;
+            states[0] = state1;
+            stateno = state1;
 
-	  for (rp = ritem + rrhs[*rulep]; *rp >= 0; rp++)
-	    {
-	      symbol2 = *rp;
-	      sp = shift_table[stateno];
-	      k = sp->nshifts;
+            for (rp = ritem + rrhs[*rulep]; *rp >= 0; rp++)
+            {
+                symbol2 = *rp;
+                sp = shift_table[stateno];
+                k = sp->nshifts;
 
-	      for (j = 0; j < k; j++)
-		{
-		  stateno = sp->shift[j];
-		  if (accessing_symbol[stateno] == symbol2) break;
-		}
+                for (j = 0; j < k; j++)
+                {
+                    stateno = sp->shift[j];
+                    if (accessing_symbol[stateno] == symbol2) break;
+                }
 
-	      states[length++] = stateno;
-	    }
+                states[length++] = stateno;
+            }
 
-	  add_lookback_edge(stateno, *rulep, i);
+            add_lookback_edge(stateno, *rulep, i);
 
-	  length--;
-	  done = 0;
-	  while (!done)
-	    {
-	      done = 1;
-	      rp--;
-	      if (ISVAR(*rp))
-		{
-		  stateno = states[--length];
-		  edge[nedges++] = map_goto(stateno, *rp);
-		  if (nullable[*rp] && length > 0) done = 0;
-		}
-	    }
-	}
+            length--;
+            done = 0;
+            while (!done)
+            {
+                done = 1;
+                rp--;
+                if (ISVAR(*rp))
+                {
+                    stateno = states[--length];
+                    edge[nedges++] = map_goto(stateno, *rp);
+                    if (nullable[*rp] && length > 0) done = 0;
+                }
+            }
+        }
 
-      if (nedges)
-	{
-	  includes[i] = shortp = NEW2(nedges + 1, short);
-	  for (j = 0; j < nedges; j++)
-	    shortp[j] = edge[j];
-	  shortp[nedges] = -1;
-	}
+        if (nedges)
+        {
+            includes[i] = shortp = NEW2(nedges + 1, short);
+            for (j = 0; j < nedges; j++)
+                shortp[j] = edge[j];
+            shortp[nedges] = -1;
+        }
     }
 
-  new_includes = transpose(includes, ngotos);
+    new_includes = transpose(includes, ngotos);
 
-  for (i = 0; i < ngotos; i++)
-    if (includes[i])
-      FREE(includes[i]);
+    for (i = 0; i < ngotos; i++)
+        if (includes[i])
+            FREE(includes[i]);
 
-  FREE(includes);
+    FREE(includes);
 
-  includes = new_includes;
+    includes = new_includes;
 
-  FREE(edge);
-  FREE(states);
+    FREE(edge);
+    FREE(states);
 }
 
 
@@ -441,10 +441,10 @@ int stateno, ruleno, gotono;
     found = 0;
     while (!found && i < k)
     {
-	if (LAruleno[i] == ruleno)
-	    found = 1;
-	else
-	    ++i;
+        if (LAruleno[i] == ruleno)
+            found = 1;
+        else
+            ++i;
     }
     assert(found);
 
@@ -461,122 +461,122 @@ transpose(R, n)
 short **R;
 int n;
 {
-  register short **new_R;
-  register short **temp_R;
-  register short *nedges;
-  register short *sp;
-  register int i;
-  register int k;
+    register short **new_R;
+    register short **temp_R;
+    register short *nedges;
+    register short *sp;
+    register int i;
+    register int k;
 
-  nedges = NEW2(n, short);
+    nedges = NEW2(n, short);
 
-  for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
-      sp = R[i];
-      if (sp)
-	{
-	  while (*sp >= 0)
-	    nedges[*sp++]++;
-	}
+        sp = R[i];
+        if (sp)
+        {
+            while (*sp >= 0)
+                nedges[*sp++]++;
+        }
     }
 
-  new_R = NEW2(n, short *);
-  temp_R = NEW2(n, short *);
+    new_R = NEW2(n, short *);
+    temp_R = NEW2(n, short *);
 
-  for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
-      k = nedges[i];
-      if (k > 0)
-	{
-	  sp = NEW2(k + 1, short);
-	  new_R[i] = sp;
-	  temp_R[i] = sp;
-	  sp[k] = -1;
-	}
+        k = nedges[i];
+        if (k > 0)
+        {
+            sp = NEW2(k + 1, short);
+            new_R[i] = sp;
+            temp_R[i] = sp;
+            sp[k] = -1;
+        }
     }
 
-  FREE(nedges);
+    FREE(nedges);
 
-  for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
-      sp = R[i];
-      if (sp)
-	{
-	  while (*sp >= 0)
-	    *temp_R[*sp++]++ = i;
-	}
+        sp = R[i];
+        if (sp)
+        {
+            while (*sp >= 0)
+                *temp_R[*sp++]++ = i;
+        }
     }
 
-  FREE(temp_R);
+    FREE(temp_R);
 
-  return (new_R);
+    return (new_R);
 }
 
 
 
 compute_FOLLOWS()
 {
-  digraph(includes);
+    digraph(includes);
 }
 
 
 compute_lookaheads()
 {
-  register int i, n;
-  register unsigned *fp1, *fp2, *fp3;
-  register shorts *sp, *next;
-  register unsigned *rowp;
+    register int i, n;
+    register unsigned *fp1, *fp2, *fp3;
+    register shorts *sp, *next;
+    register unsigned *rowp;
 
-  rowp = LA;
-  n = lookaheads[nstates];
-  for (i = 0; i < n; i++)
+    rowp = LA;
+    n = lookaheads[nstates];
+    for (i = 0; i < n; i++)
     {
-      fp3 = rowp + tokensetsize;
-      for (sp = lookback[i]; sp; sp = sp->next)
-	{
-	  fp1 = rowp;
-	  fp2 = F + tokensetsize * sp->value;
-	  while (fp1 < fp3)
-	    *fp1++ |= *fp2++;
-	}
-      rowp = fp3;
+        fp3 = rowp + tokensetsize;
+        for (sp = lookback[i]; sp; sp = sp->next)
+        {
+            fp1 = rowp;
+            fp2 = F + tokensetsize * sp->value;
+            while (fp1 < fp3)
+                *fp1++ |= *fp2++;
+        }
+        rowp = fp3;
     }
 
-  for (i = 0; i < n; i++)
-    for (sp = lookback[i]; sp; sp = next)
-      {
-        next = sp->next;
-        FREE(sp);
-      }
+    for (i = 0; i < n; i++)
+        for (sp = lookback[i]; sp; sp = next)
+        {
+            next = sp->next;
+            FREE(sp);
+        }
 
-  FREE(lookback);
-  FREE(F);
+    FREE(lookback);
+    FREE(F);
 }
 
 
 digraph(relation)
 short **relation;
 {
-  register int i;
+    register int i;
 
-  infinity = ngotos + 2;
-  INDEX = NEW2(ngotos + 1, short);
-  VERTICES = NEW2(ngotos + 1, short);
-  top = 0;
+    infinity = ngotos + 2;
+    INDEX = NEW2(ngotos + 1, short);
+    VERTICES = NEW2(ngotos + 1, short);
+    top = 0;
 
-  R = relation;
+    R = relation;
 
-  for (i = 0; i < ngotos; i++)
-    INDEX[i] = 0;
+    for (i = 0; i < ngotos; i++)
+        INDEX[i] = 0;
 
-  for (i = 0; i < ngotos; i++)
+    for (i = 0; i < ngotos; i++)
     {
-      if (INDEX[i] == 0 && R[i])
-	traverse(i);
+        if (INDEX[i] == 0 && R[i])
+            traverse(i);
     }
 
-  FREE(INDEX);
-  FREE(VERTICES);
+    FREE(INDEX);
+    FREE(VERTICES);
 }
 
 
@@ -584,55 +584,55 @@ short **relation;
 traverse(i)
 register int i;
 {
-  register unsigned *fp1;
-  register unsigned *fp2;
-  register unsigned *fp3;
-  register int j;
-  register short *rp;
+    register unsigned *fp1;
+    register unsigned *fp2;
+    register unsigned *fp3;
+    register int j;
+    register short *rp;
 
-  int height;
-  unsigned *base;
+    int height;
+    unsigned *base;
 
-  VERTICES[++top] = i;
-  INDEX[i] = height = top;
+    VERTICES[++top] = i;
+    INDEX[i] = height = top;
 
-  base = F + i * tokensetsize;
-  fp3 = base + tokensetsize;
+    base = F + i * tokensetsize;
+    fp3 = base + tokensetsize;
 
-  rp = R[i];
-  if (rp)
+    rp = R[i];
+    if (rp)
     {
-      while ((j = *rp++) >= 0)
-	{
-	  if (INDEX[j] == 0)
-	    traverse(j);
+        while ((j = *rp++) >= 0)
+        {
+            if (INDEX[j] == 0)
+                traverse(j);
 
-	  if (INDEX[i] > INDEX[j])
-	    INDEX[i] = INDEX[j];
+            if (INDEX[i] > INDEX[j])
+                INDEX[i] = INDEX[j];
 
-	  fp1 = base;
-	  fp2 = F + j * tokensetsize;
+            fp1 = base;
+            fp2 = F + j * tokensetsize;
 
-	  while (fp1 < fp3)
-	    *fp1++ |= *fp2++;
-	}
+            while (fp1 < fp3)
+                *fp1++ |= *fp2++;
+        }
     }
 
-  if (INDEX[i] == height)
+    if (INDEX[i] == height)
     {
-      for (;;)
-	{
-	  j = VERTICES[top--];
-	  INDEX[j] = infinity;
+        for (;;)
+        {
+            j = VERTICES[top--];
+            INDEX[j] = infinity;
 
-	  if (i == j)
-	    break;
+            if (i == j)
+                break;
 
-	  fp1 = base;
-	  fp2 = F + j * tokensetsize;
+            fp1 = base;
+            fp2 = F + j * tokensetsize;
 
-	  while (fp1 < fp3)
-	    *fp2++ = *fp1++;
-	}
+            while (fp1 < fp3)
+                *fp2++ = *fp1++;
+        }
     }
 }
