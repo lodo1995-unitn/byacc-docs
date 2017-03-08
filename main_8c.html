@@ -254,8 +254,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    p = NULL;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">if</span> (n)</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    p = <a class="code" href="defs_8h.html#a7f9e48318205fe92688bc80d84f15136">CALLOC</a>(1, n);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">if</span> (!p) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        p = <a class="code" href="defs_8h.html#a7f9e48318205fe92688bc80d84f15136">CALLOC</a>(1, n);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span> (!p) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> (p);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
@@ -292,7 +292,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    len = strlen(tmpdir);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    i = len + 13;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (len &amp;&amp; tmpdir[len-1] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    ++i;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        ++i;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(i);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a> == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
@@ -307,10 +307,10 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span> (len &amp;&amp; tmpdir[len - 1] != <span class="charliteral">&#39;/&#39;</span>)</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a>[len] = <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="main_8c.html#af8922d6383cbb90f4136b442c0c377c5">text_file_name</a>[len] = <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="main_8c.html#ae739d5310c026e1ca67c1341bdf92988">union_file_name</a>[len] = <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    ++len;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a>[len] = <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="main_8c.html#af8922d6383cbb90f4136b442c0c377c5">text_file_name</a>[len] = <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="main_8c.html#ae739d5310c026e1ca67c1341bdf92988">union_file_name</a>[len] = <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        ++len;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a> + len, <a class="code" href="main_8c.html#af5c9c9963e15c9553fe48e21f67eca7f">temp_form</a>);</div>
@@ -329,37 +329,37 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 7);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a> == 0)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a> + len, <a class="code" href="defs_8h.html#a5c057ab87bab477d779d53f71d0de6b4">OUTPUT_SUFFIX</a>);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a86f87cabb44e9c62dcc8818afad5a8e4">rflag</a>)</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 8);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> == 0)</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> + len, <a class="code" href="defs_8h.html#a45ff98a7eea5341b822bc1fb953e8879">CODE_SUFFIX</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 8);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> == 0)</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> + len, <a class="code" href="defs_8h.html#a45ff98a7eea5341b822bc1fb953e8879">CODE_SUFFIX</a>);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> = <a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a> = <a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a>;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a0dcaa799d1936ef88f62722db104b1a4">dflag</a>)</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 7);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a> == 0)</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a> + len, <a class="code" href="defs_8h.html#a3dff158baf21842b17667dacfc4e3b76">DEFINES_SUFFIX</a>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 7);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a> == 0)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a> + len, <a class="code" href="defs_8h.html#a3dff158baf21842b17667dacfc4e3b76">DEFINES_SUFFIX</a>);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aa11c35040b83d143bdf47216f6df3991">vflag</a>)</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 8);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a> == 0)</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a> + len, <a class="code" href="defs_8h.html#ae7c10644f055727dbfc57b60957cc6fa">VERBOSE_SUFFIX</a>);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(len + 8);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a> == 0)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a>, <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a>);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a> + len, <a class="code" href="defs_8h.html#ae7c10644f055727dbfc57b60957cc6fa">VERBOSE_SUFFIX</a>);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
 <div class="ttc" id="main_8c_html_a9f5b595c2059e13790f7909729af6f20"><div class="ttname"><a href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a></div><div class="ttdeci">char * file_prefix</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00011">main.c:11</a></div></div>
@@ -456,92 +456,92 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (argc &gt; 0) <a class="code" href="main_8c.html#a4752cbd845cd5911698f470f19966b93">myname</a> = argv[0];</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">for</span> (i = 1; i &lt; argc; ++i)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    s = argv[i];</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (*s != <span class="charliteral">&#39;-&#39;</span>) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">switch</span> (*++s)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;\0&#39;</span>:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> = stdin;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (i + 1 &lt; argc) <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        s = argv[i];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (*s != <span class="charliteral">&#39;-&#39;</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">switch</span> (*++s)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;\0&#39;</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> = stdin;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">if</span> (i + 1 &lt; argc) <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;-&#39;</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        ++i;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">goto</span> no_more_options;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;-&#39;</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            ++i;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">goto</span> no_more_options;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (*++s)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;         <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a> = s;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (++i &lt; argc)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a> = argv[i];</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">if</span> (*++s)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a> = s;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (++i &lt; argc)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="main_8c.html#a9f5b595c2059e13790f7909729af6f20">file_prefix</a> = argv[i];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="main_8c.html#a0dcaa799d1936ef88f62722db104b1a4">dflag</a> = 1;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="main_8c.html#a0dcaa799d1936ef88f62722db104b1a4">dflag</a> = 1;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;l&#39;</span>:</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="main_8c.html#a858ab980ec866cf1508eab1a081869d3">lflag</a> = 1;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;l&#39;</span>:</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="main_8c.html#a858ab980ec866cf1508eab1a081869d3">lflag</a> = 1;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (*++s)</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="main_8c.html#a9aad37e8a97f73d9d6a3676c07b4d6b0">symbol_prefix</a> = s;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (++i &lt; argc)</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="main_8c.html#a9aad37e8a97f73d9d6a3676c07b4d6b0">symbol_prefix</a> = argv[i];</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">if</span> (*++s)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <a class="code" href="main_8c.html#a9aad37e8a97f73d9d6a3676c07b4d6b0">symbol_prefix</a> = s;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (++i &lt; argc)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="main_8c.html#a9aad37e8a97f73d9d6a3676c07b4d6b0">symbol_prefix</a> = argv[i];</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="main_8c.html#a86f87cabb44e9c62dcc8818afad5a8e4">rflag</a> = 1;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="main_8c.html#a86f87cabb44e9c62dcc8818afad5a8e4">rflag</a> = 1;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="main_8c.html#a09cb2ce69ff1cb34441d575794be1a1e">tflag</a> = 1;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="main_8c.html#a09cb2ce69ff1cb34441d575794be1a1e">tflag</a> = 1;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="main_8c.html#aa11c35040b83d143bdf47216f6df3991">vflag</a> = 1;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="main_8c.html#aa11c35040b83d143bdf47216f6df3991">vflag</a> = 1;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">for</span> (;;)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">switch</span> (*++s)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;\0&#39;</span>:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">goto</span> end_of_option;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span> (;;)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">switch</span> (*++s)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;\0&#39;</span>:</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">goto</span> end_of_option;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="main_8c.html#a0dcaa799d1936ef88f62722db104b1a4">dflag</a> = 1;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <a class="code" href="main_8c.html#a0dcaa799d1936ef88f62722db104b1a4">dflag</a> = 1;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;l&#39;</span>:</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="main_8c.html#a858ab980ec866cf1508eab1a081869d3">lflag</a> = 1;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;l&#39;</span>:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <a class="code" href="main_8c.html#a858ab980ec866cf1508eab1a081869d3">lflag</a> = 1;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="main_8c.html#a86f87cabb44e9c62dcc8818afad5a8e4">rflag</a> = 1;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <a class="code" href="main_8c.html#a86f87cabb44e9c62dcc8818afad5a8e4">rflag</a> = 1;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="main_8c.html#a09cb2ce69ff1cb34441d575794be1a1e">tflag</a> = 1;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <a class="code" href="main_8c.html#a09cb2ce69ff1cb34441d575794be1a1e">tflag</a> = 1;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="main_8c.html#aa11c35040b83d143bdf47216f6df3991">vflag</a> = 1;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <a class="code" href="main_8c.html#aa11c35040b83d143bdf47216f6df3991">vflag</a> = 1;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <a class="code" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">usage</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;end_of_option:;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
@@ -698,48 +698,48 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> == 0)</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> = fopen(<a class="code" href="main_8c.html#aa91ff4ee3ee60baee9c097d4da3e3d18">input_file_name</a>, <span class="stringliteral">&quot;r&quot;</span>);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> == 0)</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#aa91ff4ee3ee60baee9c097d4da3e3d18">input_file_name</a>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> = fopen(<a class="code" href="main_8c.html#aa91ff4ee3ee60baee9c097d4da3e3d18">input_file_name</a>, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aa74b9afafd36575ac4b16ddc93cf956a">input_file</a> == 0)</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#aa91ff4ee3ee60baee9c097d4da3e3d18">input_file_name</a>);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    }</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <a class="code" href="main_8c.html#ac4054bb8ea7826ac0eaa766ea7b87844">action_file</a> = fopen(<a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#ac4054bb8ea7826ac0eaa766ea7b87844">action_file</a> == 0)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a>);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#aec554d51a9c248c04e48bb8a709a6f66">action_file_name</a>);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <a class="code" href="main_8c.html#a70aab3e007cfef8c480135d83496e2fc">text_file</a> = fopen(<a class="code" href="main_8c.html#af8922d6383cbb90f4136b442c0c377c5">text_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a70aab3e007cfef8c480135d83496e2fc">text_file</a> == 0)</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#af8922d6383cbb90f4136b442c0c377c5">text_file_name</a>);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#af8922d6383cbb90f4136b442c0c377c5">text_file_name</a>);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#aa11c35040b83d143bdf47216f6df3991">vflag</a>)</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <a class="code" href="main_8c.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a> = fopen(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a> == 0)</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a>);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="main_8c.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a> = fopen(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a> == 0)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#aee35700b2321374b56dfb58126c26fdc">verbose_file_name</a>);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a0dcaa799d1936ef88f62722db104b1a4">dflag</a>)</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="main_8c.html#a4676c4c310bfe8ca4465ad94e3680943">defines_file</a> = fopen(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a4676c4c310bfe8ca4465ad94e3680943">defines_file</a> == 0)</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a>);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="main_8c.html#a80b11bb32924d9790e344f7467269c39">union_file</a> = fopen(<a class="code" href="main_8c.html#ae739d5310c026e1ca67c1341bdf92988">union_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a80b11bb32924d9790e344f7467269c39">union_file</a> ==  0)</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#ae739d5310c026e1ca67c1341bdf92988">union_file_name</a>);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="main_8c.html#a4676c4c310bfe8ca4465ad94e3680943">defines_file</a> = fopen(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a4676c4c310bfe8ca4465ad94e3680943">defines_file</a> == 0)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#a13c63a18bc4ada4067c77b8daf6f7f18">defines_file_name</a>);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="main_8c.html#a80b11bb32924d9790e344f7467269c39">union_file</a> = fopen(<a class="code" href="main_8c.html#ae739d5310c026e1ca67c1341bdf92988">union_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a80b11bb32924d9790e344f7467269c39">union_file</a> ==  0)</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#ae739d5310c026e1ca67c1341bdf92988">union_file_name</a>);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="main_8c.html#a2960eb597f48f3b59bbb850b47e895ff">output_file</a> = fopen(<a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a2960eb597f48f3b59bbb850b47e895ff">output_file</a> == 0)</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a>);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#acdcd0d11bb729145f180d52a0755cddf">output_file_name</a>);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a86f87cabb44e9c62dcc8818afad5a8e4">rflag</a>)</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a> = fopen(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a> == 0)</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <a class="code" href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a> = fopen(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a>, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a> == 0)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <a class="code" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">open_error</a>(<a class="code" href="main_8c.html#a6c2f5330deb7e251093d4e867751aabb">code_file_name</a>);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    }</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a> = <a class="code" href="main_8c.html#a2960eb597f48f3b59bbb850b47e895ff">output_file</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a> = <a class="code" href="main_8c.html#a2960eb597f48f3b59bbb850b47e895ff">output_file</a>;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
 <div class="ttc" id="main_8c_html_a0411c329aa784570b327081d231b1562"><div class="ttname"><a href="main_8c.html#a0411c329aa784570b327081d231b1562">code_file</a></div><div class="ttdeci">FILE * code_file</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00029">main.c:29</a></div></div>
 <div class="ttc" id="main_8c_html_a8424435403fe377f38d43b7bdda78ac3"><div class="ttname"><a href="main_8c.html#a8424435403fe377f38d43b7bdda78ac3">create_file_names</a></div><div class="ttdeci">create_file_names()</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00225">main.c:225</a></div></div>
@@ -786,15 +786,15 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifdef SIGINT</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (signal(SIGINT, SIG_IGN) != SIG_IGN)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    signal(SIGINT, <a class="code" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        signal(SIGINT, <a class="code" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef SIGTERM</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (signal(SIGTERM, SIG_IGN) != SIG_IGN)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    signal(SIGTERM, <a class="code" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        signal(SIGTERM, <a class="code" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef SIGHUP</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (signal(SIGHUP, SIG_IGN) != SIG_IGN)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    signal(SIGHUP, <a class="code" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        signal(SIGHUP, <a class="code" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a>);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="main_8c_html_a9fdf94a8dff4664e9d01c43536ca3af4"><div class="ttname"><a href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">onintr</a></div><div class="ttdeci">onintr()</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00074">main.c:74</a></div></div>
@@ -1538,7 +1538,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
-    <li class="footer">Generated on Mon Mar 6 2017 13:00:50 for Berkeley YACC by
+    <li class="footer">Generated on Wed Mar 8 2017 14:36:27 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

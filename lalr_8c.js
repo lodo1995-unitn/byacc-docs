@@ -1,7 +1,7 @@
 var lalr_8c =
 [
     [ "shorts", "structshorts.html", "structshorts" ],
-    [ "shorts", "lalr_8c.html#afaf49741db7fb17eefb7903a6acb5128", null ],
+    [ "shorts", "lalr_8c.html#aba4dfc650b38a9190d92434a3035ef21", null ],
     [ "add_lookback_edge", "lalr_8c.html#ad69de49348a1b41b5f75d588240538d3", null ],
     [ "build_relations", "lalr_8c.html#a0a930e748b6863b16e0521247533842e", null ],
     [ "compute_FOLLOWS", "lalr_8c.html#a549587ac9636a2e338da2df1df852802", null ],

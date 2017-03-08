@@ -231,19 +231,19 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    prev = 0;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">for</span> (next = actions; next &amp;&amp; next-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> &lt; symbol; next = next-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    prev = next;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        prev = next;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">while</span> (next &amp;&amp; next-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> == symbol &amp;&amp; next-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>)</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    prev = next;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    next = next-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        prev = next;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        next = next-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">while</span> (next &amp;&amp; next-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> == symbol &amp;&amp;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        next-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a> &amp;&amp; next-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a> &lt; ruleno)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;           next-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a> &amp;&amp; next-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a> &lt; ruleno)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    prev = next;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    next = next-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        prev = next;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        next = next-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    temp = <a class="code" href="defs_8h.html#ad47bcaeb6a32d146af1ad46876b1e083">NEW</a>(<a class="code" href="structaction.html">action</a>);</div>
@@ -255,9 +255,9 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    temp-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> = <a class="code" href="defs_8h.html#a0d5ffe19c44a4e1528999adb937068b6">rassoc</a>[ruleno];</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (prev)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    prev-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a> = temp;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        prev-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a> = temp;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    actions = temp;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        actions = temp;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">return</span> (actions);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
@@ -330,13 +330,13 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    n = <a class="code" href="defs_8h.html#a1ae59fa49008bfd7a42be1b233cee75f">lookaheads</a>[stateno + 1];</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">for</span> (i = m; i &lt; n; i++)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    ruleno = <a class="code" href="defs_8h.html#a195a4875a206fdbbfc70f9cdefca8811">LAruleno</a>[i];</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    rowp = <a class="code" href="defs_8h.html#ab0e2a82b7f9da87cae0be8012a80a64b">LA</a> + i * <a class="code" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span> (j = <a class="code" href="defs_8h.html#a78b17f8032df23629c33ae6a2dad4741">ntokens</a> - 1; j &gt;= 0; j--)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a7c99d53e6fb8d4ae10e4b2d6c038697c">BIT</a>(rowp, j))</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        actions = <a class="code" href="mkpar_8c.html#a3448e6ef20f05ccbfad4d8f3b000c8c0">add_reduce</a>(actions, ruleno, j);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        ruleno = <a class="code" href="defs_8h.html#a195a4875a206fdbbfc70f9cdefca8811">LAruleno</a>[i];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        rowp = <a class="code" href="defs_8h.html#ab0e2a82b7f9da87cae0be8012a80a64b">LA</a> + i * <a class="code" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">for</span> (j = <a class="code" href="defs_8h.html#a78b17f8032df23629c33ae6a2dad4741">ntokens</a> - 1; j &gt;= 0; j--)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a7c99d53e6fb8d4ae10e4b2d6c038697c">BIT</a>(rowp, j))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                actions = <a class="code" href="mkpar_8c.html#a3448e6ef20f05ccbfad4d8f3b000c8c0">add_reduce</a>(actions, ruleno, j);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> (actions);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
@@ -374,7 +374,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="code" href="mkpar_8c.html#ae8cd8c771bddb88fe00967f1a1222288">defred</a> = <a class="code" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>(<a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <span class="keywordtype">short</span>);</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; i++)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <a class="code" href="mkpar_8c.html#ae8cd8c771bddb88fe00967f1a1222288">defred</a>[i] = <a class="code" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction</a>(i);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="mkpar_8c.html#ae8cd8c771bddb88fe00967f1a1222288">defred</a>[i] = <a class="code" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction</a>(i);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
 <div class="ttc" id="defs_8h_html_a20ef9f05f81df4c942c0276808046124"><div class="ttname"><a href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a></div><div class="ttdeci">#define NEW2(n, t)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00105">defs.h:105</a></div></div>
 <div class="ttc" id="mkpar_8c_html_a812d637aeb844aefdb3c63b7af18894a"><div class="ttname"><a href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction</a></div><div class="ttdeci">int sole_reduction(int stateno)</div><div class="ttdef"><b>Definition:</b> <a href="mkpar_8c_source.html#l00298">mkpar.c:298</a></div></div>
@@ -411,8 +411,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    goal = <a class="code" href="defs_8h.html#a01cf2505ce82ec00c8f04368c57331a7">ritem</a>[1];</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">for</span> (i = p-&gt;<a class="code" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">nshifts</a> - 1; i &gt;= 0; --i)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="mkpar_8c.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a> = to_state[i];</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>[<a class="code" href="mkpar_8c.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a>] == goal) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="mkpar_8c.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a> = to_state[i];</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>[<a class="code" href="mkpar_8c.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a>] == goal) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="ttc" id="structshifts_html_a66fc80653997365c242a12fb52ef3397"><div class="ttname"><a href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shifts::shift</a></div><div class="ttdeci">short shift[1]</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00148">defs.h:148</a></div></div>
@@ -447,13 +447,13 @@ Variables</h2></td></tr>
 
 <p>Referenced by <a class="el" href="mkpar_8c_source.html#l00348">free_parser()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *q;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *q;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordflow">while</span> (p)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">while</span> (p)</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      q = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <a class="code" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>(p);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      p = q;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        q = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <a class="code" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>(p);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        p = q;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
 <div class="ttc" id="structaction_html"><div class="ttname"><a href="structaction.html">action</a></div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00167">defs.h:167</a></div></div>
@@ -481,12 +481,12 @@ Variables</h2></td></tr>
 
 <p>Referenced by <a class="el" href="output_8c_source.html#l00020">output()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;{</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; i++)</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="code" href="mkpar_8c.html#a9d1a605494e3b13da79257155ebeb3c1">free_action_row</a>(<a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i]);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; i++)</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <a class="code" href="mkpar_8c.html#a9d1a605494e3b13da79257155ebeb3c1">free_action_row</a>(<a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i]);</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <a class="code" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>(<a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>(<a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>);</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;}</div>
 <div class="ttc" id="mkpar_8c_html_a9d1a605494e3b13da79257155ebeb3c1"><div class="ttname"><a href="mkpar_8c.html#a9d1a605494e3b13da79257155ebeb3c1">free_action_row</a></div><div class="ttdeci">free_action_row(action *p)</div><div class="ttdef"><b>Definition:</b> <a href="mkpar_8c_source.html#l00335">mkpar.c:335</a></div></div>
 <div class="ttc" id="defs_8h_html_a4059dce129f932da3e73c1fa8a8a7590"><div class="ttname"><a href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a></div><div class="ttdeci">int nstates</div><div class="ttdef"><b>Definition:</b> <a href="lr0_8c_source.html#l00008">lr0.c:8</a></div></div>
@@ -540,23 +540,23 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    sp = <a class="code" href="defs_8h.html#a9197c8768883873213ca494edf8a7c76">shift_table</a>[stateno];</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (sp)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    to_state = sp-&gt;<a class="code" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shift</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (i = sp-&gt;<a class="code" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">nshifts</a> - 1; i &gt;= 0; i--)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        k = to_state[i];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        symbol = <a class="code" href="defs_8h.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>[k];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a6b76ac8cec55b32a62a090f92ca1bcd7">ISTOKEN</a>(symbol))</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        temp = <a class="code" href="defs_8h.html#ad47bcaeb6a32d146af1ad46876b1e083">NEW</a>(<a class="code" href="structaction.html">action</a>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        temp-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a> = actions;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        temp-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> = symbol;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        temp-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a> = k;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        temp-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> = <a class="code" href="defs_8h.html#a4b47da62448a47ad7958024046169dab">symbol_prec</a>[symbol];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        temp-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> = <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        temp-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> = <a class="code" href="defs_8h.html#a0c0abc3ce5784395b1a4e797360b20e7">symbol_assoc</a>[symbol];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        actions = temp;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        to_state = sp-&gt;<a class="code" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shift</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span> (i = sp-&gt;<a class="code" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">nshifts</a> - 1; i &gt;= 0; i--)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            k = to_state[i];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            symbol = <a class="code" href="defs_8h.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>[k];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a6b76ac8cec55b32a62a090f92ca1bcd7">ISTOKEN</a>(symbol))</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                temp = <a class="code" href="defs_8h.html#ad47bcaeb6a32d146af1ad46876b1e083">NEW</a>(<a class="code" href="structaction.html">action</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                temp-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a> = actions;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                temp-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> = symbol;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                temp-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a> = k;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                temp-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> = <a class="code" href="defs_8h.html#a4b47da62448a47ad7958024046169dab">symbol_prec</a>[symbol];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                temp-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> = <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                temp-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> = <a class="code" href="defs_8h.html#a0c0abc3ce5784395b1a4e797360b20e7">symbol_assoc</a>[symbol];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                actions = temp;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> (actions);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
@@ -604,7 +604,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a> = <a class="code" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>(<a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <a class="code" href="structaction.html">action</a> *);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; i++)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i] = <a class="code" href="mkpar_8c.html#acec1ac11401096ceec7870ea7416dda5">parse_actions</a>(i);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i] = <a class="code" href="mkpar_8c.html#acec1ac11401096ceec7870ea7416dda5">parse_actions</a>(i);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="mkpar_8c.html#a7423356b0dcd3ec8c86b94cfad426e11">find_final_state</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts</a>();</div>
@@ -703,65 +703,65 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="mkpar_8c.html#a92702a466671c3524b486a8af7e42850">RRconflicts</a> = <a class="code" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>(<a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <span class="keywordtype">short</span>);</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; i++)</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a> = 0;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a> = 0;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    symbol = -1;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">for</span> (p = <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i]; p; p = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>)</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> != symbol)</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        pref = p;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        symbol = p-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == <a class="code" href="mkpar_8c.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a> &amp;&amp; symbol == 0)</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>++;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 1;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &gt; 0 &amp;&amp; p-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &gt; 0)</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &lt; p-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a>)</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            pref-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            pref = p;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &gt; p-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a>)</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> == <a class="code" href="defs_8h.html#a437ef08681e7210d6678427030446a54">LEFT</a>)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            pref-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            pref = p;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> == <a class="code" href="defs_8h.html#a80fb826a684cf3f0d306b22aa100ddac">RIGHT</a>)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            pref-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>++;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 1;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a>++;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 1;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a> += <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a> += <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a>;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="mkpar_8c.html#a423f7f121dd72060b58fa6b90634388b">SRconflicts</a>[i] = <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="mkpar_8c.html#a92702a466671c3524b486a8af7e42850">RRconflicts</a>[i] = <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a> = 0;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a> = 0;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        symbol = -1;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">for</span> (p = <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i]; p; p = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> != symbol)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                pref = p;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                symbol = p-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i == <a class="code" href="mkpar_8c.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a> &amp;&amp; symbol == 0)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>++;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 1;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &gt; 0 &amp;&amp; p-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &gt; 0)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &lt; p-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a>)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                        pref-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        pref = p;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a> &gt; p-&gt;<a class="code" href="structaction.html#a9ffebd88ebf36a24d54121e1696ba5f7">prec</a>)</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> == <a class="code" href="defs_8h.html#a437ef08681e7210d6678427030446a54">LEFT</a>)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                        pref-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                        pref = p;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                    }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pref-&gt;<a class="code" href="structaction.html#a3585423dee58bc88cfdcd2ae7094eb5a">assoc</a> == <a class="code" href="defs_8h.html#a80fb826a684cf3f0d306b22aa100ddac">RIGHT</a>)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                    {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                    {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                        pref-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                        p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 2;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                    <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>++;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                    p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 1;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a>++;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> = 1;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a> += <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a> += <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="mkpar_8c.html#a423f7f121dd72060b58fa6b90634388b">SRconflicts</a>[i] = <a class="code" href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <a class="code" href="mkpar_8c.html#a92702a466671c3524b486a8af7e42850">RRconflicts</a>[i] = <a class="code" href="mkpar_8c.html#a096e3fcb8530ce5a3ef6909f108a84bd">RRcount</a>;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
 <div class="ttc" id="mkpar_8c_html_a80b3737c9192e132509bdb37de99795a"><div class="ttname"><a href="mkpar_8c.html#a80b3737c9192e132509bdb37de99795a">SRcount</a></div><div class="ttdeci">static int SRcount</div><div class="ttdef"><b>Definition:</b> <a href="mkpar_8c_source.html#l00014">mkpar.c:14</a></div></div>
@@ -814,20 +814,20 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    ruleno = 0; </div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">for</span> (p = <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[stateno]; p; p = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>)</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a> &amp;&amp; p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> == 0)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">return</span> (0);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a> &amp;&amp; p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> == 0)</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">if</span> (ruleno &gt; 0 &amp;&amp; p-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a> != ruleno)</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">return</span> (0);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> != 1)</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        ++count;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        ruleno = p-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a>;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a> &amp;&amp; p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> == 0)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordflow">return</span> (0);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a> &amp;&amp; p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> == 0)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="keywordflow">if</span> (ruleno &gt; 0 &amp;&amp; p-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a> != ruleno)</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keywordflow">return</span> (0);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">symbol</a> != 1)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                ++count;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            ruleno = p-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        }</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    }</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> (count == 0)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">return</span> (0);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> (0);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> (ruleno);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
 <div class="ttc" id="structaction_html_aad3fa231e65e2f714c465655081e26cf"><div class="ttname"><a href="structaction.html#aad3fa231e65e2f714c465655081e26cf">action::number</a></div><div class="ttdeci">short number</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00171">defs.h:171</a></div></div>
@@ -863,17 +863,17 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;%s: &quot;</span>, <a class="code" href="defs_8h.html#a4752cbd845cd5911698f470f19966b93">myname</a>);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a> == 1)</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;1 shift/reduce conflict&quot;</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;1 shift/reduce conflict&quot;</span>);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a> &gt; 1)</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;%d shift/reduce conflicts&quot;</span>, <a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;%d shift/reduce conflicts&quot;</span>, <a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a>);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a> &amp;&amp; <a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a>)</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;, &quot;</span>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;, &quot;</span>);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a> == 1)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;1 reduce/reduce conflict&quot;</span>);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;1 reduce/reduce conflict&quot;</span>);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a> &gt; 1)</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;%d reduce/reduce conflicts&quot;</span>, <a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;%d reduce/reduce conflicts&quot;</span>, <a class="code" href="mkpar_8c.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a>);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;.\n&quot;</span>);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
@@ -909,26 +909,26 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a> == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4030fa806b6c395ad2fa87d009651042">nrules</a>; ++i)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>[i] = 0;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>[i] = 0;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; ++i)</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">for</span> (p = <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i]; p; p = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a> &amp;&amp; p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> == 0)</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>[p-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a>] = 1;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">for</span> (p = <a class="code" href="mkpar_8c.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>[i]; p; p = p-&gt;<a class="code" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">next</a>)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span> (p-&gt;<a class="code" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action_code</a> == <a class="code" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a> &amp;&amp; p-&gt;<a class="code" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">suppressed</a> == 0)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>[p-&gt;<a class="code" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">number</a>] = 1;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a> = 0;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">for</span> (i = 3; i &lt; <a class="code" href="defs_8h.html#a4030fa806b6c395ad2fa87d009651042">nrules</a>; ++i)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>[i]) ++<a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="mkpar_8c.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>[i]) ++<a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a>)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a> == 1)</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;%s: 1 rule never reduced\n&quot;</span>, <a class="code" href="defs_8h.html#a4752cbd845cd5911698f470f19966b93">myname</a>);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;%s: %d rules never reduced\n&quot;</span>, <a class="code" href="defs_8h.html#a4752cbd845cd5911698f470f19966b93">myname</a>, <a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a> == 1)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            fprintf(stderr, <span class="stringliteral">&quot;%s: 1 rule never reduced\n&quot;</span>, <a class="code" href="defs_8h.html#a4752cbd845cd5911698f470f19966b93">myname</a>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            fprintf(stderr, <span class="stringliteral">&quot;%s: %d rules never reduced\n&quot;</span>, <a class="code" href="defs_8h.html#a4752cbd845cd5911698f470f19966b93">myname</a>, <a class="code" href="mkpar_8c.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a>);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="ttc" id="structaction_html_aad3fa231e65e2f714c465655081e26cf"><div class="ttname"><a href="structaction.html#aad3fa231e65e2f714c465655081e26cf">action::number</a></div><div class="ttdeci">short number</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00171">defs.h:171</a></div></div>
 <div class="ttc" id="defs_8h_html_a7e3c05d61a56a6798627a9d576cb6b45"><div class="ttname"><a href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a></div><div class="ttdeci">#define MALLOC(n)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00103">defs.h:103</a></div></div>
@@ -1146,7 +1146,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="mkpar_8c.html">mkpar.c</a></li>
-    <li class="footer">Generated on Mon Mar 6 2017 13:00:50 for Berkeley YACC by
+    <li class="footer">Generated on Wed Mar 8 2017 14:36:27 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
