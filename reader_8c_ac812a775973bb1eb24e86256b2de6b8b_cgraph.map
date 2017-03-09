@@ -1,0 +1,8 @@
+<map id="skip_comment" name="skip_comment">
+<area shape="rect" id="node2" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="205,5,275,32"/>
+<area shape="rect" id="node5" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="207,56,273,83"/>
+<area shape="rect" id="node6" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="161,107,319,133"/>
+<area shape="rect" id="node3" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="369,31,447,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="496,56,547,83"/>
+<area shape="rect" id="node7" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="371,132,445,159"/>
+</map>

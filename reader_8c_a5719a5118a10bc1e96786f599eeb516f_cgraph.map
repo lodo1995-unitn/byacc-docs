@@ -1,0 +1,10 @@
+<map id="copy_text" name="copy_text">
+<area shape="rect" id="node2" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="178,56,249,83"/>
+<area shape="rect" id="node5" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="180,5,247,32"/>
+<area shape="rect" id="node6" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="134,107,293,133"/>
+<area shape="rect" id="node8" href="$error_8c.html#a1be74faa1a912de2fd380aa9a4de6eb2" title="unterminated_string" alt="" coords="145,157,281,184"/>
+<area shape="rect" id="node9" href="$error_8c.html#a60e968f02480372518e9cce97e70ef5b" title="unterminated_text" alt="" coords="150,208,277,235"/>
+<area shape="rect" id="node3" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="342,31,421,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="469,107,520,133"/>
+<area shape="rect" id="node7" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="344,183,419,209"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="advance_to_start" name="advance_to_start">
+<area shape="rect" id="node2" href="$reader_8c.html#a5719a5118a10bc1e96786f599eeb516f" title="copy_text" alt="" coords="510,208,589,235"/>
+<area shape="rect" id="node9" href="$reader_8c.html#a279a8d9eb5a5ad8dce6c95b2647b9c98" title="declare_start" alt="" coords="177,411,274,438"/>
+<area shape="rect" id="node10" href="$reader_8c.html#a11446424d65669df0f3a9e3b1cca57fa" title="nextc" alt="" coords="358,310,413,336"/>
+<area shape="rect" id="node12" href="$error_8c.html#a65962bc9ddf21cd2dc0b5f6b7dcb35fc" title="unexpected_EOF" alt="" coords="324,360,447,387"/>
+<area shape="rect" id="node13" href="$error_8c.html#ae2027917ace8b6f808a14b5cd4085eaf" title="syntax_error" alt="" coords="338,512,433,539"/>
+<area shape="rect" id="node14" href="$reader_8c.html#a47f6ab5db224a190b33568ed55a03eaf" title="get_name" alt="" coords="346,462,425,488"/>
+<area shape="rect" id="node19" href="$error_8c.html#a6859daa9b91716c6fbe56b822641877c" title="terminal_start" alt="" coords="335,614,436,640"/>
+<area shape="rect" id="node21" href="$reader_8c.html#a7b9f905e2f933d429fa1b479fd058f03" title="keyword" alt="" coords="190,563,261,590"/>
+<area shape="rect" id="node22" href="$error_8c.html#aa247f6f1a935ef2a5bffb181f2a9f48d" title="no_grammar" alt="" coords="178,56,273,83"/>
+<area shape="rect" id="node23" href="$reader_8c.html#a7691871ff8cdc7f1f7bdaf2443070ff1" title="start_rule" alt="" coords="187,158,263,184"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="695,259,766,286"/>
+<area shape="rect" id="node4" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="697,310,764,336"/>
+<area shape="rect" id="node5" href="$error_8c.html#a60e968f02480372518e9cce97e70ef5b" title="unterminated_text" alt="" coords="667,107,794,134"/>
+<area shape="rect" id="node7" href="$error_8c.html#a1be74faa1a912de2fd380aa9a4de6eb2" title="unterminated_string" alt="" coords="663,158,799,184"/>
+<area shape="rect" id="node8" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="651,208,810,235"/>
+<area shape="rect" id="node6" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="859,208,909,235"/>
+<area shape="rect" id="node20" href="$error_8c.html#a23e15c296f3057431e3c58bb151b44bd" title="restarted_warning" alt="" coords="323,411,448,438"/>
+<area shape="rect" id="node11" href="$reader_8c.html#ac812a775973bb1eb24e86256b2de6b8b" title="skip_comment" alt="" coords="496,259,603,286"/>
+<area shape="rect" id="node15" href="$reader_8c.html#a04707e6fc9527eaf37d68dafdc9483a9" title="cachec" alt="" coords="517,614,581,640"/>
+<area shape="rect" id="node16" href="$reader_8c.html#a205d802dd9de1b8e85d44a321f33365c" title="is_reserved" alt="" coords="505,411,594,438"/>
+<area shape="rect" id="node17" href="$error_8c.html#a28ccf9e0cd69034b61cd32e13e9a9e00" title="used_reserved" alt="" coords="677,462,784,488"/>
+<area shape="rect" id="node18" href="$defs_8h.html#aeb8facfda1fb8dcf16a3120589eb90e0" title="lookup" alt="" coords="519,462,579,488"/>
+<area shape="rect" id="node24" href="$error_8c.html#ab2b1e22a832ff68240af1b58df86bee3" title="terminal_lhs" alt="" coords="503,107,595,134"/>
+<area shape="rect" id="node25" href="$reader_8c.html#a26f803a6175f255b34b89151133c51f6" title="expand_rules" alt="" coords="336,107,435,134"/>
+</map>

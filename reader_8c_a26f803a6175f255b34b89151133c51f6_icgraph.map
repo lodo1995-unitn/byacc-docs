@@ -1,0 +1,8 @@
+<map id="expand_rules" name="expand_rules">
+<area shape="rect" id="node2" href="$reader_8c.html#ac59b5c8d9dca9fc4b2614fd186ec6c55" title="insert_empty_rule" alt="" coords="152,56,277,83"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a7691871ff8cdc7f1f7bdaf2443070ff1" title="start_rule" alt="" coords="177,107,253,133"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a34bf32e056d8bc6f1fb490f4efc7ce90" title="add_symbol" alt="" coords="341,56,433,83"/>
+<area shape="rect" id="node5" href="$reader_8c.html#abb83807b1bba8d346650d3e4ae4e7425" title="copy_action" alt="" coords="341,5,433,32"/>
+<area shape="rect" id="node4" href="$reader_8c.html#af6d4fba61bb761ca9fe92fef83e8ee94" title="read_grammar" alt="" coords="497,81,602,108"/>
+<area shape="rect" id="node7" href="$reader_8c.html#ac910677446efcb4dbebc9a6d3d90a9ff" title="advance_to_start" alt="" coords="325,157,448,184"/>
+</map>

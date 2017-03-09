@@ -1,0 +1,11 @@
+<map id="make_parser" name="make_parser">
+<area shape="rect" id="node2" href="$mkpar_8c.html#a3f253df6f106f6a619f439956ecce462" title="defreds" alt="" coords="181,5,246,32"/>
+<area shape="rect" id="node4" href="$mkpar_8c.html#a7423356b0dcd3ec8c86b94cfad426e11" title="find_final_state" alt="" coords="158,56,269,83"/>
+<area shape="rect" id="node5" href="$mkpar_8c.html#acec1ac11401096ceec7870ea7416dda5" title="parse_actions" alt="" coords="162,107,265,133"/>
+<area shape="rect" id="node6" href="$mkpar_8c.html#acc6262918280d450ced9ab943349fa86" title="remove_conflicts" alt="" coords="153,157,274,184"/>
+<area shape="rect" id="node7" href="$mkpar_8c.html#acbfd668c89aecf8182694bd8f052ed47" title="total_conflicts" alt="" coords="162,208,265,235"/>
+<area shape="rect" id="node8" href="$mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411" title="unused_rules" alt="" coords="164,259,263,285"/>
+<area shape="rect" id="node3" href="$mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a" title="sole_reduction" alt="" coords="323,5,429,32"/>
+<area shape="rect" id="node9" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="337,259,415,285"/>
+<area shape="rect" id="node10" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="477,259,528,285"/>
+</map>

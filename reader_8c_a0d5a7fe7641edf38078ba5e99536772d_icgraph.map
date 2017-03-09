@@ -1,0 +1,8 @@
+<map id="get_tag" name="get_tag">
+<area shape="rect" id="node2" href="$reader_8c.html#abb83807b1bba8d346650d3e4ae4e7425" title="copy_action" alt="" coords="130,5,222,32"/>
+<area shape="rect" id="node5" href="$reader_8c.html#a0b749a023a959fabb8ed2778b46ec217" title="declare_tokens" alt="" coords="121,56,231,83"/>
+<area shape="rect" id="node7" href="$reader_8c.html#a860dbc8da656fd831b19668da20207c7" title="declare_types" alt="" coords="125,107,227,133"/>
+<area shape="rect" id="node3" href="$reader_8c.html#af6d4fba61bb761ca9fe92fef83e8ee94" title="read_grammar" alt="" coords="290,5,395,32"/>
+<area shape="rect" id="node4" href="$reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b" title="reader" alt="" coords="453,31,512,57"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a07addfee5457e48ddb310769dd0e39af" title="read_declarations" alt="" coords="281,56,405,83"/>
+</map>

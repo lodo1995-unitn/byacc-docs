@@ -1,0 +1,14 @@
+<map id="skip_comment" name="skip_comment">
+<area shape="rect" id="node2" href="$reader_8c.html#a11446424d65669df0f3a9e3b1cca57fa" title="nextc" alt="" coords="161,233,215,260"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a34bf32e056d8bc6f1fb490f4efc7ce90" title="add_symbol" alt="" coords="429,5,521,32"/>
+<area shape="rect" id="node4" href="$reader_8c.html#af6d4fba61bb761ca9fe92fef83e8ee94" title="read_grammar" alt="" coords="594,107,699,133"/>
+<area shape="rect" id="node5" href="$reader_8c.html#ac910677446efcb4dbebc9a6d3d90a9ff" title="advance_to_start" alt="" coords="413,157,536,184"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a475e9b3fc05ea753aeeb760cea34a511" title="copy_ident" alt="" coords="272,411,357,437"/>
+<area shape="rect" id="node7" href="$reader_8c.html#a07addfee5457e48ddb310769dd0e39af" title="read_declarations" alt="" coords="585,360,709,387"/>
+<area shape="rect" id="node8" href="$reader_8c.html#a279a8d9eb5a5ad8dce6c95b2647b9c98" title="declare_start" alt="" coords="266,208,363,235"/>
+<area shape="rect" id="node9" href="$reader_8c.html#a0b749a023a959fabb8ed2778b46ec217" title="declare_tokens" alt="" coords="419,309,530,336"/>
+<area shape="rect" id="node10" href="$reader_8c.html#a860dbc8da656fd831b19668da20207c7" title="declare_types" alt="" coords="423,360,526,387"/>
+<area shape="rect" id="node11" href="$reader_8c.html#a0d5a7fe7641edf38078ba5e99536772d" title="get_tag" alt="" coords="282,259,347,285"/>
+<area shape="rect" id="node13" href="$reader_8c.html#aae3985d515e47c03afc20f92c0292531" title="mark_symbol" alt="" coords="265,107,365,133"/>
+<area shape="rect" id="node12" href="$reader_8c.html#abb83807b1bba8d346650d3e4ae4e7425" title="copy_action" alt="" coords="429,259,521,285"/>
+</map>

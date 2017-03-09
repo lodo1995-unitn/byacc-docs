@@ -1,0 +1,21 @@
+<map id="mark_symbol" name="mark_symbol">
+<area shape="rect" id="node2" href="$reader_8c.html#acfb64f081b0d9c4536e90c5352ce9c2c" title="get_literal" alt="" coords="331,259,410,285"/>
+<area shape="rect" id="node13" href="$reader_8c.html#a47f6ab5db224a190b33568ed55a03eaf" title="get_name" alt="" coords="331,461,410,488"/>
+<area shape="rect" id="node16" href="$reader_8c.html#a11446424d65669df0f3a9e3b1cca57fa" title="nextc" alt="" coords="185,157,239,184"/>
+<area shape="rect" id="node19" href="$error_8c.html#a73b7d91e555fcb312db3d1561b8b0468" title="prec_redeclared" alt="" coords="155,335,269,361"/>
+<area shape="rect" id="node20" href="$error_8c.html#ae2027917ace8b6f808a14b5cd4085eaf" title="syntax_error" alt="" coords="505,5,599,32"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a04707e6fc9527eaf37d68dafdc9483a9" title="cachec" alt="" coords="520,461,584,488"/>
+<area shape="rect" id="node4" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="694,259,773,285"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="517,259,587,285"/>
+<area shape="rect" id="node7" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="519,107,585,133"/>
+<area shape="rect" id="node8" href="$reader_8c.html#a9ce1e6abd7c2eac7e850297b7e1bbc6e" title="hexval" alt="" coords="522,309,582,336"/>
+<area shape="rect" id="node9" href="$error_8c.html#aad64de11ac1b5b04da452109e0c6e55a" title="illegal_character" alt="" coords="494,157,610,184"/>
+<area shape="rect" id="node11" href="$defs_8h.html#aeb8facfda1fb8dcf16a3120589eb90e0" title="lookup" alt="" coords="522,411,582,437"/>
+<area shape="rect" id="node12" href="$error_8c.html#a1be74faa1a912de2fd380aa9a4de6eb2" title="unterminated_string" alt="" coords="484,208,620,235"/>
+<area shape="rect" id="node5" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="835,183,885,209"/>
+<area shape="rect" id="node10" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="696,107,771,133"/>
+<area shape="rect" id="node14" href="$reader_8c.html#a205d802dd9de1b8e85d44a321f33365c" title="is_reserved" alt="" coords="507,512,597,539"/>
+<area shape="rect" id="node15" href="$error_8c.html#a28ccf9e0cd69034b61cd32e13e9a9e00" title="used_reserved" alt="" coords="680,436,787,463"/>
+<area shape="rect" id="node17" href="$reader_8c.html#ac812a775973bb1eb24e86256b2de6b8b" title="skip_comment" alt="" coords="317,157,424,184"/>
+<area shape="rect" id="node18" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="473,56,631,83"/>
+</map>

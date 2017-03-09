@@ -1,0 +1,11 @@
+<map id="get_name" name="get_name">
+<area shape="rect" id="node2" href="$reader_8c.html#a34bf32e056d8bc6f1fb490f4efc7ce90" title="add_symbol" alt="" coords="310,56,402,83"/>
+<area shape="rect" id="node5" href="$reader_8c.html#ac910677446efcb4dbebc9a6d3d90a9ff" title="advance_to_start" alt="" coords="295,107,417,133"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a279a8d9eb5a5ad8dce6c95b2647b9c98" title="declare_start" alt="" coords="141,157,238,184"/>
+<area shape="rect" id="node8" href="$reader_8c.html#a0b749a023a959fabb8ed2778b46ec217" title="declare_tokens" alt="" coords="134,259,245,285"/>
+<area shape="rect" id="node9" href="$reader_8c.html#a860dbc8da656fd831b19668da20207c7" title="declare_types" alt="" coords="138,208,241,235"/>
+<area shape="rect" id="node10" href="$reader_8c.html#aae3985d515e47c03afc20f92c0292531" title="mark_symbol" alt="" coords="306,5,406,32"/>
+<area shape="rect" id="node3" href="$reader_8c.html#af6d4fba61bb761ca9fe92fef83e8ee94" title="read_grammar" alt="" coords="467,81,573,108"/>
+<area shape="rect" id="node4" href="$reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b" title="reader" alt="" coords="621,107,680,133"/>
+<area shape="rect" id="node7" href="$reader_8c.html#a07addfee5457e48ddb310769dd0e39af" title="read_declarations" alt="" coords="294,183,418,209"/>
+</map>

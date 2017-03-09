@@ -1,0 +1,5 @@
+<map id="print_actions" name="print_actions">
+<area shape="rect" id="node2" href="$verbose_8c.html#a16325c030b7ca106c93a115bb1bddac9" title="print_gotos" alt="" coords="163,5,250,32"/>
+<area shape="rect" id="node3" href="$verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40" title="print_reductions" alt="" coords="149,56,264,83"/>
+<area shape="rect" id="node4" href="$verbose_8c.html#a0b08f91b4ae38460b3de67b33393d722" title="print_shifts" alt="" coords="163,107,250,133"/>
+</map>

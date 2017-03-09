@@ -1,0 +1,6 @@
+<map id="make_bucket" name="make_bucket">
+<area shape="rect" id="node2" href="$reader_8c.html#ac59b5c8d9dca9fc4b2614fd186ec6c55" title="insert_empty_rule" alt="" coords="155,31,280,57"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a34bf32e056d8bc6f1fb490f4efc7ce90" title="add_symbol" alt="" coords="329,5,421,32"/>
+<area shape="rect" id="node5" href="$reader_8c.html#abb83807b1bba8d346650d3e4ae4e7425" title="copy_action" alt="" coords="329,56,421,83"/>
+<area shape="rect" id="node4" href="$reader_8c.html#af6d4fba61bb761ca9fe92fef83e8ee94" title="read_grammar" alt="" coords="470,31,575,57"/>
+</map>

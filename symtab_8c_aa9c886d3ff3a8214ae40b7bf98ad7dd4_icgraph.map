@@ -1,0 +1,6 @@
+<map id="make_bucket" name="make_bucket">
+<area shape="rect" id="node2" href="$symtab_8c.html#aeeef4e0a9c6733adb569531e181de719" title="create_symbol_table" alt="" coords="155,5,298,32"/>
+<area shape="rect" id="node5" href="$symtab_8c.html#aee518732e7aee5ce3c6fd5208c4ffdea" title="lookup" alt="" coords="197,56,257,83"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b" title="reader" alt="" coords="347,5,405,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#afced8478b91af5c169926dfa4426333d" title="main" alt="" coords="453,5,504,32"/>
+</map>

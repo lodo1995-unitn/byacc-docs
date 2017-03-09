@@ -1,0 +1,6 @@
+<map id="traverse" name="traverse">
+<area shape="rect" id="node2" href="$lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509" title="digraph" alt="" coords="123,31,187,57"/>
+<area shape="rect" id="node3" href="$lalr_8c.html#a549587ac9636a2e338da2df1df852802" title="compute_FOLLOWS" alt="" coords="235,5,378,32"/>
+<area shape="rect" id="node5" href="$lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649" title="initialize_F" alt="" coords="265,56,349,83"/>
+<area shape="rect" id="node4" href="$lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f" title="lalr" alt="" coords="427,31,466,57"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="allocate" name="allocate">
+<area shape="rect" id="node2" href="$lr0_8c.html#ae1044f1d92f94e2469b09788be4d6b09" title="new_state" alt="" coords="137,5,220,32"/>
+<area shape="rect" id="node3" href="$lr0_8c.html#ab38dfd7acc43af0b0c19728b7d22aeec" title="save_reductions" alt="" coords="120,56,237,83"/>
+<area shape="rect" id="node6" href="$lr0_8c.html#a1908887fd7a9309bb55050cf523e0181" title="save_shifts" alt="" coords="134,107,223,133"/>
+<area shape="rect" id="node4" href="$lr0_8c.html#a81209dc209ca0c6fb2a5e74bd98c02c7" title="generate_states" alt="" coords="285,81,400,108"/>
+<area shape="rect" id="node5" href="$lr0_8c.html#aec6ecb962126ab8e37fed166e9416bce" title="lr0" alt="" coords="449,81,487,108"/>
+</map>

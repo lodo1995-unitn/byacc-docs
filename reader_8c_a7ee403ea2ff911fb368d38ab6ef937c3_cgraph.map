@@ -1,0 +1,11 @@
+<map id="copy_union" name="copy_union">
+<area shape="rect" id="node2" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="186,5,257,32"/>
+<area shape="rect" id="node5" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="188,56,255,83"/>
+<area shape="rect" id="node6" href="$error_8c.html#aa9bb2f4291d5b51cee6f8dc4156e0fd5" title="over_unionized" alt="" coords="167,259,276,285"/>
+<area shape="rect" id="node8" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="142,107,301,133"/>
+<area shape="rect" id="node9" href="$error_8c.html#a1be74faa1a912de2fd380aa9a4de6eb2" title="unterminated_string" alt="" coords="153,157,289,184"/>
+<area shape="rect" id="node10" href="$error_8c.html#a81dd9930c4155592c10afdb2b0e34588" title="unterminated_union" alt="" coords="154,208,289,235"/>
+<area shape="rect" id="node3" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="350,31,429,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="477,132,528,159"/>
+<area shape="rect" id="node7" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="352,183,427,209"/>
+</map>

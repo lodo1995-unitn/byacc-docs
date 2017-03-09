@@ -1,0 +1,6 @@
+<map id="build_relations" name="build_relations">
+<area shape="rect" id="node2" href="$lalr_8c.html#ad69de49348a1b41b5f75d588240538d3" title="add_lookback_edge" alt="" coords="161,5,298,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="204,56,255,83"/>
+<area shape="rect" id="node4" href="$lalr_8c.html#a910e5adae7c283da210c508e39d7dff6" title="map_goto" alt="" coords="190,107,269,133"/>
+<area shape="rect" id="node5" href="$lalr_8c.html#a23d78f0bc8b4f380978adbb6c3bf9299" title="transpose" alt="" coords="190,157,269,184"/>
+</map>

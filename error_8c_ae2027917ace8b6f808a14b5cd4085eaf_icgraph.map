@@ -1,0 +1,11 @@
+<map id="syntax_error" name="syntax_error">
+<area shape="rect" id="node2" href="$reader_8c.html#ac910677446efcb4dbebc9a6d3d90a9ff" title="advance_to_start" alt="" coords="303,132,425,159"/>
+<area shape="rect" id="node3" href="$reader_8c.html#af6d4fba61bb761ca9fe92fef83e8ee94" title="read_grammar" alt="" coords="475,81,581,108"/>
+<area shape="rect" id="node5" href="$reader_8c.html#a475e9b3fc05ea753aeeb760cea34a511" title="copy_ident" alt="" coords="159,309,244,336"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a07addfee5457e48ddb310769dd0e39af" title="read_declarations" alt="" coords="302,233,426,260"/>
+<area shape="rect" id="node7" href="$reader_8c.html#a279a8d9eb5a5ad8dce6c95b2647b9c98" title="declare_start" alt="" coords="153,208,250,235"/>
+<area shape="rect" id="node8" href="$reader_8c.html#a860dbc8da656fd831b19668da20207c7" title="declare_types" alt="" coords="150,360,253,387"/>
+<area shape="rect" id="node9" href="$reader_8c.html#a7b9f905e2f933d429fa1b479fd058f03" title="keyword" alt="" coords="166,157,237,184"/>
+<area shape="rect" id="node10" href="$reader_8c.html#aae3985d515e47c03afc20f92c0292531" title="mark_symbol" alt="" coords="314,5,414,32"/>
+<area shape="rect" id="node4" href="$reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b" title="reader" alt="" coords="629,107,688,133"/>
+</map>

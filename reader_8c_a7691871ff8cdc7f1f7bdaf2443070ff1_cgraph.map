@@ -1,0 +1,6 @@
+<map id="start_rule" name="start_rule">
+<area shape="rect" id="node2" href="$reader_8c.html#a26f803a6175f255b34b89151133c51f6" title="expand_rules" alt="" coords="131,5,229,32"/>
+<area shape="rect" id="node5" href="$error_8c.html#ab2b1e22a832ff68240af1b58df86bee3" title="terminal_lhs" alt="" coords="278,56,370,83"/>
+<area shape="rect" id="node3" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="285,5,363,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="419,31,469,57"/>
+</map>

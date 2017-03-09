@@ -1,0 +1,9 @@
+<map id="nextc" name="nextc">
+<area shape="rect" id="node2" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="311,5,377,32"/>
+<area shape="rect" id="node5" href="$reader_8c.html#ac812a775973bb1eb24e86256b2de6b8b" title="skip_comment" alt="" coords="109,56,216,83"/>
+<area shape="rect" id="node3" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="473,31,551,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="600,56,651,83"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="309,56,379,83"/>
+<area shape="rect" id="node7" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="265,107,423,133"/>
+<area shape="rect" id="node8" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="475,132,549,159"/>
+</map>
