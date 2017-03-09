@@ -1491,6 +1491,19 @@ free_tags()
 }
 
 
+/**
+*   @defgroup memopt Memory optimization
+*   @brief Functions to reduce the memory footprint
+*
+*   The functions in this module are used to pack the symbols manipulated by the program,
+*   switching from many small allocations to a few big memory chunks. This slightly reduces
+*   the memory footprint of the program, while also improving locality, thus incrementing
+*   the performance of the subsequent algorithms, which very often need to iterate on the data
+*/
+
+/**
+*   @ingroup memopt
+*/
 pack_names()
 {
     register bucket *bp;
@@ -1534,6 +1547,9 @@ check_symbols()
 }
 
 
+/**
+*   @ingroup memopt
+*/
 pack_symbols()
 {
     register bucket *bp;
@@ -1658,6 +1674,9 @@ pack_symbols()
 }
 
 
+/**
+*   @ingroup memopt
+*/
 pack_grammar()
 {
     register int i, j;

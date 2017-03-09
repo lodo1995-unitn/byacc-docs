@@ -1,5 +1,15 @@
 #include "defs.h"
 
+/**
+*   Computes the transitive closure of a relation in-place.
+*
+*   Let \f$ \mathrm{R} \f$ be an \f$ \mathrm{n} \times \mathrm{n} \f$ matrix of bits expressing a relation between n
+*   elements, such that \f$ \mathrm{R}_{i,j} \f$ is set if and only if the i-th elements is in relation with the j-th one.
+*
+*   Then this function computes the transitive closure of such relation and stores it in-place, using Warshall's
+*   algorithm. Its complexity is \f$ O\left( n^3 \right) \f$.
+*/
+
 transitive_closure(R, n)
 unsigned *R;
 int n;
@@ -51,6 +61,20 @@ int n;
         rowi += rowsize;
     }
 }
+
+/**
+*   Computes the transitive closure of a relation in-place.
+*
+*   Let \f$ \mathrm{R} \f$ be an \f$ \mathrm{n} \times \mathrm{n} \f$ matrix of bits expressing a relation between n
+*   elements, such that \f$ \mathrm{R}_{i,j} \f$ is set if and only if the i-th elements is in relation with the j-th one.
+*
+*   Then this function computes the reflexive and transitive closure of such relation and stores it in-place, using
+*   Warshall's algorithm. Its complexity is \f$ O\left( n^3 \right) \f$, dominated by the complexity of
+*   transitive_closure().
+*
+*   Internally, this function just calls transitive_closure() and then sets all elements on the matrix diagonal to make
+*   the relation reflexive.
+*/
 
 reflexive_transitive_closure(R, n)
 unsigned *R;

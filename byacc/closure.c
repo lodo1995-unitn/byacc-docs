@@ -4,10 +4,43 @@ short *itemset;
 short *itemsetend;
 unsigned *ruleset;
 
+/**
+*   @brief Matrix of closure productions
+*   
+*   Let \f$ V \f$ be the set of all variables (non-terminals) and \f$ \mathcal{P} \f$ the set of all productions.
+*
+*   This is a matrix of \f$ \left| V \right| \times \left| \mathcal{P} \right| \f$ bits, where entry
+*   \f$ \mathrm{first\_derives}_{i,j} \f$ is set if and only if the closure of an item of kind
+*   \f$ A \rightarrow \alpha . V_i \beta \f$ should include the production \f$ \mathcal{P}_j \f$ (with the dot on
+*   the far left).
+*
+*   It can be seen as a relation \f$ V \rightarrow 2^{\mathcal{P}} \f$.
+*/
 static unsigned *first_derives;
+
+/**
+*   @brief Matrix of Epsilon-Free Firsts
+*   
+*   Let \f$ V \f$ be the set of all variables (non-terminals) and \f$ \mathcal{P} \f$ the set of all productions.
+*
+*   This is a matrix of \f$ \left| V \right| \times \left| V \right| \f$ bits, where entry \f$ \mathrm{EFF}_{i,j} \f$
+*   is set if and only if the closure of an item of kind \f$ A \rightarrow \alpha . V_i \beta \f$ should include the
+*   productions of \f$ V_j \f$ (i.e. the closure items of the form \f$ V_j \rightarrow . \alpha \f$).
+*
+*   It can be seen as a relation \f$ V \rightarrow 2^V \f$.
+*/
 static unsigned *EFF;
 
 
+/**
+*   @brief Populates EFF, the matrix of Epsilon-Free Firsts
+*   
+*   Let \f$ V \f$ be the set of all variables (non-terminals) and \f$ \mathcal{P} \f$ the set of all productions.
+*
+*   For each non-terminal \f$ V_i \f$, scans all of its productions. If they start with a non-terminal \f$ V_j \f$,
+*   sets \f$ \mathrm{EFF}_{i,j} \f$, thus computing the direct epsilon-free firsts of \f$ V_i \f$. It then calls a
+*   function that computes the reflexive and transitive closure of such relation.
+*/
 set_EFF()
 {
     register unsigned *row;
@@ -44,6 +77,18 @@ set_EFF()
 }
 
 
+/**
+*   @brief Populates first_derives, the matrix of closure productions
+*   
+*   Let \f$ V \f$ be the set of all variables (non-terminals) and \f$ \mathcal{P} \f$ the set of all productions.
+*
+*   Using the information saved in EFF, computes the closure productions of each non-terminal. That is, it sets
+*   \f$ \mathrm{first\_derives}_{i,j} \f$ if and only if the left-hand side of \f$ \mathcal{P}_j \f$ is a \f$ V_k \f$
+*   such that \f$ \mathrm{EFF}_{i,k} \f$ is set.
+*
+*   In other words, it calculates the same information as set_EFF(), expanding the list of non-terminals to the list of
+*   their productions.
+*/
 set_first_derives()
 {
     register unsigned *rrow;

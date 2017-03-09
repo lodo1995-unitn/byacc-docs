@@ -61,6 +61,15 @@ extern char *mktemp();
 extern char *getenv();
 
 
+/**
+*   @ingroup eh
+*   @brief Shutdown function
+*
+*   This function deletes all temporary files still open and exits the program
+*   with the status code passed to it.
+*
+*   @param[in] k The status code the program should exit with
+*/
 done(k)
 int k;
 {
@@ -70,13 +79,26 @@ int k;
     exit(k);
 }
 
-
+/**
+*   @ingroup eh
+*   @brief Signal handler callback
+*
+*   This function is executed whenever the program receives a shutdown signal
+*   (either SIGINT, SIGTERM, or SIGHUP). It just calls done(int) with code 1.
+*/
 onintr()
 {
     done(1);
 }
 
 
+/**
+*   @ingroup eh
+*   @brief Sets the appropriate signal handlers up
+*
+*   This function is executed on startup and sets onintr() as callback for any
+*   shutdown signal (SIGINT, SIGTERM, SIGHUP).
+*/
 set_signals()
 {
 #ifdef SIGINT

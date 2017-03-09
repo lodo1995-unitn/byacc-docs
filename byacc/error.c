@@ -1,7 +1,20 @@
-/* routines for printing error messages  */
+/** 
+*   @defgroup eh Error handling
+*   @brief Routines for handling errors and warnings and performing cleanup
+*/
+
+/** 
+*   @file
+*   @ingroup eh
+*   @brief Routines to report various warnings and errors and maybe quit the program
+*/
 
 #include "defs.h"
 
+/**
+*   @addtogroup eh
+*   @{
+*/
 
 fatal(msg)
 char *msg;
@@ -315,3 +328,5 @@ char *s;
 {
     fprintf(stderr, "%s: w - the symbol %s is undefined\n", myname, s);
 }
+
+/// @}
