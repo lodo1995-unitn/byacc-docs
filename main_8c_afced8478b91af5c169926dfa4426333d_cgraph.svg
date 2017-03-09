@@ -62,7 +62,7 @@ var sectionId = 'dynsection-7';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="done">
+<g id="a_node2"><a xlink:href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="Shutdown function. ">
 <polygon fill="white" stroke="black" points="336,-494.5 336,-513.5 374,-513.5 374,-494.5 336,-494.5"/>
 <text text-anchor="middle" x="355" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">done</text>
 </a>
@@ -166,7 +166,7 @@ var sectionId = 'dynsection-7';
 </g>
 <!-- Node24 -->
 <g id="node24" class="node"><title>Node24</title>
-<g id="a_node24"><a xlink:href="main_8c.html#ac769b3ff8cee5f62e69fb29097d21158" target="_top" xlink:title="set_signals">
+<g id="a_node24"><a xlink:href="group__eh.html#gac769b3ff8cee5f62e69fb29097d21158" target="_top" xlink:title="Sets the appropriate signal handlers up. ">
 <polygon fill="white" stroke="red" points="78,-38.5 78,-57.5 144,-57.5 144,-38.5 78,-38.5"/>
 <text text-anchor="middle" x="111" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">set_signals</text>
 </a>

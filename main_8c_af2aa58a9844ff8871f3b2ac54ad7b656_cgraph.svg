@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" target="_top" xlink:title="no_space">
+<g id="a_node2"><a xlink:href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4" target="_top" xlink:title="no_space">
 <polygon fill="white" stroke="black" points="86.5,-0.5 86.5,-19.5 145.5,-19.5 145.5,-0.5 86.5,-0.5"/>
 <text text-anchor="middle" x="116" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">no_space</text>
 </a>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="done">
+<g id="a_node3"><a xlink:href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="Shutdown function. ">
 <polygon fill="white" stroke="black" points="182,-0.5 182,-19.5 220,-19.5 220,-0.5 182,-0.5"/>
 <text text-anchor="middle" x="201" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">done</text>
 </a>

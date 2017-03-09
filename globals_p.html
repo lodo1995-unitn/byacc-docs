@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -127,7 +134,7 @@ $(document).ready(function(){initNavTree('globals_p.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -141,13 +148,13 @@ $(document).ready(function(){initNavTree('globals_p.html','');});
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>pack_grammar()
-: <a class="el" href="reader_8c.html#ac095dad6352a9764b63b751824aa223d">reader.c</a>
+: <a class="el" href="group__memopt.html#gac095dad6352a9764b63b751824aa223d">reader.c</a>
 </li>
 <li>pack_names()
-: <a class="el" href="reader_8c.html#a9f8a3fd57d7687e5e2fe6b548fee5bc5">reader.c</a>
+: <a class="el" href="group__memopt.html#ga9f8a3fd57d7687e5e2fe6b548fee5bc5">reader.c</a>
 </li>
 <li>pack_symbols()
-: <a class="el" href="reader_8c.html#ad4d46b52f342745925534555eb129ffb">reader.c</a>
+: <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">reader.c</a>
 </li>
 <li>pack_table()
 : <a class="el" href="output_8c.html#a54964cb539071e5e6280a37aea70ca3d">output.c</a>
@@ -175,7 +182,7 @@ $(document).ready(function(){initNavTree('globals_p.html','');});
 : <a class="el" href="reader_8c.html#a5bfbd3b409ebe4bc09f9ed58d177c2bd">reader.c</a>
 </li>
 <li>prec_redeclared()
-: <a class="el" href="error_8c.html#a73b7d91e555fcb312db3d1561b8b0468">error.c</a>
+: <a class="el" href="group__eh.html#ga73b7d91e555fcb312db3d1561b8b0468">error.c</a>
 </li>
 <li>print_actions()
 : <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">verbose.c</a>
@@ -196,7 +203,7 @@ $(document).ready(function(){initNavTree('globals_p.html','');});
 : <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">verbose.c</a>
 </li>
 <li>print_pos()
-: <a class="el" href="error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e">error.c</a>
+: <a class="el" href="group__eh.html#ga3c01cc3498c6cb3655588b53da0e8f7e">error.c</a>
 </li>
 <li>print_reductions()
 : <a class="el" href="verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40">verbose.c</a>
@@ -213,7 +220,7 @@ $(document).ready(function(){initNavTree('globals_p.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:14 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

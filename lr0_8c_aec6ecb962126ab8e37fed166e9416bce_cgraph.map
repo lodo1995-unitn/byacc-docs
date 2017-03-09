@@ -11,11 +11,11 @@
 <area shape="rect" id="node13" href="$lr0_8c.html#a5c9a3400f7917d3c7b04448f229556e6" title="new_itemsets" alt="" coords="265,360,367,387"/>
 <area shape="rect" id="node14" href="$lr0_8c.html#ab38dfd7acc43af0b0c19728b7d22aeec" title="save_reductions" alt="" coords="257,411,375,437"/>
 <area shape="rect" id="node16" href="$lr0_8c.html#a1908887fd7a9309bb55050cf523e0181" title="save_shifts" alt="" coords="271,309,361,336"/>
-<area shape="rect" id="node17" href="$closure_8c.html#ab7198901ee6f38f5ed229dce745ceaa6" title="set_first_derives" alt="" coords="257,5,375,32"/>
+<area shape="rect" id="node17" href="$closure_8c.html#ab7198901ee6f38f5ed229dce745ceaa6" title="Populates first_derives, the matrix of closure productions. " alt="" coords="257,5,375,32"/>
 <area shape="rect" id="node4" href="$lr0_8c.html#aa479aeec6857bbd2e4af25cdce71210f" title="allocate_itemsets" alt="" coords="425,56,549,83"/>
 <area shape="rect" id="node6" href="$lr0_8c.html#a92ebb11dc8ea206c073a3509f413f513" title="get_state" alt="" coords="449,107,525,133"/>
-<area shape="rect" id="node11" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="447,461,526,488"/>
-<area shape="rect" id="node12" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="597,487,648,513"/>
+<area shape="rect" id="node11" href="$group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="447,461,526,488"/>
+<area shape="rect" id="node12" href="$group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" title="Shutdown function. " alt="" coords="597,487,648,513"/>
 <area shape="rect" id="node15" href="$defs_8h.html#a5a2da8a4ba34f568d590a5b13640e6e8" title="allocate" alt="" coords="453,360,520,387"/>
-<area shape="rect" id="node18" href="$closure_8c.html#a8771690f7fd06e6be291505119de2fcb" title="set_EFF" alt="" coords="451,5,523,32"/>
+<area shape="rect" id="node18" href="$closure_8c.html#a8771690f7fd06e6be291505119de2fcb" title="Populates EFF, the matrix of Epsilon&#45;Free Firsts. " alt="" coords="451,5,523,32"/>
 </map>

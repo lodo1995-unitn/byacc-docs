@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +100,7 @@ $(document).ready(function(){initNavTree('structaction.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -153,7 +160,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00173">173</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00113">add_reduce()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="verbose_8c_source.html#l00092">print_conflicts()</a>, <a class="el" href="verbose_8c_source.html#l00176">print_nulls()</a>, <a class="el" href="verbose_8c_source.html#l00272">print_reductions()</a>, <a class="el" href="verbose_8c_source.html#l00247">print_shifts()</a>, <a class="el" href="mkpar_8c_source.html#l00202">remove_conflicts()</a>, <a class="el" href="mkpar_8c_source.html#l00298">sole_reduction()</a>, <a class="el" href="output_8c_source.html#l00205">token_actions()</a>, and <a class="el" href="mkpar_8c_source.html#l00170">unused_rules()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#ac605cb1418d8c823ee87b723abf5f73d">add_reduce()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="verbose_8c.html#ab7b979880ffb0d5a58f63bac764cc0e2">print_conflicts()</a>, <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">print_nulls()</a>, <a class="el" href="verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40">print_reductions()</a>, <a class="el" href="verbose_8c.html#a0b08f91b4ae38460b3de67b33393d722">print_shifts()</a>, <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts()</a>, <a class="el" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction()</a>, <a class="el" href="output_8c.html#a24893b46da9c3c12db2dc362e52e61dc">token_actions()</a>, and <a class="el" href="mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411">unused_rules()</a>.</p>
 
 </div>
 </div>
@@ -169,7 +176,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00174">174</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00113">add_reduce()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, and <a class="el" href="mkpar_8c_source.html#l00202">remove_conflicts()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#ac605cb1418d8c823ee87b723abf5f73d">add_reduce()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, and <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +192,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00169">169</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00113">add_reduce()</a>, <a class="el" href="mkpar_8c_source.html#l00335">free_action_row()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="verbose_8c_source.html#l00092">print_conflicts()</a>, <a class="el" href="verbose_8c_source.html#l00176">print_nulls()</a>, <a class="el" href="verbose_8c_source.html#l00272">print_reductions()</a>, <a class="el" href="verbose_8c_source.html#l00247">print_shifts()</a>, <a class="el" href="mkpar_8c_source.html#l00202">remove_conflicts()</a>, <a class="el" href="mkpar_8c_source.html#l00298">sole_reduction()</a>, <a class="el" href="output_8c_source.html#l00205">token_actions()</a>, and <a class="el" href="mkpar_8c_source.html#l00170">unused_rules()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#ac605cb1418d8c823ee87b723abf5f73d">add_reduce()</a>, <a class="el" href="mkpar_8c.html#a9d1a605494e3b13da79257155ebeb3c1">free_action_row()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="verbose_8c.html#ab7b979880ffb0d5a58f63bac764cc0e2">print_conflicts()</a>, <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">print_nulls()</a>, <a class="el" href="verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40">print_reductions()</a>, <a class="el" href="verbose_8c.html#a0b08f91b4ae38460b3de67b33393d722">print_shifts()</a>, <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts()</a>, <a class="el" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction()</a>, <a class="el" href="output_8c.html#a24893b46da9c3c12db2dc362e52e61dc">token_actions()</a>, and <a class="el" href="mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411">unused_rules()</a>.</p>
 
 </div>
 </div>
@@ -201,7 +208,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00171">171</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00113">add_reduce()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="verbose_8c_source.html#l00092">print_conflicts()</a>, <a class="el" href="verbose_8c_source.html#l00176">print_nulls()</a>, <a class="el" href="mkpar_8c_source.html#l00298">sole_reduction()</a>, <a class="el" href="output_8c_source.html#l00205">token_actions()</a>, and <a class="el" href="mkpar_8c_source.html#l00170">unused_rules()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#ac605cb1418d8c823ee87b723abf5f73d">add_reduce()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="verbose_8c.html#ab7b979880ffb0d5a58f63bac764cc0e2">print_conflicts()</a>, <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">print_nulls()</a>, <a class="el" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction()</a>, <a class="el" href="output_8c.html#a24893b46da9c3c12db2dc362e52e61dc">token_actions()</a>, and <a class="el" href="mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411">unused_rules()</a>.</p>
 
 </div>
 </div>
@@ -217,7 +224,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00172">172</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00113">add_reduce()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, and <a class="el" href="mkpar_8c_source.html#l00202">remove_conflicts()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#ac605cb1418d8c823ee87b723abf5f73d">add_reduce()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, and <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts()</a>.</p>
 
 </div>
 </div>
@@ -233,7 +240,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00175">175</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00092">print_conflicts()</a>, <a class="el" href="verbose_8c_source.html#l00176">print_nulls()</a>, <a class="el" href="verbose_8c_source.html#l00272">print_reductions()</a>, <a class="el" href="verbose_8c_source.html#l00247">print_shifts()</a>, <a class="el" href="mkpar_8c_source.html#l00202">remove_conflicts()</a>, <a class="el" href="mkpar_8c_source.html#l00298">sole_reduction()</a>, <a class="el" href="output_8c_source.html#l00205">token_actions()</a>, and <a class="el" href="mkpar_8c_source.html#l00170">unused_rules()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#ab7b979880ffb0d5a58f63bac764cc0e2">print_conflicts()</a>, <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">print_nulls()</a>, <a class="el" href="verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40">print_reductions()</a>, <a class="el" href="verbose_8c.html#a0b08f91b4ae38460b3de67b33393d722">print_shifts()</a>, <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts()</a>, <a class="el" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction()</a>, <a class="el" href="output_8c.html#a24893b46da9c3c12db2dc362e52e61dc">token_actions()</a>, and <a class="el" href="mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411">unused_rules()</a>.</p>
 
 </div>
 </div>
@@ -249,7 +256,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00170">170</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00113">add_reduce()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="verbose_8c_source.html#l00092">print_conflicts()</a>, <a class="el" href="mkpar_8c_source.html#l00202">remove_conflicts()</a>, <a class="el" href="mkpar_8c_source.html#l00298">sole_reduction()</a>, and <a class="el" href="output_8c_source.html#l00205">token_actions()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#ac605cb1418d8c823ee87b723abf5f73d">add_reduce()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="verbose_8c.html#ab7b979880ffb0d5a58f63bac764cc0e2">print_conflicts()</a>, <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">remove_conflicts()</a>, <a class="el" href="mkpar_8c.html#a812d637aeb844aefdb3c63b7af18894a">sole_reduction()</a>, and <a class="el" href="output_8c.html#a24893b46da9c3c12db2dc362e52e61dc">token_actions()</a>.</p>
 
 </div>
 </div>
@@ -262,7 +269,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structaction.html">action</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

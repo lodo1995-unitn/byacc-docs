@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="error_8c.html#a4000cace0a889b23c1ec8411e02979a3" target="_top" xlink:title="undefined_goal">
+<g id="a_node2"><a xlink:href="group__eh.html#ga4000cace0a889b23c1ec8411e02979a3" target="_top" xlink:title="undefined_goal">
 <polygon fill="white" stroke="black" points="148,-38.5 148,-57.5 230,-57.5 230,-38.5 148,-38.5"/>
 <text text-anchor="middle" x="189" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">undefined_goal</text>
 </a>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="error_8c.html#ae6a521b17a781796ffe5cbd6cefc0d09" target="_top" xlink:title="undefined_symbol_warning">
+<g id="a_node4"><a xlink:href="group__eh.html#gae6a521b17a781796ffe5cbd6cefc0d09" target="_top" xlink:title="undefined_symbol_warning">
 <polygon fill="white" stroke="black" points="122,-0.5 122,-19.5 256,-19.5 256,-0.5 122,-0.5"/>
 <text text-anchor="middle" x="189" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">undefined_symbol_warning</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="done">
+<g id="a_node3"><a xlink:href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="Shutdown function. ">
 <polygon fill="white" stroke="black" points="292,-38.5 292,-57.5 330,-57.5 330,-38.5 292,-38.5"/>
 <text text-anchor="middle" x="311" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">done</text>
 </a>

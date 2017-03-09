@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['illegal_5fcharacter',['illegal_character',['../error_8c.html#aad64de11ac1b5b04da452109e0c6e55a',1,'error.c']]],
-  ['illegal_5ftag',['illegal_tag',['../error_8c.html#a3abdd7162e1bf8338bfc5c31c590ffe1',1,'error.c']]],
+  ['illegal_5fcharacter',['illegal_character',['../group__eh.html#gaad64de11ac1b5b04da452109e0c6e55a',1,'error.c']]],
+  ['illegal_5ftag',['illegal_tag',['../group__eh.html#ga3abdd7162e1bf8338bfc5c31c590ffe1',1,'error.c']]],
   ['initialize_5ff',['initialize_F',['../lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649',1,'lalr.c']]],
   ['initialize_5fgrammar',['initialize_grammar',['../reader_8c.html#a329c5f0f613a0bef43be8262a531e952',1,'reader.c']]],
   ['initialize_5fla',['initialize_LA',['../lalr_8c.html#a8d038bf14a91cab7082013e7b046a023',1,'lalr.c']]],

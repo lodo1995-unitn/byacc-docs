@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -126,7 +133,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -228,7 +235,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="reader_8c.html#a860dbc8da656fd831b19668da20207c7">reader.c</a>
 </li>
 <li>default_action_warning()
-: <a class="el" href="error_8c.html#adb0403f76d903f343861ba458e8d4a57">error.c</a>
+: <a class="el" href="group__eh.html#gadb0403f76d903f343861ba458e8d4a57">error.c</a>
 </li>
 <li>default_goto()
 : <a class="el" href="output_8c.html#ad878b7f8437824b96a20cb1940e47b15">output.c</a>
@@ -240,13 +247,13 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">lalr.c</a>
 </li>
 <li>dollar_error()
-: <a class="el" href="error_8c.html#aa7751e4500f0f24aba5df3a1da874632">error.c</a>
+: <a class="el" href="group__eh.html#gaa7751e4500f0f24aba5df3a1da874632">error.c</a>
 </li>
 <li>dollar_warning()
-: <a class="el" href="error_8c.html#ae78233a24912be6e0e72a1446c3058cd">error.c</a>
+: <a class="el" href="group__eh.html#gae78233a24912be6e0e72a1446c3058cd">error.c</a>
 </li>
 <li>done()
-: <a class="el" href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a">main.c</a>
+: <a class="el" href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a">main.c</a>
 </li>
 <li>dup_line()
 : <a class="el" href="reader_8c.html#a416a4e795e86e5666f1a734793f9636e">reader.c</a>
@@ -269,7 +276,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>fatal()
-: <a class="el" href="error_8c.html#ae558ad59d93f53e83fc2d8e29afdffb9">error.c</a>
+: <a class="el" href="group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9">error.c</a>
 </li>
 <li>finalize_closure()
 : <a class="el" href="closure_8c.html#aaa34c5655f10410e4baf705089e3de69">closure.c</a>
@@ -365,10 +372,10 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>illegal_character()
-: <a class="el" href="error_8c.html#aad64de11ac1b5b04da452109e0c6e55a">error.c</a>
+: <a class="el" href="group__eh.html#gaad64de11ac1b5b04da452109e0c6e55a">error.c</a>
 </li>
 <li>illegal_tag()
-: <a class="el" href="error_8c.html#a3abdd7162e1bf8338bfc5c31c590ffe1">error.c</a>
+: <a class="el" href="group__eh.html#ga3abdd7162e1bf8338bfc5c31c590ffe1">error.c</a>
 </li>
 <li>initialize_F()
 : <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">lalr.c</a>
@@ -461,20 +468,20 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="reader_8c.html#a11446424d65669df0f3a9e3b1cca57fa">reader.c</a>
 </li>
 <li>no_grammar()
-: <a class="el" href="error_8c.html#aa247f6f1a935ef2a5bffb181f2a9f48d">error.c</a>
+: <a class="el" href="group__eh.html#gaa247f6f1a935ef2a5bffb181f2a9f48d">error.c</a>
 </li>
 <li>no_space()
-: <a class="el" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">error.c</a>
+: <a class="el" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">error.c</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>onintr()
-: <a class="el" href="main_8c.html#a9fdf94a8dff4664e9d01c43536ca3af4">main.c</a>
+: <a class="el" href="group__eh.html#ga9fdf94a8dff4664e9d01c43536ca3af4">main.c</a>
 </li>
 <li>open_error()
-: <a class="el" href="error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e">error.c</a>
+: <a class="el" href="group__eh.html#gafc759b2ea54a7db6fc62cf4f4cb1856e">error.c</a>
 </li>
 <li>open_files()
 : <a class="el" href="main_8c.html#a2a2d365d086e7a890bc2770b6a9c0f0f">main.c</a>
@@ -522,20 +529,20 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="output_8c.html#a08bab69ca7ac3d7afe5db83343383ccc">output.c</a>
 </li>
 <li>over_unionized()
-: <a class="el" href="error_8c.html#aa9bb2f4291d5b51cee6f8dc4156e0fd5">error.c</a>
+: <a class="el" href="group__eh.html#gaa9bb2f4291d5b51cee6f8dc4156e0fd5">error.c</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>pack_grammar()
-: <a class="el" href="reader_8c.html#ac095dad6352a9764b63b751824aa223d">reader.c</a>
+: <a class="el" href="group__memopt.html#gac095dad6352a9764b63b751824aa223d">reader.c</a>
 </li>
 <li>pack_names()
-: <a class="el" href="reader_8c.html#a9f8a3fd57d7687e5e2fe6b548fee5bc5">reader.c</a>
+: <a class="el" href="group__memopt.html#ga9f8a3fd57d7687e5e2fe6b548fee5bc5">reader.c</a>
 </li>
 <li>pack_symbols()
-: <a class="el" href="reader_8c.html#ad4d46b52f342745925534555eb129ffb">reader.c</a>
+: <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">reader.c</a>
 </li>
 <li>pack_table()
 : <a class="el" href="output_8c.html#a54964cb539071e5e6280a37aea70ca3d">output.c</a>
@@ -547,7 +554,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="mkpar_8c.html#acec1ac11401096ceec7870ea7416dda5">mkpar.c</a>
 </li>
 <li>prec_redeclared()
-: <a class="el" href="error_8c.html#a73b7d91e555fcb312db3d1561b8b0468">error.c</a>
+: <a class="el" href="group__eh.html#ga73b7d91e555fcb312db3d1561b8b0468">error.c</a>
 </li>
 <li>print_actions()
 : <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">verbose.c</a>
@@ -568,7 +575,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">verbose.c</a>
 </li>
 <li>print_pos()
-: <a class="el" href="error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e">error.c</a>
+: <a class="el" href="group__eh.html#ga3c01cc3498c6cb3655588b53da0e8f7e">error.c</a>
 </li>
 <li>print_reductions()
 : <a class="el" href="verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40">verbose.c</a>
@@ -602,16 +609,16 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="mkpar_8c.html#acc6262918280d450ced9ab943349fa86">mkpar.c</a>
 </li>
 <li>reprec_warning()
-: <a class="el" href="error_8c.html#a611d57303996915e8b1cb835e81d4708">error.c</a>
+: <a class="el" href="group__eh.html#ga611d57303996915e8b1cb835e81d4708">error.c</a>
 </li>
 <li>restarted_warning()
-: <a class="el" href="error_8c.html#a23e15c296f3057431e3c58bb151b44bd">error.c</a>
+: <a class="el" href="group__eh.html#ga23e15c296f3057431e3c58bb151b44bd">error.c</a>
 </li>
 <li>retyped_warning()
-: <a class="el" href="error_8c.html#a3d339813f1a66f2c299cbb4a23b4729d">error.c</a>
+: <a class="el" href="group__eh.html#ga3d339813f1a66f2c299cbb4a23b4729d">error.c</a>
 </li>
 <li>revalued_warning()
-: <a class="el" href="error_8c.html#a770515753ea5a59ff13bcca8dadb9e48">error.c</a>
+: <a class="el" href="group__eh.html#ga770515753ea5a59ff13bcca8dadb9e48">error.c</a>
 </li>
 </ul>
 
@@ -654,7 +661,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="lalr_8c.html#a6613d689596e2f81d6093379459a29c7">lalr.c</a>
 </li>
 <li>set_signals()
-: <a class="el" href="main_8c.html#ac769b3ff8cee5f62e69fb29097d21158">main.c</a>
+: <a class="el" href="group__eh.html#gac769b3ff8cee5f62e69fb29097d21158">main.c</a>
 </li>
 <li>set_state_table()
 : <a class="el" href="lalr_8c.html#a273192077c200e39adede06c9ab36310">lalr.c</a>
@@ -687,23 +694,23 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">defs.h</a>
 </li>
 <li>syntax_error()
-: <a class="el" href="error_8c.html#ae2027917ace8b6f808a14b5cd4085eaf">error.c</a>
+: <a class="el" href="group__eh.html#gae2027917ace8b6f808a14b5cd4085eaf">error.c</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>terminal_lhs()
-: <a class="el" href="error_8c.html#ab2b1e22a832ff68240af1b58df86bee3">error.c</a>
+: <a class="el" href="group__eh.html#gab2b1e22a832ff68240af1b58df86bee3">error.c</a>
 </li>
 <li>terminal_start()
-: <a class="el" href="error_8c.html#a6859daa9b91716c6fbe56b822641877c">error.c</a>
+: <a class="el" href="group__eh.html#ga6859daa9b91716c6fbe56b822641877c">error.c</a>
 </li>
 <li>token_actions()
 : <a class="el" href="output_8c.html#a24893b46da9c3c12db2dc362e52e61dc">output.c</a>
 </li>
 <li>tokenized_start()
-: <a class="el" href="error_8c.html#abcb4446ca644dc3e6dd448223d8cecf3">error.c</a>
+: <a class="el" href="group__eh.html#gabcb4446ca644dc3e6dd448223d8cecf3">error.c</a>
 </li>
 <li>total_conflicts()
 : <a class="el" href="mkpar_8c.html#acbfd668c89aecf8182694bd8f052ed47">mkpar.c</a>
@@ -722,37 +729,37 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>undefined_goal()
-: <a class="el" href="error_8c.html#a4000cace0a889b23c1ec8411e02979a3">error.c</a>
+: <a class="el" href="group__eh.html#ga4000cace0a889b23c1ec8411e02979a3">error.c</a>
 </li>
 <li>undefined_symbol_warning()
-: <a class="el" href="error_8c.html#ae6a521b17a781796ffe5cbd6cefc0d09">error.c</a>
+: <a class="el" href="group__eh.html#gae6a521b17a781796ffe5cbd6cefc0d09">error.c</a>
 </li>
 <li>unexpected_EOF()
-: <a class="el" href="error_8c.html#a65962bc9ddf21cd2dc0b5f6b7dcb35fc">error.c</a>
+: <a class="el" href="group__eh.html#ga65962bc9ddf21cd2dc0b5f6b7dcb35fc">error.c</a>
 </li>
 <li>unknown_rhs()
-: <a class="el" href="error_8c.html#a69399ed8e91ea487b50fb9ce29d9dfe7">error.c</a>
+: <a class="el" href="group__eh.html#ga69399ed8e91ea487b50fb9ce29d9dfe7">error.c</a>
 </li>
 <li>unterminated_action()
-: <a class="el" href="error_8c.html#a150e9a905e4ecaf20109c91b6de62383">error.c</a>
+: <a class="el" href="group__eh.html#ga150e9a905e4ecaf20109c91b6de62383">error.c</a>
 </li>
 <li>unterminated_comment()
-: <a class="el" href="error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1">error.c</a>
+: <a class="el" href="group__eh.html#ga81c4e76cf37319065a21afcaec1b8ab1">error.c</a>
 </li>
 <li>unterminated_string()
-: <a class="el" href="error_8c.html#a1be74faa1a912de2fd380aa9a4de6eb2">error.c</a>
+: <a class="el" href="group__eh.html#ga1be74faa1a912de2fd380aa9a4de6eb2">error.c</a>
 </li>
 <li>unterminated_text()
-: <a class="el" href="error_8c.html#a60e968f02480372518e9cce97e70ef5b">error.c</a>
+: <a class="el" href="group__eh.html#ga60e968f02480372518e9cce97e70ef5b">error.c</a>
 </li>
 <li>unterminated_union()
-: <a class="el" href="error_8c.html#a81dd9930c4155592c10afdb2b0e34588">error.c</a>
+: <a class="el" href="group__eh.html#ga81dd9930c4155592c10afdb2b0e34588">error.c</a>
 </li>
 <li>untyped_lhs()
-: <a class="el" href="error_8c.html#af3c15789267651b6cf6063963c3e1a47">error.c</a>
+: <a class="el" href="group__eh.html#gaf3c15789267651b6cf6063963c3e1a47">error.c</a>
 </li>
 <li>untyped_rhs()
-: <a class="el" href="error_8c.html#a379bc1d52c8597f3914fc3937a6fecda">error.c</a>
+: <a class="el" href="group__eh.html#ga379bc1d52c8597f3914fc3937a6fecda">error.c</a>
 </li>
 <li>unused_rules()
 : <a class="el" href="mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411">mkpar.c</a>
@@ -761,7 +768,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3">main.c</a>
 </li>
 <li>used_reserved()
-: <a class="el" href="error_8c.html#a28ccf9e0cd69034b61cd32e13e9a9e00">error.c</a>
+: <a class="el" href="group__eh.html#ga28ccf9e0cd69034b61cd32e13e9a9e00">error.c</a>
 </li>
 </ul>
 
@@ -783,7 +790,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:14 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

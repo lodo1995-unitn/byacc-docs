@@ -1,12 +1,12 @@
 <map id="get_literal" name="get_literal">
 <area shape="rect" id="node2" href="$reader_8c.html#a04707e6fc9527eaf37d68dafdc9483a9" title="cachec" alt="" coords="169,5,233,32"/>
-<area shape="rect" id="node3" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="318,107,397,133"/>
+<area shape="rect" id="node3" href="$group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="318,107,397,133"/>
 <area shape="rect" id="node5" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="166,107,237,133"/>
 <area shape="rect" id="node6" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="168,157,235,184"/>
 <area shape="rect" id="node7" href="$reader_8c.html#a9ce1e6abd7c2eac7e850297b7e1bbc6e" title="hexval" alt="" coords="171,208,231,235"/>
-<area shape="rect" id="node8" href="$error_8c.html#aad64de11ac1b5b04da452109e0c6e55a" title="illegal_character" alt="" coords="143,259,259,285"/>
+<area shape="rect" id="node8" href="$group__eh.html#gaad64de11ac1b5b04da452109e0c6e55a" title="illegal_character" alt="" coords="143,259,259,285"/>
 <area shape="rect" id="node10" href="$defs_8h.html#aeb8facfda1fb8dcf16a3120589eb90e0" title="lookup" alt="" coords="171,309,231,336"/>
-<area shape="rect" id="node11" href="$error_8c.html#a1be74faa1a912de2fd380aa9a4de6eb2" title="unterminated_string" alt="" coords="133,360,269,387"/>
-<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="445,259,496,285"/>
-<area shape="rect" id="node9" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="320,309,395,336"/>
+<area shape="rect" id="node11" href="$group__eh.html#ga1be74faa1a912de2fd380aa9a4de6eb2" title="unterminated_string" alt="" coords="133,360,269,387"/>
+<area shape="rect" id="node4" href="$group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" title="Shutdown function. " alt="" coords="445,259,496,285"/>
+<area shape="rect" id="node9" href="$group__eh.html#ga3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="320,309,395,336"/>
 </map>

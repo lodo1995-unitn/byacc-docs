@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="closure_8c.html#a8771690f7fd06e6be291505119de2fcb" target="_top" xlink:title="set_EFF">
+<g id="a_node2"><a xlink:href="closure_8c.html#a8771690f7fd06e6be291505119de2fcb" target="_top" xlink:title="Populates EFF, the matrix of Epsilon&#45;Free Firsts. ">
 <polygon fill="white" stroke="black" points="126,-5.5 126,-24.5 180,-24.5 180,-5.5 126,-5.5"/>
 <text text-anchor="middle" x="153" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">set_EFF</text>
 </a>

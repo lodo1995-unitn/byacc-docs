@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +99,7 @@ $(document).ready(function(){initNavTree('skeleton_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -156,9 +163,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="skeleton_8c_source.html#l00287">287</a> of file <a class="el" href="skeleton_8c_source.html">skeleton.c</a>.</p>
 
-<p>References <a class="el" href="main_8c_source.html#l00029">code_file</a>, and <a class="el" href="main_8c_source.html#l00016">outline</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a0411c329aa784570b327081d231b1562">code_file</a>, and <a class="el" href="defs_8h.html#a8f2e121d17724ac350912c502a6f4067">outline</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l00020">output()</a>, and <a class="el" href="reader_8c_source.html#l01756">reader()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#a3939045b11b9aaefdf692feb963f0dfc">output()</a>, and <a class="el" href="reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b">reader()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> c;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
@@ -218,7 +225,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="skeleton_8c_source.html#l00015">15</a> of file <a class="el" href="skeleton_8c_source.html">skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01756">reader()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b">reader()</a>.</p>
 
 </div>
 </div>
@@ -234,7 +241,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="skeleton_8c_source.html#l00077">77</a> of file <a class="el" href="skeleton_8c_source.html">skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l00020">output()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#a3939045b11b9aaefdf692feb963f0dfc">output()</a>.</p>
 
 </div>
 </div>
@@ -276,7 +283,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="skeleton_8c_source.html#l00049">49</a> of file <a class="el" href="skeleton_8c_source.html">skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l00020">output()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#a3939045b11b9aaefdf692feb963f0dfc">output()</a>.</p>
 
 </div>
 </div>
@@ -309,7 +316,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="skeleton_8c_source.html#l00030">30</a> of file <a class="el" href="skeleton_8c_source.html">skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l00020">output()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#a3939045b11b9aaefdf692feb963f0dfc">output()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +332,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="skeleton_8c_source.html#l00225">225</a> of file <a class="el" href="skeleton_8c_source.html">skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l00020">output()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#a3939045b11b9aaefdf692feb963f0dfc">output()</a>.</p>
 
 </div>
 </div>
@@ -335,7 +342,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="skeleton_8c.html">skeleton.c</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

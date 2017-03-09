@@ -15,6 +15,7 @@ var searchData=
   ['maxrules',['maxrules',['../reader_8c.html#a2f4f3cec64050916fdc4cc0d1384f739',1,'reader.c']]],
   ['maxshort',['MAXSHORT',['../defs_8h.html#a1e5264eeb3e2ad97c6f33d88e80a49b4',1,'defs.h']]],
   ['maxtable',['MAXTABLE',['../defs_8h.html#a4bdf687b6e82b39bf91d9f9a94bd99ee',1,'MAXTABLE():&#160;defs.h'],['../output_8c.html#acb95ce7d82051c2fa52ab3f386ee80f3',1,'maxtable():&#160;output.c']]],
+  ['memory_20optimization',['Memory optimization',['../group__memopt.html',1,'']]],
   ['minshort',['MINSHORT',['../defs_8h.html#ac36853ace2a3c61796417650b9bc7ce0',1,'defs.h']]],
   ['mkpar_2ec',['mkpar.c',['../mkpar_8c.html',1,'']]],
   ['mktemp',['mktemp',['../main_8c.html#ac31a368bfe3ea363e428c0a5b6f88c6d',1,'main.c']]],

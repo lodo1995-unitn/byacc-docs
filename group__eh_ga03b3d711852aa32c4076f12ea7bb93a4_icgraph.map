@@ -1,0 +1,26 @@
+<map id="no_space" name="no_space">
+<area shape="rect" id="node2" href="$main_8c.html#af2aa58a9844ff8871f3b2ac54ad7b656" title="allocate" alt="" coords="164,5,231,32"/>
+<area shape="rect" id="node3" href="$reader_8c.html#a04707e6fc9527eaf37d68dafdc9483a9" title="cachec" alt="" coords="165,56,229,83"/>
+<area shape="rect" id="node4" href="$reader_8c.html#acfb64f081b0d9c4536e90c5352ce9c2c" title="get_literal" alt="" coords="342,196,421,223"/>
+<area shape="rect" id="node6" href="$reader_8c.html#a0d5a7fe7641edf38078ba5e99536772d" title="get_tag" alt="" coords="349,132,414,159"/>
+<area shape="rect" id="node8" href="$reader_8c.html#a07addfee5457e48ddb310769dd0e39af" title="read_declarations" alt="" coords="502,221,626,248"/>
+<area shape="rect" id="node9" href="$main_8c.html#a8424435403fe377f38d43b7bdda78ac3" title="create_file_names" alt="" coords="133,259,261,285"/>
+<area shape="rect" id="node10" href="$symtab_8c.html#aeeef4e0a9c6733adb569531e181de719" title="create_symbol_table" alt="" coords="310,588,453,615"/>
+<area shape="rect" id="node11" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="162,157,233,184"/>
+<area shape="rect" id="node12" href="$reader_8c.html#a2d5a55a1a526ac853c3234ea51ee18f8" title="expand_items" alt="" coords="146,411,249,437"/>
+<area shape="rect" id="node13" href="$reader_8c.html#a26f803a6175f255b34b89151133c51f6" title="expand_rules" alt="" coords="148,461,247,488"/>
+<area shape="rect" id="node14" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="164,208,231,235"/>
+<area shape="rect" id="node15" href="$reader_8c.html#a329c5f0f613a0bef43be8262a531e952" title="initialize_grammar" alt="" coords="134,563,261,589"/>
+<area shape="rect" id="node16" href="$lr0_8c.html#a4a4e3e94f2e9df0df4826edfaa275d47" title="initialize_states" alt="" coords="141,613,253,640"/>
+<area shape="rect" id="node17" href="$symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4" title="make_bucket" alt="" coords="147,512,247,539"/>
+<area shape="rect" id="node18" href="$output_8c.html#a47dee73a8684c92137c4358133450a88" title="output_debug" alt="" coords="147,715,247,741"/>
+<area shape="rect" id="node19" href="$group__memopt.html#gac095dad6352a9764b63b751824aa223d" title="pack_grammar" alt="" coords="143,765,251,792"/>
+<area shape="rect" id="node20" href="$group__memopt.html#ga9f8a3fd57d7687e5e2fe6b548fee5bc5" title="pack_names" alt="" coords="149,816,245,843"/>
+<area shape="rect" id="node21" href="$group__memopt.html#gad4d46b52f342745925534555eb129ffb" title="pack_symbols" alt="" coords="144,867,251,893"/>
+<area shape="rect" id="node22" href="$output_8c.html#a0bb10d48c7349f5223563cafe2d47cee" title="pack_vector" alt="" coords="151,917,244,944"/>
+<area shape="rect" id="node23" href="$lr0_8c.html#a13b7dc617c6f314880ce2338dac35568" title="set_nullable" alt="" coords="152,968,243,995"/>
+<area shape="rect" id="node24" href="$mkpar_8c.html#a00b425b13b9daa8d3e647ea34588b411" title="unused_rules" alt="" coords="148,1019,247,1045"/>
+<area shape="rect" id="node25" href="$verbose_8c.html#a51c39b5f33bea9632e037e0b94fa0db8" title="verbose" alt="" coords="163,1069,231,1096"/>
+<area shape="rect" id="node5" href="$reader_8c.html#a47f6ab5db224a190b33568ed55a03eaf" title="get_name" alt="" coords="342,31,421,57"/>
+<area shape="rect" id="node7" href="$reader_8c.html#a7b9f905e2f933d429fa1b479fd058f03" title="keyword" alt="" coords="346,81,417,108"/>
+</map>

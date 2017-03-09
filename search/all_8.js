@@ -1,8 +1,8 @@
 var searchData=
 [
   ['ident',['IDENT',['../defs_8h.html#a096a20e68e4e980b6845ad843ec2c3a7',1,'defs.h']]],
-  ['illegal_5fcharacter',['illegal_character',['../error_8c.html#aad64de11ac1b5b04da452109e0c6e55a',1,'error.c']]],
-  ['illegal_5ftag',['illegal_tag',['../error_8c.html#a3abdd7162e1bf8338bfc5c31c590ffe1',1,'error.c']]],
+  ['illegal_5fcharacter',['illegal_character',['../group__eh.html#gaad64de11ac1b5b04da452109e0c6e55a',1,'error.c']]],
+  ['illegal_5ftag',['illegal_tag',['../group__eh.html#ga3abdd7162e1bf8338bfc5c31c590ffe1',1,'error.c']]],
   ['includes',['includes',['../lalr_8c.html#af0ce41ccf437cf554e9e41a061a0f1f0',1,'lalr.c']]],
   ['index',['index',['../structbucket.html#a0b897ab8d67b47728890052bdf40c742',1,'bucket::index()'],['../lalr_8c.html#a6d14500a94cddbb9fc76a6ec22ea3884',1,'INDEX():&#160;lalr.c']]],
   ['infinity',['infinity',['../lalr_8c.html#a652f88fb6bac77f1882023c1410e84d3',1,'lalr.c']]],

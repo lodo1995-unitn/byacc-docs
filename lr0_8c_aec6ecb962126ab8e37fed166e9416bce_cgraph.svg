@@ -172,7 +172,7 @@
 </g>
 <!-- Node17 -->
 <g id="node17" class="node"><title>Node17</title>
-<g id="a_node17"><a xlink:href="closure_8c.html#ab7198901ee6f38f5ed229dce745ceaa6" target="_top" xlink:title="set_first_derives">
+<g id="a_node17"><a xlink:href="closure_8c.html#ab7198901ee6f38f5ed229dce745ceaa6" target="_top" xlink:title="Populates first_derives, the matrix of closure productions. ">
 <polygon fill="white" stroke="black" points="188.5,-380.5 188.5,-399.5 277.5,-399.5 277.5,-380.5 188.5,-380.5"/>
 <text text-anchor="middle" x="233" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">set_first_derives</text>
 </a>
@@ -211,7 +211,7 @@
 </g>
 <!-- Node11 -->
 <g id="node11" class="node"><title>Node11</title>
-<g id="a_node11"><a xlink:href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" target="_top" xlink:title="no_space">
+<g id="a_node11"><a xlink:href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4" target="_top" xlink:title="no_space">
 <polygon fill="white" stroke="black" points="331.5,-38.5 331.5,-57.5 390.5,-57.5 390.5,-38.5 331.5,-38.5"/>
 <text text-anchor="middle" x="361" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">no_space</text>
 </a>
@@ -224,7 +224,7 @@
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="done">
+<g id="a_node12"><a xlink:href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" target="_top" xlink:title="Shutdown function. ">
 <polygon fill="white" stroke="black" points="444,-19.5 444,-38.5 482,-38.5 482,-19.5 444,-19.5"/>
 <text text-anchor="middle" x="463" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">done</text>
 </a>
@@ -255,7 +255,7 @@
 </g>
 <!-- Node18 -->
 <g id="node18" class="node"><title>Node18</title>
-<g id="a_node18"><a xlink:href="closure_8c.html#a8771690f7fd06e6be291505119de2fcb" target="_top" xlink:title="set_EFF">
+<g id="a_node18"><a xlink:href="closure_8c.html#a8771690f7fd06e6be291505119de2fcb" target="_top" xlink:title="Populates EFF, the matrix of Epsilon&#45;Free Firsts. ">
 <polygon fill="white" stroke="red" points="334,-380.5 334,-399.5 388,-399.5 388,-380.5 334,-380.5"/>
 <text text-anchor="middle" x="361" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">set_EFF</text>
 </a>

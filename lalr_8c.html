@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +99,7 @@ $(document).ready(function(){initNavTree('lalr_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -264,9 +271,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00432">432</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00013">LAruleno</a>, <a class="el" href="lalr_8c_source.html#l00012">lookaheads</a>, <a class="el" href="defs_8h_source.html#l00104">NEW</a>, <a class="el" href="lalr_8c_source.html#l00006">shorts::next</a>, and <a class="el" href="lalr_8c_source.html#l00007">shorts::value</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a195a4875a206fdbbfc70f9cdefca8811">LAruleno</a>, <a class="el" href="lalr_8c.html#a1ae59fa49008bfd7a42be1b233cee75f">lookaheads</a>, <a class="el" href="defs_8h.html#ad47bcaeb6a32d146af1ad46876b1e083">NEW</a>, <a class="el" href="structshorts.html#a9df42e7a69a264c303e2be75911fb7ce">shorts::next</a>, and <a class="el" href="structshorts.html#ada1d1ef2096f2520b377dda2c99e486b">shorts::value</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;{</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i, k;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> found;</div>
@@ -324,9 +331,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00340">340</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00015">accessing_symbol</a>, <a class="el" href="lalr_8c_source.html#l00432">add_lookback_edge()</a>, <a class="el" href="main_8c_source.html#l00057">derives</a>, <a class="el" href="main_8c_source.html#l00064">done()</a>, <a class="el" href="defs_8h_source.html#l00102">FREE</a>, <a class="el" href="lalr_8c_source.html#l00020">from_state</a>, <a class="el" href="lalr_8c_source.html#l00029">includes</a>, <a class="el" href="defs_8h_source.html#l00096">ISVAR</a>, <a class="el" href="lalr_8c_source.html#l00235">map_goto()</a>, <a class="el" href="lalr_8c_source.html#l00026">maxrhs</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="lalr_8c_source.html#l00027">ngotos</a>, <a class="el" href="defs_8h_source.html#l00147">shifts::nshifts</a>, <a class="el" href="main_8c_source.html#l00058">nullable</a>, <a class="el" href="main_8c_source.html#l00052">ritem</a>, <a class="el" href="main_8c_source.html#l00054">rrhs</a>, <a class="el" href="defs_8h_source.html#l00148">shifts::shift</a>, <a class="el" href="lalr_8c_source.html#l00021">to_state</a>, and <a class="el" href="lalr_8c.html#a23d78f0bc8b4f380978adbb6c3bf9299">transpose()</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>, <a class="el" href="lalr_8c.html#ad69de49348a1b41b5f75d588240538d3">add_lookback_edge()</a>, <a class="el" href="defs_8h.html#af0bcccfe9f508ce7d9e60d925054b6bf">derives</a>, <a class="el" href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a">done()</a>, <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, <a class="el" href="lalr_8c.html#a2c549f4b9076247f27ebdbe00ec163dc">from_state</a>, <a class="el" href="lalr_8c.html#af0ce41ccf437cf554e9e41a061a0f1f0">includes</a>, <a class="el" href="defs_8h.html#ad84404204a42a016a68148afae4aca4b">ISVAR</a>, <a class="el" href="lalr_8c.html#a910e5adae7c283da210c508e39d7dff6">map_goto()</a>, <a class="el" href="lalr_8c.html#a65037d6b3dda480469b3ce9a5c659015">maxrhs</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a>, <a class="el" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">shifts::nshifts</a>, <a class="el" href="defs_8h.html#a4ef3e698062c3ff17c5dd45a83f8d41c">nullable</a>, <a class="el" href="defs_8h.html#a01cf2505ce82ec00c8f04368c57331a7">ritem</a>, <a class="el" href="defs_8h.html#a6bdaef6424096c992feb769a96dcd665">rrhs</a>, <a class="el" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shifts::shift</a>, <a class="el" href="lalr_8c.html#aafdf027bac2717ba1e321f31e3efc7ca">to_state</a>, and <a class="el" href="lalr_8c.html#a23d78f0bc8b4f380978adbb6c3bf9299">transpose()</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> j;</div>
@@ -336,7 +343,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">register</span> <a class="code" href="structshifts.html">shifts</a> *sp;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> length;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> nedges;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> <a class="code" href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a">done</a>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> <a class="code" href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a">done</a>;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> state1;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> stateno;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> symbol1;</div>
@@ -425,6 +432,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="lalr_8c_html_ab11e35fb27dcaa6fde7383e760ab0de4"><div class="ttname"><a href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a></div><div class="ttdeci">static int ngotos</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00027">lalr.c:27</a></div></div>
 <div class="ttc" id="defs_8h_html_ad84404204a42a016a68148afae4aca4b"><div class="ttname"><a href="defs_8h.html#ad84404204a42a016a68148afae4aca4b">ISVAR</a></div><div class="ttdeci">#define ISVAR(s)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00096">defs.h:96</a></div></div>
 <div class="ttc" id="lalr_8c_html_af0ce41ccf437cf554e9e41a061a0f1f0"><div class="ttname"><a href="lalr_8c.html#af0ce41ccf437cf554e9e41a061a0f1f0">includes</a></div><div class="ttdeci">static short ** includes</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00029">lalr.c:29</a></div></div>
+<div class="ttc" id="group__eh_html_ga67b6b9fd02aac96bef4297b1e6a1789a"><div class="ttname"><a href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a">done</a></div><div class="ttdeci">done(int k)</div><div class="ttdoc">Shutdown function. </div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00073">main.c:73</a></div></div>
 <div class="ttc" id="lalr_8c_html_a910e5adae7c283da210c508e39d7dff6"><div class="ttname"><a href="lalr_8c.html#a910e5adae7c283da210c508e39d7dff6">map_goto</a></div><div class="ttdeci">int map_goto(int state, int symbol)</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00235">lalr.c:235</a></div></div>
 <div class="ttc" id="lalr_8c_html_a65037d6b3dda480469b3ce9a5c659015"><div class="ttname"><a href="lalr_8c.html#a65037d6b3dda480469b3ce9a5c659015">maxrhs</a></div><div class="ttdeci">static int maxrhs</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00026">lalr.c:26</a></div></div>
 <div class="ttc" id="structshifts_html_a068ef8eefbf09239f3cd031177797ea9"><div class="ttname"><a href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">shifts::nshifts</a></div><div class="ttdeci">short nshifts</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00147">defs.h:147</a></div></div>
@@ -435,7 +443,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="defs_8h_html_a01cf2505ce82ec00c8f04368c57331a7"><div class="ttname"><a href="defs_8h.html#a01cf2505ce82ec00c8f04368c57331a7">ritem</a></div><div class="ttdeci">short * ritem</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00052">main.c:52</a></div></div>
 <div class="ttc" id="defs_8h_html_af0bcccfe9f508ce7d9e60d925054b6bf"><div class="ttname"><a href="defs_8h.html#af0bcccfe9f508ce7d9e60d925054b6bf">derives</a></div><div class="ttdeci">short ** derives</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00057">main.c:57</a></div></div>
 <div class="ttc" id="lalr_8c_html_a23d78f0bc8b4f380978adbb6c3bf9299"><div class="ttname"><a href="lalr_8c.html#a23d78f0bc8b4f380978adbb6c3bf9299">transpose</a></div><div class="ttdeci">short ** transpose()</div></div>
-<div class="ttc" id="main_8c_html_a67b6b9fd02aac96bef4297b1e6a1789a"><div class="ttname"><a href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a">done</a></div><div class="ttdeci">done(int k)</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00064">main.c:64</a></div></div>
 <div class="ttc" id="lalr_8c_html_a9197c8768883873213ca494edf8a7c76"><div class="ttname"><a href="lalr_8c.html#a9197c8768883873213ca494edf8a7c76">shift_table</a></div><div class="ttdeci">shifts ** shift_table</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00017">lalr.c:17</a></div></div>
 </div><!-- fragment -->
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -475,9 +482,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00517">517</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, and <a class="el" href="lalr_8c_source.html#l00029">includes</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, and <a class="el" href="lalr_8c.html#af0ce41ccf437cf554e9e41a061a0f1f0">includes</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;{</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <a class="code" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph</a>(<a class="code" href="lalr_8c.html#af0ce41ccf437cf554e9e41a061a0f1f0">includes</a>);</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}</div>
@@ -521,9 +528,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00523">523</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00028">F</a>, <a class="el" href="defs_8h_source.html#l00102">FREE</a>, <a class="el" href="lalr_8c_source.html#l00014">LA</a>, <a class="el" href="lalr_8c_source.html#l00012">lookaheads</a>, <a class="el" href="lalr_8c_source.html#l00006">shorts::next</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, <a class="el" href="lalr_8c_source.html#l00011">tokensetsize</a>, and <a class="el" href="lalr_8c_source.html#l00007">shorts::value</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a69526ad0fe506f6d9516bcf4b6206a8d">F</a>, <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, <a class="el" href="lalr_8c.html#ab0e2a82b7f9da87cae0be8012a80a64b">LA</a>, <a class="el" href="lalr_8c.html#a1ae59fa49008bfd7a42be1b233cee75f">lookaheads</a>, <a class="el" href="structshorts.html#a9df42e7a69a264c303e2be75911fb7ce">shorts::next</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <a class="el" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>, and <a class="el" href="structshorts.html#ada1d1ef2096f2520b377dda2c99e486b">shorts::value</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;{</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i, n;</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *fp1, *fp2, *fp3;</div>
@@ -594,9 +601,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00557">557</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00102">FREE</a>, <a class="el" href="lalr_8c_source.html#l00032">INDEX</a>, <a class="el" href="lalr_8c_source.html#l00025">infinity</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="lalr_8c_source.html#l00027">ngotos</a>, <a class="el" href="lalr_8c_source.html#l00031">R</a>, <a class="el" href="lalr_8c_source.html#l00034">top</a>, <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>, and <a class="el" href="lalr_8c_source.html#l00033">VERTICES</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, <a class="el" href="lalr_8c.html#a6d14500a94cddbb9fc76a6ec22ea3884">INDEX</a>, <a class="el" href="lalr_8c.html#a652f88fb6bac77f1882023c1410e84d3">infinity</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a>, <a class="el" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>, <a class="el" href="lalr_8c.html#af93f4f37fc2ad9c37af4a715423b110c">top</a>, <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>, and <a class="el" href="lalr_8c.html#a66976b4e1c46fa88de76e1f943366f2e">VERTICES</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00517">compute_FOLLOWS()</a>, and <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a549587ac9636a2e338da2df1df852802">compute_FOLLOWS()</a>, and <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;{</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
@@ -666,9 +673,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00263">263</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00015">accessing_symbol</a>, <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, <a class="el" href="lalr_8c_source.html#l00028">F</a>, <a class="el" href="defs_8h_source.html#l00102">FREE</a>, <a class="el" href="defs_8h_source.html#l00096">ISVAR</a>, <a class="el" href="lalr_8c_source.html#l00235">map_goto()</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="lalr_8c_source.html#l00027">ngotos</a>, <a class="el" href="defs_8h_source.html#l00147">shifts::nshifts</a>, <a class="el" href="main_8c_source.html#l00058">nullable</a>, <a class="el" href="defs_8h_source.html#l00028">SETBIT</a>, <a class="el" href="defs_8h_source.html#l00148">shifts::shift</a>, <a class="el" href="lalr_8c_source.html#l00021">to_state</a>, and <a class="el" href="lalr_8c_source.html#l00011">tokensetsize</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>, <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, <a class="el" href="lalr_8c.html#a69526ad0fe506f6d9516bcf4b6206a8d">F</a>, <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, <a class="el" href="defs_8h.html#ad84404204a42a016a68148afae4aca4b">ISVAR</a>, <a class="el" href="lalr_8c.html#a910e5adae7c283da210c508e39d7dff6">map_goto()</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a>, <a class="el" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">shifts::nshifts</a>, <a class="el" href="defs_8h.html#a4ef3e698062c3ff17c5dd45a83f8d41c">nullable</a>, <a class="el" href="defs_8h.html#a9bc5a41948fd9a5aa2a11848025f0bda">SETBIT</a>, <a class="el" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shifts::shift</a>, <a class="el" href="lalr_8c.html#aafdf027bac2717ba1e321f31e3efc7ca">to_state</a>, and <a class="el" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> j;</div>
@@ -796,9 +803,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00128">128</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00014">LA</a>, <a class="el" href="lalr_8c_source.html#l00013">LAruleno</a>, <a class="el" href="lalr_8c_source.html#l00012">lookaheads</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="defs_8h_source.html#l00159">reductions::nreds</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, <a class="el" href="defs_8h_source.html#l00160">reductions::rules</a>, and <a class="el" href="lalr_8c_source.html#l00011">tokensetsize</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#ab0e2a82b7f9da87cae0be8012a80a64b">LA</a>, <a class="el" href="lalr_8c.html#a195a4875a206fdbbfc70f9cdefca8811">LAruleno</a>, <a class="el" href="lalr_8c.html#a1ae59fa49008bfd7a42be1b233cee75f">lookaheads</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="structreductions.html#adee580e183d347a70ce769cc3e110f50">reductions::nreds</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <a class="el" href="structreductions.html#aa2445e7b9b61d676d9ede9b023d41f51">reductions::rules</a>, and <a class="el" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i, j, k;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">register</span> <a class="code" href="structreductions.html">reductions</a> *rp;</div>
@@ -873,9 +880,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00037">37</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, <a class="el" href="lalr_8c_source.html#l00517">compute_FOLLOWS()</a>, <a class="el" href="lalr_8c_source.html#l00523">compute_lookaheads()</a>, <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>, <a class="el" href="lalr_8c_source.html#l00128">initialize_LA()</a>, <a class="el" href="main_8c_source.html#l00043">ntokens</a>, <a class="el" href="lalr_8c_source.html#l00067">set_accessing_symbol()</a>, <a class="el" href="lalr_8c_source.html#l00165">set_goto_map()</a>, <a class="el" href="lalr_8c_source.html#l00100">set_maxrhs()</a>, <a class="el" href="lalr_8c_source.html#l00089">set_reduction_table()</a>, <a class="el" href="lalr_8c_source.html#l00078">set_shift_table()</a>, <a class="el" href="lalr_8c_source.html#l00056">set_state_table()</a>, <a class="el" href="lalr_8c_source.html#l00011">tokensetsize</a>, and <a class="el" href="defs_8h_source.html#l00026">WORDSIZE</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, <a class="el" href="lalr_8c.html#a549587ac9636a2e338da2df1df852802">compute_FOLLOWS()</a>, <a class="el" href="lalr_8c.html#a103fc18951240fa5978060b77c7a04bb">compute_lookaheads()</a>, <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>, <a class="el" href="lalr_8c.html#a8d038bf14a91cab7082013e7b046a023">initialize_LA()</a>, <a class="el" href="defs_8h.html#a78b17f8032df23629c33ae6a2dad4741">ntokens</a>, <a class="el" href="lalr_8c.html#af40b4ca0e2ac0c861650887f53cd8473">set_accessing_symbol()</a>, <a class="el" href="lalr_8c.html#ae8c3ccdf05c8529dad837c3a51a13fbd">set_goto_map()</a>, <a class="el" href="lalr_8c.html#a107978079d3d88b0053b49ec52927803">set_maxrhs()</a>, <a class="el" href="lalr_8c.html#abfd5c21537a4f473773c2d25803bc919">set_reduction_table()</a>, <a class="el" href="lalr_8c.html#a6613d689596e2f81d6093379459a29c7">set_shift_table()</a>, <a class="el" href="lalr_8c.html#a273192077c200e39adede06c9ab36310">set_state_table()</a>, <a class="el" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>, and <a class="el" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c_source.html#l00360">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#afced8478b91af5c169926dfa4426333d">main()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a> = <a class="code" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>(<a class="code" href="defs_8h.html#a78b17f8032df23629c33ae6a2dad4741">ntokens</a>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
@@ -954,9 +961,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00235">235</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00020">from_state</a>, <a class="el" href="lalr_8c_source.html#l00019">goto_map</a>, and <a class="el" href="output_8c_source.html#l00017">high</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a2c549f4b9076247f27ebdbe00ec163dc">from_state</a>, <a class="el" href="lalr_8c.html#a76a8966708e1473d8e3c4539828e04b4">goto_map</a>, and <a class="el" href="output_8c.html#aae03a5bfee63ef73c818b660e31146a9">high</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, and <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, and <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;{</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> <a class="code" href="output_8c.html#aae03a5bfee63ef73c818b660e31146a9">high</a>;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> low;</div>
@@ -1010,9 +1017,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00067">67</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00015">accessing_symbol</a>, <a class="el" href="defs_8h_source.html#l00134">core::accessing_symbol</a>, <a class="el" href="lr0_8c_source.html#l00009">first_state</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="defs_8h_source.html#l00131">core::next</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, and <a class="el" href="defs_8h_source.html#l00133">core::number</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>, <a class="el" href="structcore.html#a33d77ddbc83d0fab40eea51d31d9fa68">core::accessing_symbol</a>, <a class="el" href="defs_8h.html#a743de5212c85df93f9b059f0f24c7b09">first_state</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="structcore.html#a95dae756b3fe1e8a6ae9c57d2f493030">core::next</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, and <a class="el" href="structcore.html#a82ae722463853ce46f479979018bf4d7">core::number</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">register</span> <a class="code" href="structcore.html">core</a> *sp;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
@@ -1056,9 +1063,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00165">165</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00015">accessing_symbol</a>, <a class="el" href="error_8c_source.html#l00006">fatal()</a>, <a class="el" href="lr0_8c_source.html#l00010">first_shift</a>, <a class="el" href="defs_8h_source.html#l00102">FREE</a>, <a class="el" href="lalr_8c_source.html#l00020">from_state</a>, <a class="el" href="lalr_8c_source.html#l00019">goto_map</a>, <a class="el" href="defs_8h_source.html#l00095">ISTOKEN</a>, <a class="el" href="defs_8h_source.html#l00022">MAXSHORT</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="defs_8h_source.html#l00145">shifts::next</a>, <a class="el" href="lalr_8c_source.html#l00027">ngotos</a>, <a class="el" href="defs_8h_source.html#l00147">shifts::nshifts</a>, <a class="el" href="main_8c_source.html#l00042">nsyms</a>, <a class="el" href="main_8c_source.html#l00043">ntokens</a>, <a class="el" href="defs_8h_source.html#l00146">shifts::number</a>, <a class="el" href="main_8c_source.html#l00044">nvars</a>, <a class="el" href="defs_8h_source.html#l00148">shifts::shift</a>, and <a class="el" href="lalr_8c_source.html#l00021">to_state</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>, <a class="el" href="group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9">fatal()</a>, <a class="el" href="defs_8h.html#a72623a31ea34a2690cd3b7ccd95b1dc9">first_shift</a>, <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, <a class="el" href="lalr_8c.html#a2c549f4b9076247f27ebdbe00ec163dc">from_state</a>, <a class="el" href="lalr_8c.html#a76a8966708e1473d8e3c4539828e04b4">goto_map</a>, <a class="el" href="defs_8h.html#a6b76ac8cec55b32a62a090f92ca1bcd7">ISTOKEN</a>, <a class="el" href="defs_8h.html#a1e5264eeb3e2ad97c6f33d88e80a49b4">MAXSHORT</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="structshifts.html#ac21ccdf8badde9e78bdd62228b806998">shifts::next</a>, <a class="el" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a>, <a class="el" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">shifts::nshifts</a>, <a class="el" href="defs_8h.html#a1dc6fe1e5081ce7ab7f86e148a97585a">nsyms</a>, <a class="el" href="defs_8h.html#a78b17f8032df23629c33ae6a2dad4741">ntokens</a>, <a class="el" href="structshifts.html#aeaa959dd72e35efaf4d8509b83391033">shifts::number</a>, <a class="el" href="defs_8h.html#ae8f6d2fd6490d3153cb4133bf183a404">nvars</a>, <a class="el" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shifts::shift</a>, and <a class="el" href="lalr_8c.html#aafdf027bac2717ba1e321f31e3efc7ca">to_state</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">register</span> <a class="code" href="structshifts.html">shifts</a> *sp;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
@@ -1081,7 +1088,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a6b76ac8cec55b32a62a090f92ca1bcd7">ISTOKEN</a>(symbol)) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a> == <a class="code" href="defs_8h.html#a1e5264eeb3e2ad97c6f33d88e80a49b4">MAXSHORT</a>)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="error_8c.html#ae558ad59d93f53e83fc2d8e29afdffb9">fatal</a>(<span class="stringliteral">&quot;too many gotos&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9">fatal</a>(<span class="stringliteral">&quot;too many gotos&quot;</span>);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a>++;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="lalr_8c.html#a76a8966708e1473d8e3c4539828e04b4">goto_map</a>[symbol]++;</div>
@@ -1139,7 +1146,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="defs_8h_html_a6b76ac8cec55b32a62a090f92ca1bcd7"><div class="ttname"><a href="defs_8h.html#a6b76ac8cec55b32a62a090f92ca1bcd7">ISTOKEN</a></div><div class="ttdeci">#define ISTOKEN(s)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00095">defs.h:95</a></div></div>
 <div class="ttc" id="defs_8h_html_a1dc6fe1e5081ce7ab7f86e148a97585a"><div class="ttname"><a href="defs_8h.html#a1dc6fe1e5081ce7ab7f86e148a97585a">nsyms</a></div><div class="ttdeci">int nsyms</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00042">main.c:42</a></div></div>
 <div class="ttc" id="defs_8h_html_a25875003b43b81a4302256caa4a13599"><div class="ttname"><a href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a></div><div class="ttdeci">#define FREE(x)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00102">defs.h:102</a></div></div>
-<div class="ttc" id="error_8c_html_ae558ad59d93f53e83fc2d8e29afdffb9"><div class="ttname"><a href="error_8c.html#ae558ad59d93f53e83fc2d8e29afdffb9">fatal</a></div><div class="ttdeci">fatal(char *msg)</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00006">error.c:6</a></div></div>
+<div class="ttc" id="group__eh_html_gae558ad59d93f53e83fc2d8e29afdffb9"><div class="ttname"><a href="group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9">fatal</a></div><div class="ttdeci">fatal(char *msg)</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00019">error.c:19</a></div></div>
 <div class="ttc" id="structshifts_html_aeaa959dd72e35efaf4d8509b83391033"><div class="ttname"><a href="structshifts.html#aeaa959dd72e35efaf4d8509b83391033">shifts::number</a></div><div class="ttdeci">short number</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00146">defs.h:146</a></div></div>
 </div><!-- fragment -->
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1179,9 +1186,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00100">100</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00026">maxrhs</a>, <a class="el" href="main_8c_source.html#l00040">nitems</a>, and <a class="el" href="main_8c_source.html#l00052">ritem</a>.</p>
+<p>References <a class="el" href="lalr_8c.html#a65037d6b3dda480469b3ce9a5c659015">maxrhs</a>, <a class="el" href="defs_8h.html#a1a693ed191d60c301334b79fa390f5c7">nitems</a>, and <a class="el" href="defs_8h.html#a01cf2505ce82ec00c8f04368c57331a7">ritem</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">short</span> *itemp;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">short</span> *item_end;</div>
@@ -1237,9 +1244,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00089">89</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lr0_8c_source.html#l00011">first_reduction</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="defs_8h_source.html#l00157">reductions::next</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, and <a class="el" href="defs_8h_source.html#l00158">reductions::number</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a36af3fcb562678ef227d910a8a9eb89c">first_reduction</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="structreductions.html#a4ade1892f3582573cd244f38d884c846">reductions::next</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, and <a class="el" href="structreductions.html#a18dfbbd43b8f8cc793307db31718946d">reductions::number</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">register</span> <a class="code" href="structreductions.html">reductions</a> *rp;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
@@ -1282,9 +1289,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00078">78</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lr0_8c_source.html#l00010">first_shift</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="defs_8h_source.html#l00145">shifts::next</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, and <a class="el" href="defs_8h_source.html#l00146">shifts::number</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a72623a31ea34a2690cd3b7ccd95b1dc9">first_shift</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="structshifts.html#ac21ccdf8badde9e78bdd62228b806998">shifts::next</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, and <a class="el" href="structshifts.html#aeaa959dd72e35efaf4d8509b83391033">shifts::number</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">register</span> <a class="code" href="structshifts.html">shifts</a> *sp;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -1327,9 +1334,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00056">56</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="lr0_8c_source.html#l00009">first_state</a>, <a class="el" href="defs_8h_source.html#l00105">NEW2</a>, <a class="el" href="defs_8h_source.html#l00131">core::next</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, and <a class="el" href="defs_8h_source.html#l00133">core::number</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a743de5212c85df93f9b059f0f24c7b09">first_state</a>, <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>, <a class="el" href="structcore.html#a95dae756b3fe1e8a6ae9c57d2f493030">core::next</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, and <a class="el" href="structcore.html#a82ae722463853ce46f479979018bf4d7">core::number</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">register</span> <a class="code" href="structcore.html">core</a> *sp;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -1370,7 +1377,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>.</p>
 
 <p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1410,7 +1417,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00460">460</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00102">FREE</a>, and <a class="el" href="defs_8h_source.html#l00105">NEW2</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, and <a class="el" href="defs_8h.html#a20ef9f05f81df4c942c0276808046124">NEW2</a>.</p>
 <div class="fragment"><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;{</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">short</span> **new_R;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">short</span> **temp_R;</div>
@@ -1484,9 +1491,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00584">584</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>References <a class="el" href="output_8c_source.html#l00011">base</a>, <a class="el" href="lalr_8c_source.html#l00028">F</a>, <a class="el" href="lalr_8c_source.html#l00032">INDEX</a>, <a class="el" href="lalr_8c_source.html#l00025">infinity</a>, <a class="el" href="lalr_8c_source.html#l00031">R</a>, <a class="el" href="lalr_8c_source.html#l00011">tokensetsize</a>, <a class="el" href="lalr_8c_source.html#l00034">top</a>, and <a class="el" href="lalr_8c_source.html#l00033">VERTICES</a>.</p>
+<p>References <a class="el" href="output_8c.html#af34765e3916ebd93d077cfa1fcbfa737">base</a>, <a class="el" href="lalr_8c.html#a69526ad0fe506f6d9516bcf4b6206a8d">F</a>, <a class="el" href="lalr_8c.html#a6d14500a94cddbb9fc76a6ec22ea3884">INDEX</a>, <a class="el" href="lalr_8c.html#a652f88fb6bac77f1882023c1410e84d3">infinity</a>, <a class="el" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>, <a class="el" href="lalr_8c.html#ad6de7c315edd94136b22d6e89b695a9b">tokensetsize</a>, <a class="el" href="lalr_8c.html#af93f4f37fc2ad9c37af4a715423b110c">top</a>, and <a class="el" href="lalr_8c.html#a66976b4e1c46fa88de76e1f943366f2e">VERTICES</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;{</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *fp1;</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *fp2;</div>
@@ -1575,7 +1582,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00015">15</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, <a class="el" href="mkpar_8c_source.html#l00153">find_final_state()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>, <a class="el" href="output_8c_source.html#l00177">output_actions()</a>, <a class="el" href="verbose_8c_source.html#l00220">print_actions()</a>, <a class="el" href="verbose_8c_source.html#l00310">print_gotos()</a>, <a class="el" href="lalr_8c_source.html#l00067">set_accessing_symbol()</a>, and <a class="el" href="lalr_8c_source.html#l00165">set_goto_map()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, <a class="el" href="mkpar_8c.html#a7423356b0dcd3ec8c86b94cfad426e11">find_final_state()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>, <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>, <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">print_actions()</a>, <a class="el" href="verbose_8c.html#a16325c030b7ca106c93a115bb1bddac9">print_gotos()</a>, <a class="el" href="lalr_8c.html#af40b4ca0e2ac0c861650887f53cd8473">set_accessing_symbol()</a>, and <a class="el" href="lalr_8c.html#ae8c3ccdf05c8529dad837c3a51a13fbd">set_goto_map()</a>.</p>
 
 </div>
 </div>
@@ -1599,7 +1606,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00028">28</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00523">compute_lookaheads()</a>, <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a103fc18951240fa5978060b77c7a04bb">compute_lookaheads()</a>, <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1622,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00020">20</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, <a class="el" href="lalr_8c_source.html#l00235">map_goto()</a>, <a class="el" href="output_8c_source.html#l00177">output_actions()</a>, <a class="el" href="output_8c_source.html#l00358">save_column()</a>, and <a class="el" href="lalr_8c_source.html#l00165">set_goto_map()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, <a class="el" href="lalr_8c.html#a910e5adae7c283da210c508e39d7dff6">map_goto()</a>, <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>, <a class="el" href="output_8c.html#acc69157560996ca656abbc998eb56647">save_column()</a>, and <a class="el" href="lalr_8c.html#ae8c3ccdf05c8529dad837c3a51a13fbd">set_goto_map()</a>.</p>
 
 </div>
 </div>
@@ -1631,7 +1638,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00019">19</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l00322">default_goto()</a>, <a class="el" href="lalr_8c_source.html#l00235">map_goto()</a>, <a class="el" href="output_8c_source.html#l00177">output_actions()</a>, <a class="el" href="output_8c_source.html#l00358">save_column()</a>, and <a class="el" href="lalr_8c_source.html#l00165">set_goto_map()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#ad878b7f8437824b96a20cb1940e47b15">default_goto()</a>, <a class="el" href="lalr_8c.html#a910e5adae7c283da210c508e39d7dff6">map_goto()</a>, <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>, <a class="el" href="output_8c.html#acc69157560996ca656abbc998eb56647">save_column()</a>, and <a class="el" href="lalr_8c.html#ae8c3ccdf05c8529dad837c3a51a13fbd">set_goto_map()</a>.</p>
 
 </div>
 </div>
@@ -1655,7 +1662,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00029">29</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, and <a class="el" href="lalr_8c_source.html#l00517">compute_FOLLOWS()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, and <a class="el" href="lalr_8c.html#a549587ac9636a2e338da2df1df852802">compute_FOLLOWS()</a>.</p>
 
 </div>
 </div>
@@ -1679,7 +1686,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00032">32</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1703,7 +1710,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00025">25</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1719,7 +1726,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00014">14</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00087">add_reductions()</a>, <a class="el" href="lalr_8c_source.html#l00523">compute_lookaheads()</a>, <a class="el" href="lalr_8c_source.html#l00128">initialize_LA()</a>, and <a class="el" href="output_8c_source.html#l00177">output_actions()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#aa47d5eefe3f93bac5d8f0fc971dd0f87">add_reductions()</a>, <a class="el" href="lalr_8c.html#a103fc18951240fa5978060b77c7a04bb">compute_lookaheads()</a>, <a class="el" href="lalr_8c.html#a8d038bf14a91cab7082013e7b046a023">initialize_LA()</a>, and <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>.</p>
 
 </div>
 </div>
@@ -1735,7 +1742,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00013">13</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00432">add_lookback_edge()</a>, <a class="el" href="mkpar_8c_source.html#l00087">add_reductions()</a>, <a class="el" href="lalr_8c_source.html#l00128">initialize_LA()</a>, and <a class="el" href="output_8c_source.html#l00177">output_actions()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#ad69de49348a1b41b5f75d588240538d3">add_lookback_edge()</a>, <a class="el" href="mkpar_8c.html#aa47d5eefe3f93bac5d8f0fc971dd0f87">add_reductions()</a>, <a class="el" href="lalr_8c.html#a8d038bf14a91cab7082013e7b046a023">initialize_LA()</a>, and <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1758,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00012">12</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00432">add_lookback_edge()</a>, <a class="el" href="mkpar_8c_source.html#l00087">add_reductions()</a>, <a class="el" href="lalr_8c_source.html#l00523">compute_lookaheads()</a>, <a class="el" href="lalr_8c_source.html#l00128">initialize_LA()</a>, and <a class="el" href="output_8c_source.html#l00177">output_actions()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#ad69de49348a1b41b5f75d588240538d3">add_lookback_edge()</a>, <a class="el" href="mkpar_8c.html#aa47d5eefe3f93bac5d8f0fc971dd0f87">add_reductions()</a>, <a class="el" href="lalr_8c.html#a103fc18951240fa5978060b77c7a04bb">compute_lookaheads()</a>, <a class="el" href="lalr_8c.html#a8d038bf14a91cab7082013e7b046a023">initialize_LA()</a>, and <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>.</p>
 
 </div>
 </div>
@@ -1797,7 +1804,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00026">26</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, and <a class="el" href="lalr_8c_source.html#l00100">set_maxrhs()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, and <a class="el" href="lalr_8c.html#a107978079d3d88b0053b49ec52927803">set_maxrhs()</a>.</p>
 
 </div>
 </div>
@@ -1821,7 +1828,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00027">27</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>, and <a class="el" href="lalr_8c_source.html#l00165">set_goto_map()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>, and <a class="el" href="lalr_8c.html#ae8c3ccdf05c8529dad837c3a51a13fbd">set_goto_map()</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +1852,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00031">31</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, <a class="el" href="warshall_8c_source.html#l00055">reflexive_transitive_closure()</a>, <a class="el" href="warshall_8c_source.html#l00003">transitive_closure()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, <a class="el" href="warshall_8c.html#a5b17363d658cbdfeba8682ae963937dc">reflexive_transitive_closure()</a>, <a class="el" href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1861,7 +1868,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00018">18</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l01200">free_reductions()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#a212159182ed127eaa4097353a62aaacb">free_reductions()</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +1884,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00017">17</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00153">find_final_state()</a>, <a class="el" href="output_8c_source.html#l01186">free_shifts()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="verbose_8c_source.html#l00220">print_actions()</a>, and <a class="el" href="verbose_8c_source.html#l00310">print_gotos()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#a7423356b0dcd3ec8c86b94cfad426e11">find_final_state()</a>, <a class="el" href="output_8c.html#ae9f79fbf40b3ab2e0a8e14708dfc2491">free_shifts()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">print_actions()</a>, and <a class="el" href="verbose_8c.html#a16325c030b7ca106c93a115bb1bddac9">print_gotos()</a>.</p>
 
 </div>
 </div>
@@ -1893,7 +1900,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00016">16</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="output_8c_source.html#l01173">free_itemsets()</a>, and <a class="el" href="verbose_8c_source.html#l00140">print_core()</a>.</p>
+<p>Referenced by <a class="el" href="output_8c.html#ac43b4028b2aea7d5803f43eb2ee58056">free_itemsets()</a>, and <a class="el" href="verbose_8c.html#a4358c308a92b3689750bccf18e8e8683">print_core()</a>.</p>
 
 </div>
 </div>
@@ -1909,7 +1916,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00021">21</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00340">build_relations()</a>, <a class="el" href="output_8c_source.html#l00322">default_goto()</a>, <a class="el" href="mkpar_8c_source.html#l00153">find_final_state()</a>, <a class="el" href="mkpar_8c_source.html#l00052">get_shifts()</a>, <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>, <a class="el" href="output_8c_source.html#l00177">output_actions()</a>, <a class="el" href="verbose_8c_source.html#l00310">print_gotos()</a>, <a class="el" href="output_8c_source.html#l00358">save_column()</a>, and <a class="el" href="lalr_8c_source.html#l00165">set_goto_map()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a0a930e748b6863b16e0521247533842e">build_relations()</a>, <a class="el" href="output_8c.html#ad878b7f8437824b96a20cb1940e47b15">default_goto()</a>, <a class="el" href="mkpar_8c.html#a7423356b0dcd3ec8c86b94cfad426e11">find_final_state()</a>, <a class="el" href="mkpar_8c.html#a4310f8c453777c4441017e4a9f53cbb8">get_shifts()</a>, <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>, <a class="el" href="output_8c.html#aeefacc88e584337cfc3508c372fb453e">output_actions()</a>, <a class="el" href="verbose_8c.html#a16325c030b7ca106c93a115bb1bddac9">print_gotos()</a>, <a class="el" href="output_8c.html#acc69157560996ca656abbc998eb56647">save_column()</a>, and <a class="el" href="lalr_8c.html#ae8c3ccdf05c8529dad837c3a51a13fbd">set_goto_map()</a>.</p>
 
 </div>
 </div>
@@ -1925,7 +1932,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00011">11</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mkpar_8c_source.html#l00087">add_reductions()</a>, <a class="el" href="lalr_8c_source.html#l00523">compute_lookaheads()</a>, <a class="el" href="lalr_8c_source.html#l00263">initialize_F()</a>, <a class="el" href="lalr_8c_source.html#l00128">initialize_LA()</a>, <a class="el" href="lalr_8c_source.html#l00037">lalr()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="mkpar_8c.html#aa47d5eefe3f93bac5d8f0fc971dd0f87">add_reductions()</a>, <a class="el" href="lalr_8c.html#a103fc18951240fa5978060b77c7a04bb">compute_lookaheads()</a>, <a class="el" href="lalr_8c.html#a6c91f5faa72becd25b25708e2ca97649">initialize_F()</a>, <a class="el" href="lalr_8c.html#a8d038bf14a91cab7082013e7b046a023">initialize_LA()</a>, <a class="el" href="lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f">lalr()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1949,7 +1956,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00034">34</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1973,7 +1980,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lalr_8c_source.html#l00033">33</a> of file <a class="el" href="lalr_8c_source.html">lalr.c</a>.</p>
 
-<p>Referenced by <a class="el" href="lalr_8c_source.html#l00557">digraph()</a>, and <a class="el" href="lalr_8c_source.html#l00584">traverse()</a>.</p>
+<p>Referenced by <a class="el" href="lalr_8c.html#a34974a0ef462a2a48b9a48cc5c7ac509">digraph()</a>, and <a class="el" href="lalr_8c.html#a79d482cb00a7dc76578918993ba7a597">traverse()</a>.</p>
 
 </div>
 </div>
@@ -1983,7 +1990,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="lalr_8c.html">lalr.c</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

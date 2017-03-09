@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Berkeley YACC", "index.html", [
+    [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -25,8 +26,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"lalr_8c.html#a23d78f0bc8b4f380978adbb6c3bf9299",
-"reader_8c.html#a91e4d8a878948ae4d8573c4a9894b2e2"
+"group__eh.html#ga3c01cc3498c6cb3655588b53da0e8f7e",
+"reader_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

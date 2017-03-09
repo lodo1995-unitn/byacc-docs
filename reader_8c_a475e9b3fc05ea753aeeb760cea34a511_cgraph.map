@@ -1,12 +1,12 @@
 <map id="copy_ident" name="copy_ident">
 <area shape="rect" id="node2" href="$reader_8c.html#a11446424d65669df0f3a9e3b1cca57fa" title="nextc" alt="" coords="139,56,194,83"/>
-<area shape="rect" id="node10" href="$error_8c.html#ae2027917ace8b6f808a14b5cd4085eaf" title="syntax_error" alt="" coords="446,157,541,184"/>
-<area shape="rect" id="node11" href="$error_8c.html#a65962bc9ddf21cd2dc0b5f6b7dcb35fc" title="unexpected_EOF" alt="" coords="243,208,365,235"/>
+<area shape="rect" id="node10" href="$group__eh.html#gae2027917ace8b6f808a14b5cd4085eaf" title="syntax_error" alt="" coords="446,157,541,184"/>
+<area shape="rect" id="node11" href="$group__eh.html#ga65962bc9ddf21cd2dc0b5f6b7dcb35fc" title="unexpected_EOF" alt="" coords="243,208,365,235"/>
 <area shape="rect" id="node3" href="$reader_8c.html#a204317aa3b6d154f1abff12df35953df" title="get_line" alt="" coords="460,5,527,32"/>
 <area shape="rect" id="node6" href="$reader_8c.html#ac812a775973bb1eb24e86256b2de6b8b" title="skip_comment" alt="" coords="251,56,357,83"/>
-<area shape="rect" id="node4" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="622,5,701,32"/>
-<area shape="rect" id="node5" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="749,107,800,133"/>
+<area shape="rect" id="node4" href="$group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="622,5,701,32"/>
+<area shape="rect" id="node5" href="$group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" title="Shutdown function. " alt="" coords="749,107,800,133"/>
 <area shape="rect" id="node7" href="$reader_8c.html#a416a4e795e86e5666f1a734793f9636e" title="dup_line" alt="" coords="458,56,529,83"/>
-<area shape="rect" id="node8" href="$error_8c.html#a81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="414,107,573,133"/>
-<area shape="rect" id="node9" href="$error_8c.html#a3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="624,107,699,133"/>
+<area shape="rect" id="node8" href="$group__eh.html#ga81c4e76cf37319065a21afcaec1b8ab1" title="unterminated_comment" alt="" coords="414,107,573,133"/>
+<area shape="rect" id="node9" href="$group__eh.html#ga3c01cc3498c6cb3655588b53da0e8f7e" title="print_pos" alt="" coords="624,107,699,133"/>
 </map>

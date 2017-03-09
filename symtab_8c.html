@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +99,7 @@ $(document).ready(function(){initNavTree('symtab_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -164,7 +171,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00007">7</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>Referenced by <a class="el" href="symtab_8c_source.html#l00083">create_symbol_table()</a>, and <a class="el" href="symtab_8c_source.html#l00016">hash()</a>.</p>
+<p>Referenced by <a class="el" href="symtab_8c.html#aeeef4e0a9c6733adb569531e181de719">create_symbol_table()</a>, and <a class="el" href="symtab_8c.html#a9560ff0249886c6495396bd0d25a7320">hash()</a>.</p>
 
 </div>
 </div>
@@ -184,15 +191,15 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00083">83</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00121">bucket::class</a>, <a class="el" href="symtab_8c_source.html#l00016">hash()</a>, <a class="el" href="defs_8h_source.html#l00119">bucket::index</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="defs_8h_source.html#l00103">MALLOC</a>, <a class="el" href="error_8c_source.html#l00014">no_space()</a>, <a class="el" href="symtab_8c_source.html#l00007">TABLE_SIZE</a>, and <a class="el" href="defs_8h_source.html#l00071">TERM</a>.</p>
+<p>References <a class="el" href="structbucket.html#a722df2e390d3c80ec408fd9c9fb44552">bucket::class</a>, <a class="el" href="symtab_8c.html#a9560ff0249886c6495396bd0d25a7320">hash()</a>, <a class="el" href="structbucket.html#a0b897ab8d67b47728890052bdf40c742">bucket::index</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>, <a class="el" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space()</a>, <a class="el" href="symtab_8c.html#a032503e76d6f69bc67e99e909c8125da">TABLE_SIZE</a>, and <a class="el" href="defs_8h.html#ab19a74cdecfe8fdf5ec475457079fad0">TERM</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01756">reader()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b">reader()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">register</span> <a class="code" href="structbucket.html">bucket</a> *bp;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a> = (<a class="code" href="structbucket.html">bucket</a> **) <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(<a class="code" href="symtab_8c.html#a032503e76d6f69bc67e99e909c8125da">TABLE_SIZE</a>*<span class="keyword">sizeof</span>(<a class="code" href="structbucket.html">bucket</a> *));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a> == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a> == 0) <a class="code" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="symtab_8c.html#a032503e76d6f69bc67e99e909c8125da">TABLE_SIZE</a>; i++)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a>[i] = 0;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
@@ -207,9 +214,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="defs_8h_html_a7e3c05d61a56a6798627a9d576cb6b45"><div class="ttname"><a href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a></div><div class="ttdeci">#define MALLOC(n)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00103">defs.h:103</a></div></div>
 <div class="ttc" id="symtab_8c_html_a4e52d5245b1297f726582ae5b4ca4dc0"><div class="ttname"><a href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a></div><div class="ttdeci">bucket ** symbol_table</div><div class="ttdef"><b>Definition:</b> <a href="symtab_8c_source.html#l00010">symtab.c:10</a></div></div>
 <div class="ttc" id="defs_8h_html_ab19a74cdecfe8fdf5ec475457079fad0"><div class="ttname"><a href="defs_8h.html#ab19a74cdecfe8fdf5ec475457079fad0">TERM</a></div><div class="ttdeci">#define TERM</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00071">defs.h:71</a></div></div>
-<div class="ttc" id="error_8c_html_a03b3d711852aa32c4076f12ea7bb93a4"><div class="ttname"><a href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a></div><div class="ttdeci">no_space()</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00014">error.c:14</a></div></div>
 <div class="ttc" id="symtab_8c_html_a9560ff0249886c6495396bd0d25a7320"><div class="ttname"><a href="symtab_8c.html#a9560ff0249886c6495396bd0d25a7320">hash</a></div><div class="ttdeci">int hash(char *name)</div><div class="ttdef"><b>Definition:</b> <a href="symtab_8c_source.html#l00016">symtab.c:16</a></div></div>
 <div class="ttc" id="symtab_8c_html_aa9c886d3ff3a8214ae40b7bf98ad7dd4"><div class="ttname"><a href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket</a></div><div class="ttdeci">bucket * make_bucket(char *name)</div><div class="ttdef"><b>Definition:</b> <a href="symtab_8c_source.html#l00033">symtab.c:33</a></div></div>
+<div class="ttc" id="group__eh_html_ga03b3d711852aa32c4076f12ea7bb93a4"><div class="ttname"><a href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a></div><div class="ttdeci">no_space()</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00027">error.c:27</a></div></div>
 <div class="ttc" id="structbucket_html_a722df2e390d3c80ec408fd9c9fb44552"><div class="ttname"><a href="structbucket.html#a722df2e390d3c80ec408fd9c9fb44552">bucket::class</a></div><div class="ttdeci">char class</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00121">defs.h:121</a></div></div>
 <div class="ttc" id="symtab_8c_html_a1ed0f15406e7f959f0a458f219c97944"><div class="ttname"><a href="symtab_8c.html#a1ed0f15406e7f959f0a458f219c97944">first_symbol</a></div><div class="ttdeci">bucket * first_symbol</div><div class="ttdef"><b>Definition:</b> <a href="symtab_8c_source.html#l00011">symtab.c:11</a></div></div>
 <div class="ttc" id="symtab_8c_html_a48198818a451641115faa85190207fbc"><div class="ttname"><a href="symtab_8c.html#a48198818a451641115faa85190207fbc">last_symbol</a></div><div class="ttdeci">bucket * last_symbol</div><div class="ttdef"><b>Definition:</b> <a href="symtab_8c_source.html#l00012">symtab.c:12</a></div></div>
@@ -254,9 +261,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00103">103</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00102">FREE</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01756">reader()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b">reader()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>(<a class="code" href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="symtab_8c.html#a4e52d5245b1297f726582ae5b4ca4dc0">symbol_table</a> = 0;</div>
@@ -291,9 +298,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00110">110</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00102">FREE</a>, and <a class="el" href="defs_8h_source.html#l00115">bucket::next</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, and <a class="el" href="structbucket.html#a70c4dfb30de550c0caf1ce95f5e8803f">bucket::next</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01756">reader()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b">reader()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">register</span> <a class="code" href="structbucket.html">bucket</a> *p, *q;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
@@ -336,9 +343,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00016">16</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>References <a class="el" href="symtab_8c_source.html#l00007">TABLE_SIZE</a>.</p>
+<p>References <a class="el" href="symtab_8c.html#a032503e76d6f69bc67e99e909c8125da">TABLE_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="symtab_8c_source.html#l00083">create_symbol_table()</a>, and <a class="el" href="symtab_8c_source.html#l00060">lookup()</a>.</p>
+<p>Referenced by <a class="el" href="symtab_8c.html#aeeef4e0a9c6733adb569531e181de719">create_symbol_table()</a>, and <a class="el" href="symtab_8c.html#aee518732e7aee5ce3c6fd5208c4ffdea">lookup()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">char</span> *s;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> c, k;</div>
@@ -381,7 +388,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00060">60</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>References <a class="el" href="symtab_8c_source.html#l00016">hash()</a>, <a class="el" href="defs_8h_source.html#l00114">bucket::link</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="defs_8h_source.html#l00116">bucket::name</a>, and <a class="el" href="defs_8h_source.html#l00115">bucket::next</a>.</p>
+<p>References <a class="el" href="symtab_8c.html#a9560ff0249886c6495396bd0d25a7320">hash()</a>, <a class="el" href="structbucket.html#a731490952839e3d4bf33972c5642df20">bucket::link</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">bucket::name</a>, and <a class="el" href="structbucket.html#a70c4dfb30de550c0caf1ce95f5e8803f">bucket::next</a>.</p>
 <div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">register</span> <a class="code" href="structbucket.html">bucket</a> *bp, **bpp;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -438,19 +445,19 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00033">33</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00122">bucket::assoc</a>, <a class="el" href="defs_8h_source.html#l00119">bucket::index</a>, <a class="el" href="defs_8h_source.html#l00114">bucket::link</a>, <a class="el" href="defs_8h_source.html#l00103">MALLOC</a>, <a class="el" href="defs_8h_source.html#l00116">bucket::name</a>, <a class="el" href="defs_8h_source.html#l00115">bucket::next</a>, <a class="el" href="error_8c_source.html#l00014">no_space()</a>, <a class="el" href="defs_8h_source.html#l00120">bucket::prec</a>, <a class="el" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy()</a>, <a class="el" href="defs_8h_source.html#l00117">bucket::tag</a>, <a class="el" href="defs_8h_source.html#l00056">TOKEN</a>, <a class="el" href="defs_8h_source.html#l00077">UNDEFINED</a>, <a class="el" href="defs_8h_source.html#l00070">UNKNOWN</a>, and <a class="el" href="defs_8h_source.html#l00118">bucket::value</a>.</p>
+<p>References <a class="el" href="structbucket.html#a60e2217a1c919890a10545ae4adb6e67">bucket::assoc</a>, <a class="el" href="structbucket.html#a0b897ab8d67b47728890052bdf40c742">bucket::index</a>, <a class="el" href="structbucket.html#a731490952839e3d4bf33972c5642df20">bucket::link</a>, <a class="el" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>, <a class="el" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">bucket::name</a>, <a class="el" href="structbucket.html#a70c4dfb30de550c0caf1ce95f5e8803f">bucket::next</a>, <a class="el" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space()</a>, <a class="el" href="structbucket.html#a36012bcc4fbe73a5095dc858746f6439">bucket::prec</a>, <a class="el" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy()</a>, <a class="el" href="structbucket.html#a3d2d030cba5394245d67f95c35760967">bucket::tag</a>, <a class="el" href="defs_8h.html#a5c3a83864bf5991d09aa5c2abb911bf0">TOKEN</a>, <a class="el" href="defs_8h.html#a2dc3870be25a19efa2940150507aaf71">UNDEFINED</a>, <a class="el" href="defs_8h.html#ac1ae4add974b9cfc6b5aaf8a578f01ab">UNKNOWN</a>, and <a class="el" href="structbucket.html#a281671008712cea24b5e13a3558b64cf">bucket::value</a>.</p>
 
-<p>Referenced by <a class="el" href="symtab_8c_source.html#l00083">create_symbol_table()</a>, and <a class="el" href="symtab_8c_source.html#l00060">lookup()</a>.</p>
+<p>Referenced by <a class="el" href="symtab_8c.html#aeeef4e0a9c6733adb569531e181de719">create_symbol_table()</a>, and <a class="el" href="symtab_8c.html#aee518732e7aee5ce3c6fd5208c4ffdea">lookup()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">register</span> <a class="code" href="structbucket.html">bucket</a> *bp;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    assert(name);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    bp = (<a class="code" href="structbucket.html">bucket</a> *) <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(<span class="keyword">sizeof</span>(<a class="code" href="structbucket.html">bucket</a>));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (bp == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (bp == 0) <a class="code" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a731490952839e3d4bf33972c5642df20">link</a> = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a70c4dfb30de550c0caf1ce95f5e8803f">next</a> = 0;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">name</a> = <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(strlen(name) + 1);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (bp-&gt;<a class="code" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">name</a> == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (bp-&gt;<a class="code" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">name</a> == 0) <a class="code" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a3d2d030cba5394245d67f95c35760967">tag</a> = 0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a281671008712cea24b5e13a3558b64cf">value</a> = <a class="code" href="defs_8h.html#a2dc3870be25a19efa2940150507aaf71">UNDEFINED</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a0b897ab8d67b47728890052bdf40c742">index</a> = 0;</div>
@@ -458,7 +465,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    bp-&gt; <span class="keyword">class </span>= <a class="code" href="defs_8h.html#ac1ae4add974b9cfc6b5aaf8a578f01ab">UNKNOWN</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    bp-&gt;<a class="code" href="structbucket.html#a60e2217a1c919890a10545ae4adb6e67">assoc</a> = <a class="code" href="defs_8h.html#a5c3a83864bf5991d09aa5c2abb911bf0">TOKEN</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (bp-&gt;<a class="code" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">name</a> == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (bp-&gt;<a class="code" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">name</a> == 0) <a class="code" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="defs_8h.html#add539a5755e4c4070b0c8ca97477fe47">strcpy</a>(bp-&gt;<a class="code" href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">name</a>, name);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> (bp);</div>
@@ -469,9 +476,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="defs_8h_html_a2dc3870be25a19efa2940150507aaf71"><div class="ttname"><a href="defs_8h.html#a2dc3870be25a19efa2940150507aaf71">UNDEFINED</a></div><div class="ttdeci">#define UNDEFINED</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00077">defs.h:77</a></div></div>
 <div class="ttc" id="structbucket_html_a1d8309bbc0e36cd478c0494292ebfb05"><div class="ttname"><a href="structbucket.html#a1d8309bbc0e36cd478c0494292ebfb05">bucket::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00116">defs.h:116</a></div></div>
 <div class="ttc" id="defs_8h_html_ac1ae4add974b9cfc6b5aaf8a578f01ab"><div class="ttname"><a href="defs_8h.html#ac1ae4add974b9cfc6b5aaf8a578f01ab">UNKNOWN</a></div><div class="ttdeci">#define UNKNOWN</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00070">defs.h:70</a></div></div>
-<div class="ttc" id="error_8c_html_a03b3d711852aa32c4076f12ea7bb93a4"><div class="ttname"><a href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a></div><div class="ttdeci">no_space()</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00014">error.c:14</a></div></div>
 <div class="ttc" id="structbucket_html_a36012bcc4fbe73a5095dc858746f6439"><div class="ttname"><a href="structbucket.html#a36012bcc4fbe73a5095dc858746f6439">bucket::prec</a></div><div class="ttdeci">short prec</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00120">defs.h:120</a></div></div>
 <div class="ttc" id="structbucket_html_a731490952839e3d4bf33972c5642df20"><div class="ttname"><a href="structbucket.html#a731490952839e3d4bf33972c5642df20">bucket::link</a></div><div class="ttdeci">struct bucket * link</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00114">defs.h:114</a></div></div>
+<div class="ttc" id="group__eh_html_ga03b3d711852aa32c4076f12ea7bb93a4"><div class="ttname"><a href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a></div><div class="ttdeci">no_space()</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00027">error.c:27</a></div></div>
 <div class="ttc" id="structbucket_html_a0b897ab8d67b47728890052bdf40c742"><div class="ttname"><a href="structbucket.html#a0b897ab8d67b47728890052bdf40c742">bucket::index</a></div><div class="ttdeci">short index</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00119">defs.h:119</a></div></div>
 <div class="ttc" id="structbucket_html_a70c4dfb30de550c0caf1ce95f5e8803f"><div class="ttname"><a href="structbucket.html#a70c4dfb30de550c0caf1ce95f5e8803f">bucket::next</a></div><div class="ttdeci">struct bucket * next</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00115">defs.h:115</a></div></div>
 <div class="ttc" id="structbucket_html_a281671008712cea24b5e13a3558b64cf"><div class="ttname"><a href="structbucket.html#a281671008712cea24b5e13a3558b64cf">bucket::value</a></div><div class="ttdeci">short value</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00118">defs.h:118</a></div></div>
@@ -514,7 +521,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00011">11</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01519">check_symbols()</a>, <a class="el" href="reader_8c_source.html#l01494">pack_names()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a57996ead211e5a17b36a1b7da0313239">check_symbols()</a>, <a class="el" href="group__memopt.html#ga9f8a3fd57d7687e5e2fe6b548fee5bc5">pack_names()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -530,7 +537,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="symtab_8c_source.html#l00012">12</a> of file <a class="el" href="symtab_8c_source.html">symtab.c</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01119">insert_empty_rule()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#ac59b5c8d9dca9fc4b2614fd186ec6c55">insert_empty_rule()</a>.</p>
 
 </div>
 </div>
@@ -554,7 +561,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="symtab_8c.html">symtab.c</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="453,31,504,58"/>
+<area shape="rect" id="node2" href="$group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" title="Shutdown function. " alt="" coords="453,31,504,58"/>
 <area shape="rect" id="node3" href="$main_8c.html#a37677b66995b6ad88eb083f3b9be8e6a" title="getargs" alt="" coords="121,158,186,185"/>
 <area shape="rect" id="node5" href="$lalr_8c.html#aa70d90188d9b76b70e29c8f7e19dc92f" title="lalr" alt="" coords="134,335,173,362"/>
 <area shape="rect" id="node17" href="$lr0_8c.html#aec6ecb962126ab8e37fed166e9416bce" title="lr0" alt="" coords="134,386,173,413"/>
@@ -7,7 +7,7 @@
 <area shape="rect" id="node21" href="$main_8c.html#a2a2d365d086e7a890bc2770b6a9c0f0f" title="open_files" alt="" coords="113,487,194,514"/>
 <area shape="rect" id="node22" href="$output_8c.html#a3939045b11b9aaefdf692feb963f0dfc" title="output" alt="" coords="124,538,183,565"/>
 <area shape="rect" id="node23" href="$reader_8c.html#a3351a985e2d992eea6ed332cc837ad5b" title="reader" alt="" coords="124,589,183,615"/>
-<area shape="rect" id="node24" href="$main_8c.html#ac769b3ff8cee5f62e69fb29097d21158" title="set_signals" alt="" coords="109,639,197,666"/>
+<area shape="rect" id="node24" href="$group__eh.html#gac769b3ff8cee5f62e69fb29097d21158" title="Sets the appropriate signal handlers up. " alt="" coords="109,639,197,666"/>
 <area shape="rect" id="node25" href="$verbose_8c.html#a51c39b5f33bea9632e037e0b94fa0db8" title="verbose" alt="" coords="119,690,187,717"/>
 <area shape="rect" id="node4" href="$main_8c.html#afe55eae96aed06d16232a3b56fcf1ad3" title="usage" alt="" coords="299,31,357,58"/>
 <area shape="rect" id="node6" href="$lalr_8c.html#a0a930e748b6863b16e0521247533842e" title="build_relations" alt="" coords="275,82,381,109"/>

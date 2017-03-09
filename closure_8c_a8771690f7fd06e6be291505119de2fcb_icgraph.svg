@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="closure_8c.html#ab7198901ee6f38f5ed229dce745ceaa6" target="_top" xlink:title="set_first_derives">
+<g id="a_node2"><a xlink:href="closure_8c.html#ab7198901ee6f38f5ed229dce745ceaa6" target="_top" xlink:title="Populates first_derives, the matrix of closure productions. ">
 <polygon fill="white" stroke="black" points="90.5,-0.5 90.5,-19.5 179.5,-19.5 179.5,-0.5 90.5,-0.5"/>
 <text text-anchor="middle" x="135" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">set_first_derives</text>
 </a>

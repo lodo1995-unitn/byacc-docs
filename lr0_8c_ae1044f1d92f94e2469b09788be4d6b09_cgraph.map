@@ -1,5 +1,5 @@
 <map id="new_state" name="new_state">
 <area shape="rect" id="node2" href="$defs_8h.html#a5a2da8a4ba34f568d590a5b13640e6e8" title="allocate" alt="" coords="136,5,203,32"/>
-<area shape="rect" id="node3" href="$error_8c.html#ae558ad59d93f53e83fc2d8e29afdffb9" title="fatal" alt="" coords="146,56,193,83"/>
-<area shape="rect" id="node4" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="251,56,301,83"/>
+<area shape="rect" id="node3" href="$group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9" title="fatal" alt="" coords="146,56,193,83"/>
+<area shape="rect" id="node4" href="$group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" title="Shutdown function. " alt="" coords="251,56,301,83"/>
 </map>

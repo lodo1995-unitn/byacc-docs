@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +99,7 @@ $(document).ready(function(){initNavTree('warshall_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,38 +158,42 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the transitive closure of a relation in-place.</p>
+<p>Let \( \mathrm{R} \) be an \( \mathrm{n} \times \mathrm{n} \) matrix of bits expressing a relation between n elements, such that \( \mathrm{R}_{i,j} \) is set if and only if the i-th elements is in relation with the j-th one.</p>
+<p>Then this function computes the reflexive and transitive closure of such relation and stores it in-place, using Warshall's algorithm. Its complexity is \( O\left( n^3 \right) \), dominated by the complexity of <a class="el" href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure()</a>.</p>
+<p>Internally, this function just calls <a class="el" href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure()</a> and then sets all elements on the matrix diagonal to make the relation reflexive. </p>
 
-<p>Definition at line <a class="el" href="warshall_8c_source.html#l00055">55</a> of file <a class="el" href="warshall_8c_source.html">warshall.c</a>.</p>
+<p>Definition at line <a class="el" href="warshall_8c_source.html#l00079">79</a> of file <a class="el" href="warshall_8c_source.html">warshall.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00025">BITS_PER_WORD</a>, <a class="el" href="lalr_8c_source.html#l00031">R</a>, <a class="el" href="warshall_8c_source.html#l00003">transitive_closure()</a>, and <a class="el" href="defs_8h_source.html#l00026">WORDSIZE</a>.</p>
+<p>References <a class="el" href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a>, <a class="el" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>, <a class="el" href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure()</a>, and <a class="el" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="closure_8c_source.html#l00011">set_EFF()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> rowsize;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> i;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rp;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *relend;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure</a>(<a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>, n);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    rowsize = <a class="code" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>(n);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    relend = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a> + n*rowsize;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    i = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    rp = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">while</span> (rp &lt; relend)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        *rp |= (1 &lt;&lt; i);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (++i &gt;= <a class="code" href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a>)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            i = 0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            rp++;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        rp += rowsize;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="ttc" id="warshall_8c_html_a99f17c91d1c5f4ddb62238d2c7fa7ea4"><div class="ttname"><a href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure</a></div><div class="ttdeci">transitive_closure(unsigned *R, int n)</div><div class="ttdef"><b>Definition:</b> <a href="warshall_8c_source.html#l00003">warshall.c:3</a></div></div>
+<p>Referenced by <a class="el" href="closure_8c.html#a8771690f7fd06e6be291505119de2fcb">set_EFF()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> rowsize;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> i;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rp;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *relend;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure</a>(<a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>, n);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    rowsize = <a class="code" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>(n);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    relend = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a> + n*rowsize;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    i = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    rp = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">while</span> (rp &lt; relend)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        *rp |= (1 &lt;&lt; i);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (++i &gt;= <a class="code" href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a>)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            i = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            rp++;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        rp += rowsize;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="ttc" id="warshall_8c_html_a99f17c91d1c5f4ddb62238d2c7fa7ea4"><div class="ttname"><a href="warshall_8c.html#a99f17c91d1c5f4ddb62238d2c7fa7ea4">transitive_closure</a></div><div class="ttdeci">transitive_closure(unsigned *R, int n)</div><div class="ttdef"><b>Definition:</b> <a href="warshall_8c_source.html#l00013">warshall.c:13</a></div></div>
 <div class="ttc" id="defs_8h_html_af859a98f57110e5243e8f0541319e43b"><div class="ttname"><a href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a></div><div class="ttdeci">#define BITS_PER_WORD</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00025">defs.h:25</a></div></div>
 <div class="ttc" id="defs_8h_html_a4b92bc7672722db524eb96025d1d91cc"><div class="ttname"><a href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a></div><div class="ttdeci">#define WORDSIZE(n)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00026">defs.h:26</a></div></div>
 <div class="ttc" id="lalr_8c_html_a85e5ec05bd2f9e7ef78081223b158aa9"><div class="ttname"><a href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a></div><div class="ttdeci">static short ** R</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00031">lalr.c:31</a></div></div>
@@ -232,60 +243,63 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Computes the transitive closure of a relation in-place.</p>
+<p>Let \( \mathrm{R} \) be an \( \mathrm{n} \times \mathrm{n} \) matrix of bits expressing a relation between n elements, such that \( \mathrm{R}_{i,j} \) is set if and only if the i-th elements is in relation with the j-th one.</p>
+<p>Then this function computes the transitive closure of such relation and stores it in-place, using Warshall's algorithm. Its complexity is \( O\left( n^3 \right) \). </p>
 
-<p>Definition at line <a class="el" href="warshall_8c_source.html#l00003">3</a> of file <a class="el" href="warshall_8c_source.html">warshall.c</a>.</p>
+<p>Definition at line <a class="el" href="warshall_8c_source.html#l00013">13</a> of file <a class="el" href="warshall_8c_source.html">warshall.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00025">BITS_PER_WORD</a>, <a class="el" href="lalr_8c_source.html#l00031">R</a>, and <a class="el" href="defs_8h_source.html#l00026">WORDSIZE</a>.</p>
+<p>References <a class="el" href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a>, <a class="el" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>, and <a class="el" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="warshall_8c_source.html#l00055">reflexive_transitive_closure()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> rowsize;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> i;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rowj;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rp;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rend;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *ccol;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *relend;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *cword;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rowi;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    rowsize = <a class="code" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>(n);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    relend = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a> + n*rowsize;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    cword = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    i = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    rowi = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">while</span> (rowi &lt; relend)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ccol = cword;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        rowj = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">while</span> (rowj &lt; relend)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> (*ccol &amp; (1 &lt;&lt; i))</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                rp = rowi;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                rend = rowj + rowsize;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">while</span> (rowj &lt; rend)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    *rowj++ |= *rp++;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                rowj += rowsize;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            ccol += rowsize;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (++i &gt;= <a class="code" href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            i = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            cword++;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        rowi += rowsize;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<p>Referenced by <a class="el" href="warshall_8c.html#a5b17363d658cbdfeba8682ae963937dc">reflexive_transitive_closure()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> rowsize;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> i;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rowj;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rp;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rend;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *ccol;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *relend;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *cword;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">unsigned</span> *rowi;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    rowsize = <a class="code" href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a>(n);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    relend = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a> + n*rowsize;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    cword = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    i = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    rowi = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">while</span> (rowi &lt; relend)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ccol = cword;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        rowj = <a class="code" href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">while</span> (rowj &lt; relend)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span> (*ccol &amp; (1 &lt;&lt; i))</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                rp = rowi;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                rend = rowj + rowsize;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">while</span> (rowj &lt; rend)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    *rowj++ |= *rp++;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                rowj += rowsize;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            ccol += rowsize;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (++i &gt;= <a class="code" href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            i = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            cword++;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        rowi += rowsize;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="ttc" id="defs_8h_html_af859a98f57110e5243e8f0541319e43b"><div class="ttname"><a href="defs_8h.html#af859a98f57110e5243e8f0541319e43b">BITS_PER_WORD</a></div><div class="ttdeci">#define BITS_PER_WORD</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00025">defs.h:25</a></div></div>
 <div class="ttc" id="defs_8h_html_a4b92bc7672722db524eb96025d1d91cc"><div class="ttname"><a href="defs_8h.html#a4b92bc7672722db524eb96025d1d91cc">WORDSIZE</a></div><div class="ttdeci">#define WORDSIZE(n)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00026">defs.h:26</a></div></div>
 <div class="ttc" id="lalr_8c_html_a85e5ec05bd2f9e7ef78081223b158aa9"><div class="ttname"><a href="lalr_8c.html#a85e5ec05bd2f9e7ef78081223b158aa9">R</a></div><div class="ttdeci">static short ** R</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00031">lalr.c:31</a></div></div>
@@ -308,7 +322,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="warshall_8c.html">warshall.c</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

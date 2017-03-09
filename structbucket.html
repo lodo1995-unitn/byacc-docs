@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +100,7 @@ $(document).ready(function(){initNavTree('structbucket.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -157,7 +164,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00122">122</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l00827">declare_tokens()</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="reader_8c_source.html#l01403">mark_symbol()</a>, <a class="el" href="reader_8c_source.html#l01661">pack_grammar()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a0b749a023a959fabb8ed2778b46ec217">declare_tokens()</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="reader_8c.html#aae3985d515e47c03afc20f92c0292531">mark_symbol()</a>, <a class="el" href="group__memopt.html#gac095dad6352a9764b63b751824aa223d">pack_grammar()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -173,7 +180,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00121">121</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01035">advance_to_start()</a>, <a class="el" href="reader_8c_source.html#l01519">check_symbols()</a>, <a class="el" href="symtab_8c_source.html#l00083">create_symbol_table()</a>, <a class="el" href="reader_8c_source.html#l00917">declare_start()</a>, <a class="el" href="reader_8c_source.html#l00827">declare_tokens()</a>, <a class="el" href="reader_8c_source.html#l00586">get_literal()</a>, <a class="el" href="reader_8c_source.html#l01119">insert_empty_rule()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#ac910677446efcb4dbebc9a6d3d90a9ff">advance_to_start()</a>, <a class="el" href="reader_8c.html#a57996ead211e5a17b36a1b7da0313239">check_symbols()</a>, <a class="el" href="symtab_8c.html#aeeef4e0a9c6733adb569531e181de719">create_symbol_table()</a>, <a class="el" href="reader_8c.html#a279a8d9eb5a5ad8dce6c95b2647b9c98">declare_start()</a>, <a class="el" href="reader_8c.html#a0b749a023a959fabb8ed2778b46ec217">declare_tokens()</a>, <a class="el" href="reader_8c.html#acfb64f081b0d9c4536e90c5352ce9c2c">get_literal()</a>, <a class="el" href="reader_8c.html#ac59b5c8d9dca9fc4b2614fd186ec6c55">insert_empty_rule()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -189,7 +196,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00119">119</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="symtab_8c_source.html#l00083">create_symbol_table()</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="reader_8c_source.html#l01661">pack_grammar()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="symtab_8c.html#aeeef4e0a9c6733adb569531e181de719">create_symbol_table()</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="group__memopt.html#gac095dad6352a9764b63b751824aa223d">pack_grammar()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -205,7 +212,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00114">114</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="symtab_8c_source.html#l00060">lookup()</a>, and <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>.</p>
+<p>Referenced by <a class="el" href="symtab_8c.html#aee518732e7aee5ce3c6fd5208c4ffdea">lookup()</a>, and <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>.</p>
 
 </div>
 </div>
@@ -221,7 +228,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00116">116</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01035">advance_to_start()</a>, <a class="el" href="reader_8c_source.html#l01519">check_symbols()</a>, <a class="el" href="reader_8c_source.html#l00917">declare_start()</a>, <a class="el" href="reader_8c_source.html#l00827">declare_tokens()</a>, <a class="el" href="reader_8c_source.html#l00889">declare_types()</a>, <a class="el" href="symtab_8c_source.html#l00060">lookup()</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="reader_8c_source.html#l01494">pack_names()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#ac910677446efcb4dbebc9a6d3d90a9ff">advance_to_start()</a>, <a class="el" href="reader_8c.html#a57996ead211e5a17b36a1b7da0313239">check_symbols()</a>, <a class="el" href="reader_8c.html#a279a8d9eb5a5ad8dce6c95b2647b9c98">declare_start()</a>, <a class="el" href="reader_8c.html#a0b749a023a959fabb8ed2778b46ec217">declare_tokens()</a>, <a class="el" href="reader_8c.html#a860dbc8da656fd831b19668da20207c7">declare_types()</a>, <a class="el" href="symtab_8c.html#aee518732e7aee5ce3c6fd5208c4ffdea">lookup()</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="group__memopt.html#ga9f8a3fd57d7687e5e2fe6b548fee5bc5">pack_names()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -237,7 +244,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00115">115</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01519">check_symbols()</a>, <a class="el" href="symtab_8c_source.html#l00110">free_symbols()</a>, <a class="el" href="reader_8c_source.html#l01119">insert_empty_rule()</a>, <a class="el" href="symtab_8c_source.html#l00060">lookup()</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="reader_8c_source.html#l01494">pack_names()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a57996ead211e5a17b36a1b7da0313239">check_symbols()</a>, <a class="el" href="symtab_8c.html#aa478da0ed8af2de7934c4aa3dcf06771">free_symbols()</a>, <a class="el" href="reader_8c.html#ac59b5c8d9dca9fc4b2614fd186ec6c55">insert_empty_rule()</a>, <a class="el" href="symtab_8c.html#aee518732e7aee5ce3c6fd5208c4ffdea">lookup()</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="group__memopt.html#ga9f8a3fd57d7687e5e2fe6b548fee5bc5">pack_names()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +260,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00120">120</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l00827">declare_tokens()</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, <a class="el" href="reader_8c_source.html#l01403">mark_symbol()</a>, <a class="el" href="reader_8c_source.html#l01661">pack_grammar()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a0b749a023a959fabb8ed2778b46ec217">declare_tokens()</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, <a class="el" href="reader_8c.html#aae3985d515e47c03afc20f92c0292531">mark_symbol()</a>, <a class="el" href="group__memopt.html#gac095dad6352a9764b63b751824aa223d">pack_grammar()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -269,7 +276,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00117">117</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l01179">copy_action()</a>, <a class="el" href="reader_8c_source.html#l00827">declare_tokens()</a>, <a class="el" href="reader_8c_source.html#l00889">declare_types()</a>, <a class="el" href="reader_8c_source.html#l01119">insert_empty_rule()</a>, and <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#abb83807b1bba8d346650d3e4ae4e7425">copy_action()</a>, <a class="el" href="reader_8c.html#a0b749a023a959fabb8ed2778b46ec217">declare_tokens()</a>, <a class="el" href="reader_8c.html#a860dbc8da656fd831b19668da20207c7">declare_types()</a>, <a class="el" href="reader_8c.html#ac59b5c8d9dca9fc4b2614fd186ec6c55">insert_empty_rule()</a>, and <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>.</p>
 
 </div>
 </div>
@@ -285,7 +292,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="defs_8h_source.html#l00118">118</a> of file <a class="el" href="defs_8h_source.html">defs.h</a>.</p>
 
-<p>Referenced by <a class="el" href="reader_8c_source.html#l00827">declare_tokens()</a>, <a class="el" href="reader_8c_source.html#l00586">get_literal()</a>, <a class="el" href="symtab_8c_source.html#l00033">make_bucket()</a>, and <a class="el" href="reader_8c_source.html#l01537">pack_symbols()</a>.</p>
+<p>Referenced by <a class="el" href="reader_8c.html#a0b749a023a959fabb8ed2778b46ec217">declare_tokens()</a>, <a class="el" href="reader_8c.html#acfb64f081b0d9c4536e90c5352ce9c2c">get_literal()</a>, <a class="el" href="symtab_8c.html#aa9c886d3ff3a8214ae40b7bf98ad7dd4">make_bucket()</a>, and <a class="el" href="group__memopt.html#gad4d46b52f342745925534555eb129ffb">pack_symbols()</a>.</p>
 
 </div>
 </div>
@@ -298,7 +305,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structbucket.html">bucket</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

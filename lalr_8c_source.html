@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +99,7 @@ $(document).ready(function(){initNavTree('lalr_8c_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -293,7 +300,7 @@ $(document).ready(function(){initNavTree('lalr_8c_source.html','');});
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="defs_8h.html#a6b76ac8cec55b32a62a090f92ca1bcd7">ISTOKEN</a>(symbol)) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a> == <a class="code" href="defs_8h.html#a1e5264eeb3e2ad97c6f33d88e80a49b4">MAXSHORT</a>)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="error_8c.html#ae558ad59d93f53e83fc2d8e29afdffb9">fatal</a>(<span class="stringliteral">&quot;too many gotos&quot;</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9">fatal</a>(<span class="stringliteral">&quot;too many gotos&quot;</span>);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a>++;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="lalr_8c.html#a76a8966708e1473d8e3c4539828e04b4">goto_map</a>[symbol]++;</div>
@@ -455,7 +462,7 @@ $(document).ready(function(){initNavTree('lalr_8c_source.html','');});
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">register</span> <a class="code" href="structshifts.html">shifts</a> *sp;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> length;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> nedges;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> <a class="code" href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a">done</a>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> <a class="code" href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a">done</a>;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> state1;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> stateno;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> symbol1;</div>
@@ -770,6 +777,7 @@ $(document).ready(function(){initNavTree('lalr_8c_source.html','');});
 <div class="ttc" id="lalr_8c_html_ab11e35fb27dcaa6fde7383e760ab0de4"><div class="ttname"><a href="lalr_8c.html#ab11e35fb27dcaa6fde7383e760ab0de4">ngotos</a></div><div class="ttdeci">static int ngotos</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00027">lalr.c:27</a></div></div>
 <div class="ttc" id="defs_8h_html_ad84404204a42a016a68148afae4aca4b"><div class="ttname"><a href="defs_8h.html#ad84404204a42a016a68148afae4aca4b">ISVAR</a></div><div class="ttdeci">#define ISVAR(s)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00096">defs.h:96</a></div></div>
 <div class="ttc" id="lalr_8c_html_af0ce41ccf437cf554e9e41a061a0f1f0"><div class="ttname"><a href="lalr_8c.html#af0ce41ccf437cf554e9e41a061a0f1f0">includes</a></div><div class="ttdeci">static short ** includes</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00029">lalr.c:29</a></div></div>
+<div class="ttc" id="group__eh_html_ga67b6b9fd02aac96bef4297b1e6a1789a"><div class="ttname"><a href="group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a">done</a></div><div class="ttdeci">done(int k)</div><div class="ttdoc">Shutdown function. </div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00073">main.c:73</a></div></div>
 <div class="ttc" id="lalr_8c_html_a549587ac9636a2e338da2df1df852802"><div class="ttname"><a href="lalr_8c.html#a549587ac9636a2e338da2df1df852802">compute_FOLLOWS</a></div><div class="ttdeci">compute_FOLLOWS()</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00517">lalr.c:517</a></div></div>
 <div class="ttc" id="lalr_8c_html_a107978079d3d88b0053b49ec52927803"><div class="ttname"><a href="lalr_8c.html#a107978079d3d88b0053b49ec52927803">set_maxrhs</a></div><div class="ttdeci">set_maxrhs()</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00100">lalr.c:100</a></div></div>
 <div class="ttc" id="structshorts_html_a9df42e7a69a264c303e2be75911fb7ce"><div class="ttname"><a href="structshorts.html#a9df42e7a69a264c303e2be75911fb7ce">shorts::next</a></div><div class="ttdeci">struct shorts * next</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00006">lalr.c:6</a></div></div>
@@ -814,9 +822,8 @@ $(document).ready(function(){initNavTree('lalr_8c_source.html','');});
 <div class="ttc" id="defs_8h_html_a9bc5a41948fd9a5aa2a11848025f0bda"><div class="ttname"><a href="defs_8h.html#a9bc5a41948fd9a5aa2a11848025f0bda">SETBIT</a></div><div class="ttdeci">#define SETBIT(r, n)</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00028">defs.h:28</a></div></div>
 <div class="ttc" id="structreductions_html_adee580e183d347a70ce769cc3e110f50"><div class="ttname"><a href="structreductions.html#adee580e183d347a70ce769cc3e110f50">reductions::nreds</a></div><div class="ttdeci">short nreds</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00159">defs.h:159</a></div></div>
 <div class="ttc" id="lalr_8c_html_a23d78f0bc8b4f380978adbb6c3bf9299"><div class="ttname"><a href="lalr_8c.html#a23d78f0bc8b4f380978adbb6c3bf9299">transpose</a></div><div class="ttdeci">short ** transpose()</div></div>
-<div class="ttc" id="error_8c_html_ae558ad59d93f53e83fc2d8e29afdffb9"><div class="ttname"><a href="error_8c.html#ae558ad59d93f53e83fc2d8e29afdffb9">fatal</a></div><div class="ttdeci">fatal(char *msg)</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00006">error.c:6</a></div></div>
 <div class="ttc" id="structcore_html_a33d77ddbc83d0fab40eea51d31d9fa68"><div class="ttname"><a href="structcore.html#a33d77ddbc83d0fab40eea51d31d9fa68">core::accessing_symbol</a></div><div class="ttdeci">short accessing_symbol</div><div class="ttdef"><b>Definition:</b> <a href="defs_8h_source.html#l00134">defs.h:134</a></div></div>
-<div class="ttc" id="main_8c_html_a67b6b9fd02aac96bef4297b1e6a1789a"><div class="ttname"><a href="main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a">done</a></div><div class="ttdeci">done(int k)</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00064">main.c:64</a></div></div>
+<div class="ttc" id="group__eh_html_gae558ad59d93f53e83fc2d8e29afdffb9"><div class="ttname"><a href="group__eh.html#gae558ad59d93f53e83fc2d8e29afdffb9">fatal</a></div><div class="ttdeci">fatal(char *msg)</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00019">error.c:19</a></div></div>
 <div class="ttc" id="lalr_8c_html_a9197c8768883873213ca494edf8a7c76"><div class="ttname"><a href="lalr_8c.html#a9197c8768883873213ca494edf8a7c76">shift_table</a></div><div class="ttdeci">shifts ** shift_table</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00017">lalr.c:17</a></div></div>
 <div class="ttc" id="lalr_8c_html_ab0e2a82b7f9da87cae0be8012a80a64b"><div class="ttname"><a href="lalr_8c.html#ab0e2a82b7f9da87cae0be8012a80a64b">LA</a></div><div class="ttdeci">unsigned * LA</div><div class="ttdef"><b>Definition:</b> <a href="lalr_8c_source.html#l00014">lalr.c:14</a></div></div>
 <div class="ttc" id="output_8c_html_af34765e3916ebd93d077cfa1fcbfa737"><div class="ttname"><a href="output_8c.html#af34765e3916ebd93d077cfa1fcbfa737">base</a></div><div class="ttdeci">static short * base</div><div class="ttdef"><b>Definition:</b> <a href="output_8c_source.html#l00011">output.c:11</a></div></div>
@@ -831,7 +838,7 @@ $(document).ready(function(){initNavTree('lalr_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="lalr_8c.html">lalr.c</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:33 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

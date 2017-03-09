@@ -1,9 +1,9 @@
 <map id="open_files" name="open_files">
 <area shape="rect" id="node2" href="$main_8c.html#a8424435403fe377f38d43b7bdda78ac3" title="create_file_names" alt="" coords="136,107,264,133"/>
-<area shape="rect" id="node8" href="$error_8c.html#afc759b2ea54a7db6fc62cf4f4cb1856e" title="open_error" alt="" coords="159,183,241,209"/>
+<area shape="rect" id="node8" href="$group__eh.html#gafc759b2ea54a7db6fc62cf4f4cb1856e" title="open_error" alt="" coords="159,183,241,209"/>
 <area shape="rect" id="node3" href="$main_8c.html#aee28fd8a0e40b6d958f7d20348e45368" title="getenv" alt="" coords="321,5,383,32"/>
 <area shape="rect" id="node4" href="$main_8c.html#ac31a368bfe3ea363e428c0a5b6f88c6d" title="mktemp" alt="" coords="317,56,387,83"/>
-<area shape="rect" id="node5" href="$error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="313,107,391,133"/>
+<area shape="rect" id="node5" href="$group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4" title="no_space" alt="" coords="313,107,391,133"/>
 <area shape="rect" id="node7" href="$defs_8h.html#add539a5755e4c4070b0c8ca97477fe47" title="strcpy" alt="" coords="323,157,381,184"/>
-<area shape="rect" id="node6" href="$main_8c.html#a67b6b9fd02aac96bef4297b1e6a1789a" title="done" alt="" coords="440,157,491,184"/>
+<area shape="rect" id="node6" href="$group__eh.html#ga67b6b9fd02aac96bef4297b1e6a1789a" title="Shutdown function. " alt="" coords="440,157,491,184"/>
 </map>

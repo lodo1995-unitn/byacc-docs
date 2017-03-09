@@ -20,6 +20,12 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -46,6 +52,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +99,7 @@ $(document).ready(function(){initNavTree('verbose_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -167,9 +174,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00050">50</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, <a class="el" href="mkpar_8c_source.html#l00008">RRconflicts</a>, <a class="el" href="mkpar_8c_source.html#l00007">SRconflicts</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <a class="el" href="defs_8h.html#a92702a466671c3524b486a8af7e42850">RRconflicts</a>, <a class="el" href="defs_8h.html#a423f7f121dd72060b58fa6b90634388b">SRconflicts</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00007">verbose()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a51c39b5f33bea9632e037e0b94fa0db8">verbose()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -227,9 +234,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00031">31</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="main_8c_source.html#l00041">nrules</a>, <a class="el" href="main_8c_source.html#l00052">ritem</a>, <a class="el" href="main_8c_source.html#l00053">rlhs</a>, <a class="el" href="main_8c_source.html#l00054">rrhs</a>, <a class="el" href="mkpar_8c_source.html#l00010">rules_used</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a4030fa806b6c395ad2fa87d009651042">nrules</a>, <a class="el" href="defs_8h.html#a01cf2505ce82ec00c8f04368c57331a7">ritem</a>, <a class="el" href="defs_8h.html#ae4bb5b682bd5e29c99f352c7e5461d9e">rlhs</a>, <a class="el" href="defs_8h.html#a6bdaef6424096c992feb769a96dcd665">rrhs</a>, <a class="el" href="defs_8h.html#a22e0d90c54f9196b6bad0e65f38df4ff">rules_used</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00007">verbose()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a51c39b5f33bea9632e037e0b94fa0db8">verbose()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">short</span> *p;</div>
@@ -282,9 +289,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00220">220</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00015">accessing_symbol</a>, <a class="el" href="mkpar_8c_source.html#l00009">defred</a>, <a class="el" href="mkpar_8c_source.html#l00012">final_state</a>, <a class="el" href="defs_8h_source.html#l00096">ISVAR</a>, <a class="el" href="defs_8h_source.html#l00147">shifts::nshifts</a>, <a class="el" href="mkpar_8c_source.html#l00004">parser</a>, <a class="el" href="verbose_8c_source.html#l00310">print_gotos()</a>, <a class="el" href="verbose_8c_source.html#l00272">print_reductions()</a>, <a class="el" href="verbose_8c_source.html#l00247">print_shifts()</a>, <a class="el" href="defs_8h_source.html#l00148">shifts::shift</a>, <a class="el" href="lalr_8c_source.html#l00017">shift_table</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>, <a class="el" href="defs_8h.html#ae8cd8c771bddb88fe00967f1a1222288">defred</a>, <a class="el" href="defs_8h.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a>, <a class="el" href="defs_8h.html#ad84404204a42a016a68148afae4aca4b">ISVAR</a>, <a class="el" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">shifts::nshifts</a>, <a class="el" href="defs_8h.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>, <a class="el" href="verbose_8c.html#a16325c030b7ca106c93a115bb1bddac9">print_gotos()</a>, <a class="el" href="verbose_8c.html#a5d799faf27a7c46b7f4c2912f811be40">print_reductions()</a>, <a class="el" href="verbose_8c.html#a0b08f91b4ae38460b3de67b33393d722">print_shifts()</a>, <a class="el" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shifts::shift</a>, <a class="el" href="defs_8h.html#a9197c8768883873213ca494edf8a7c76">shift_table</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00078">print_state()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *p;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">register</span> <a class="code" href="structshifts.html">shifts</a> *sp;</div>
@@ -361,9 +368,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00092">92</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00173">action::action_code</a>, <a class="el" href="mkpar_8c_source.html#l00012">final_state</a>, <a class="el" href="defs_8h_source.html#l00169">action::next</a>, <a class="el" href="defs_8h_source.html#l00171">action::number</a>, <a class="el" href="mkpar_8c_source.html#l00004">parser</a>, <a class="el" href="defs_8h_source.html#l00083">REDUCE</a>, <a class="el" href="defs_8h_source.html#l00082">SHIFT</a>, <a class="el" href="defs_8h_source.html#l00175">action::suppressed</a>, <a class="el" href="defs_8h_source.html#l00170">action::symbol</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action::action_code</a>, <a class="el" href="defs_8h.html#a7c517fa2f55f9f96dee4213b42e9abe6">final_state</a>, <a class="el" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">action::next</a>, <a class="el" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">action::number</a>, <a class="el" href="defs_8h.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>, <a class="el" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a>, <a class="el" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>, <a class="el" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">action::suppressed</a>, <a class="el" href="structaction.html#a0dd0dd448045d71020a267c4227ac1fd">action::symbol</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00078">print_state()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> symbol, act, number;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *p;</div>
@@ -449,9 +456,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00140">140</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00136">core::items</a>, <a class="el" href="defs_8h_source.html#l00135">core::nitems</a>, <a class="el" href="main_8c_source.html#l00052">ritem</a>, <a class="el" href="main_8c_source.html#l00053">rlhs</a>, <a class="el" href="main_8c_source.html#l00054">rrhs</a>, <a class="el" href="lalr_8c_source.html#l00016">state_table</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="structcore.html#ae3b1e74f50e5b5c28c51bc3e63ca2d24">core::items</a>, <a class="el" href="structcore.html#a3ecb146c79efa0b4deccb1306ca9125a">core::nitems</a>, <a class="el" href="defs_8h.html#a01cf2505ce82ec00c8f04368c57331a7">ritem</a>, <a class="el" href="defs_8h.html#ae4bb5b682bd5e29c99f352c7e5461d9e">rlhs</a>, <a class="el" href="defs_8h.html#a6bdaef6424096c992feb769a96dcd665">rrhs</a>, <a class="el" href="defs_8h.html#a790b8dc86a96122c91d2e4a1796d1b91">state_table</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00078">print_state()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> k;</div>
@@ -522,9 +529,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00310">310</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="lalr_8c_source.html#l00015">accessing_symbol</a>, <a class="el" href="defs_8h_source.html#l00096">ISVAR</a>, <a class="el" href="defs_8h_source.html#l00147">shifts::nshifts</a>, <a class="el" href="defs_8h_source.html#l00148">shifts::shift</a>, <a class="el" href="lalr_8c_source.html#l00017">shift_table</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, <a class="el" href="lalr_8c_source.html#l00021">to_state</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a0e63559addd3f9fec591a84db46878aa">accessing_symbol</a>, <a class="el" href="defs_8h.html#ad84404204a42a016a68148afae4aca4b">ISVAR</a>, <a class="el" href="structshifts.html#a068ef8eefbf09239f3cd031177797ea9">shifts::nshifts</a>, <a class="el" href="structshifts.html#a66fc80653997365c242a12fb52ef3397">shifts::shift</a>, <a class="el" href="defs_8h.html#a9197c8768883873213ca494edf8a7c76">shift_table</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, <a class="el" href="defs_8h.html#aafdf027bac2717ba1e321f31e3efc7ca">to_state</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00220">print_actions()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">print_actions()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i, k;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> as;</div>
@@ -580,9 +587,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00176">176</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00173">action::action_code</a>, <a class="el" href="defs_8h_source.html#l00169">action::next</a>, <a class="el" href="verbose_8c_source.html#l00005">null_rules</a>, <a class="el" href="defs_8h_source.html#l00171">action::number</a>, <a class="el" href="mkpar_8c_source.html#l00004">parser</a>, <a class="el" href="defs_8h_source.html#l00083">REDUCE</a>, <a class="el" href="main_8c_source.html#l00053">rlhs</a>, <a class="el" href="main_8c_source.html#l00054">rrhs</a>, <a class="el" href="defs_8h_source.html#l00175">action::suppressed</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action::action_code</a>, <a class="el" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">action::next</a>, <a class="el" href="verbose_8c.html#ad93827b0927d8c3cbe14f3f2d6bf3f2e">null_rules</a>, <a class="el" href="structaction.html#aad3fa231e65e2f714c465655081e26cf">action::number</a>, <a class="el" href="defs_8h.html#a67a29fa4ef37c9cbf8842db5cad8cacc">parser</a>, <a class="el" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a>, <a class="el" href="defs_8h.html#ae4bb5b682bd5e29c99f352c7e5461d9e">rlhs</a>, <a class="el" href="defs_8h.html#a6bdaef6424096c992feb769a96dcd665">rrhs</a>, <a class="el" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">action::suppressed</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00078">print_state()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *p;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i, j, k, nnulls;</div>
@@ -674,9 +681,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00272">272</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00173">action::action_code</a>, <a class="el" href="defs_8h_source.html#l00169">action::next</a>, <a class="el" href="defs_8h_source.html#l00083">REDUCE</a>, <a class="el" href="defs_8h_source.html#l00175">action::suppressed</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action::action_code</a>, <a class="el" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">action::next</a>, <a class="el" href="defs_8h.html#a76c64ace77ce430c5f0b1e614914825c">REDUCE</a>, <a class="el" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">action::suppressed</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00220">print_actions()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">print_actions()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> k, anyreds;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *q;</div>
@@ -749,9 +756,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00247">247</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00173">action::action_code</a>, <a class="el" href="defs_8h_source.html#l00169">action::next</a>, <a class="el" href="defs_8h_source.html#l00082">SHIFT</a>, <a class="el" href="defs_8h_source.html#l00175">action::suppressed</a>, <a class="el" href="main_8c_source.html#l00047">symbol_name</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="structaction.html#ac7ee63c7c3daa2cbf5d36262ef012aeb">action::action_code</a>, <a class="el" href="structaction.html#ac28cb9e021b566c2a6ce19f1a3351a57">action::next</a>, <a class="el" href="defs_8h.html#ac179eef68bcc694aa0ef8dd1eb09950b">SHIFT</a>, <a class="el" href="structaction.html#a714f47aba2ce4c26d2bb118dfe02bd70">action::suppressed</a>, <a class="el" href="defs_8h.html#a9b4024758f5f2402b4f8ba15286cde1c">symbol_name</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00220">print_actions()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">print_actions()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> count;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">register</span> <a class="code" href="structaction.html">action</a> *q;</div>
@@ -811,9 +818,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00078">78</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="verbose_8c_source.html#l00220">print_actions()</a>, <a class="el" href="verbose_8c_source.html#l00092">print_conflicts()</a>, <a class="el" href="verbose_8c_source.html#l00140">print_core()</a>, <a class="el" href="verbose_8c_source.html#l00176">print_nulls()</a>, <a class="el" href="mkpar_8c_source.html#l00008">RRconflicts</a>, <a class="el" href="mkpar_8c_source.html#l00007">SRconflicts</a>, and <a class="el" href="main_8c_source.html#l00038">verbose_file</a>.</p>
+<p>References <a class="el" href="verbose_8c.html#a66b6f430acc8445d785ba8a77b2cc0ac">print_actions()</a>, <a class="el" href="verbose_8c.html#ab7b979880ffb0d5a58f63bac764cc0e2">print_conflicts()</a>, <a class="el" href="verbose_8c.html#a4358c308a92b3689750bccf18e8e8683">print_core()</a>, <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">print_nulls()</a>, <a class="el" href="defs_8h.html#a92702a466671c3524b486a8af7e42850">RRconflicts</a>, <a class="el" href="defs_8h.html#a423f7f121dd72060b58fa6b90634388b">SRconflicts</a>, and <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00007">verbose()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a51c39b5f33bea9632e037e0b94fa0db8">verbose()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (state)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        fprintf(<a class="code" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>, <span class="stringliteral">&quot;\n\n&quot;</span>);</div>
@@ -869,16 +876,16 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00007">7</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>References <a class="el" href="defs_8h_source.html#l00102">FREE</a>, <a class="el" href="verbose_8c_source.html#l00050">log_conflicts()</a>, <a class="el" href="verbose_8c_source.html#l00031">log_unused()</a>, <a class="el" href="defs_8h_source.html#l00103">MALLOC</a>, <a class="el" href="error_8c_source.html#l00014">no_space()</a>, <a class="el" href="main_8c_source.html#l00041">nrules</a>, <a class="el" href="lr0_8c_source.html#l00008">nstates</a>, <a class="el" href="main_8c_source.html#l00043">ntokens</a>, <a class="el" href="verbose_8c_source.html#l00005">null_rules</a>, <a class="el" href="mkpar_8c_source.html#l00011">nunused</a>, <a class="el" href="main_8c_source.html#l00044">nvars</a>, <a class="el" href="verbose_8c_source.html#l00078">print_state()</a>, <a class="el" href="mkpar_8c_source.html#l00006">RRtotal</a>, <a class="el" href="mkpar_8c_source.html#l00005">SRtotal</a>, <a class="el" href="main_8c_source.html#l00038">verbose_file</a>, and <a class="el" href="main_8c_source.html#l00008">vflag</a>.</p>
+<p>References <a class="el" href="defs_8h.html#a25875003b43b81a4302256caa4a13599">FREE</a>, <a class="el" href="verbose_8c.html#ac77843426adc9e9b6346ac2ac1d6fdc3">log_conflicts()</a>, <a class="el" href="verbose_8c.html#a9f010efab9b5e885bb85c4fb14888065">log_unused()</a>, <a class="el" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>, <a class="el" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space()</a>, <a class="el" href="defs_8h.html#a4030fa806b6c395ad2fa87d009651042">nrules</a>, <a class="el" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>, <a class="el" href="defs_8h.html#a78b17f8032df23629c33ae6a2dad4741">ntokens</a>, <a class="el" href="verbose_8c.html#ad93827b0927d8c3cbe14f3f2d6bf3f2e">null_rules</a>, <a class="el" href="defs_8h.html#a54a11f305ce70588fab17eb3e6592e25">nunused</a>, <a class="el" href="defs_8h.html#ae8f6d2fd6490d3153cb4133bf183a404">nvars</a>, <a class="el" href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state()</a>, <a class="el" href="defs_8h.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a>, <a class="el" href="defs_8h.html#afe66309ceff1d37eb5a274c6e8476c36">SRtotal</a>, <a class="el" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>, and <a class="el" href="defs_8h.html#aa11c35040b83d143bdf47216f6df3991">vflag</a>.</p>
 
-<p>Referenced by <a class="el" href="main_8c_source.html#l00360">main()</a>.</p>
+<p>Referenced by <a class="el" href="main_8c.html#afced8478b91af5c169926dfa4426333d">main()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">register</span> <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="defs_8h.html#aa11c35040b83d143bdf47216f6df3991">vflag</a>) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="verbose_8c.html#ad93827b0927d8c3cbe14f3f2d6bf3f2e">null_rules</a> = (<span class="keywordtype">short</span> *) <a class="code" href="defs_8h.html#a7e3c05d61a56a6798627a9d576cb6b45">MALLOC</a>(<a class="code" href="defs_8h.html#a4030fa806b6c395ad2fa87d009651042">nrules</a>*<span class="keyword">sizeof</span>(<span class="keywordtype">short</span>));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="verbose_8c.html#ad93827b0927d8c3cbe14f3f2d6bf3f2e">null_rules</a> == 0) <a class="code" href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="verbose_8c.html#ad93827b0927d8c3cbe14f3f2d6bf3f2e">null_rules</a> == 0) <a class="code" href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    fprintf(<a class="code" href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a>, <span class="stringliteral">&quot;\f\n&quot;</span>);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a>; i++)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state</a>(i);</div>
@@ -900,9 +907,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="defs_8h_html_aa11c35040b83d143bdf47216f6df3991"><div class="ttname"><a href="defs_8h.html#aa11c35040b83d143bdf47216f6df3991">vflag</a></div><div class="ttdeci">char vflag</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00008">main.c:8</a></div></div>
 <div class="ttc" id="defs_8h_html_a4059dce129f932da3e73c1fa8a8a7590"><div class="ttname"><a href="defs_8h.html#a4059dce129f932da3e73c1fa8a8a7590">nstates</a></div><div class="ttdeci">int nstates</div><div class="ttdef"><b>Definition:</b> <a href="lr0_8c_source.html#l00008">lr0.c:8</a></div></div>
 <div class="ttc" id="verbose_8c_html_a9f010efab9b5e885bb85c4fb14888065"><div class="ttname"><a href="verbose_8c.html#a9f010efab9b5e885bb85c4fb14888065">log_unused</a></div><div class="ttdeci">log_unused()</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8c_source.html#l00031">verbose.c:31</a></div></div>
-<div class="ttc" id="error_8c_html_a03b3d711852aa32c4076f12ea7bb93a4"><div class="ttname"><a href="error_8c.html#a03b3d711852aa32c4076f12ea7bb93a4">no_space</a></div><div class="ttdeci">no_space()</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00014">error.c:14</a></div></div>
 <div class="ttc" id="defs_8h_html_a23ee419bdda88f7ba0c62c754cc67c14"><div class="ttname"><a href="defs_8h.html#a23ee419bdda88f7ba0c62c754cc67c14">RRtotal</a></div><div class="ttdeci">int RRtotal</div><div class="ttdef"><b>Definition:</b> <a href="mkpar_8c_source.html#l00006">mkpar.c:6</a></div></div>
 <div class="ttc" id="defs_8h_html_a4030fa806b6c395ad2fa87d009651042"><div class="ttname"><a href="defs_8h.html#a4030fa806b6c395ad2fa87d009651042">nrules</a></div><div class="ttdeci">int nrules</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00041">main.c:41</a></div></div>
+<div class="ttc" id="group__eh_html_ga03b3d711852aa32c4076f12ea7bb93a4"><div class="ttname"><a href="group__eh.html#ga03b3d711852aa32c4076f12ea7bb93a4">no_space</a></div><div class="ttdeci">no_space()</div><div class="ttdef"><b>Definition:</b> <a href="error_8c_source.html#l00027">error.c:27</a></div></div>
 <div class="ttc" id="defs_8h_html_ae8f6d2fd6490d3153cb4133bf183a404"><div class="ttname"><a href="defs_8h.html#ae8f6d2fd6490d3153cb4133bf183a404">nvars</a></div><div class="ttdeci">int nvars</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00044">main.c:44</a></div></div>
 <div class="ttc" id="verbose_8c_html_addc9cef22a1860f5c3a28468a4089893"><div class="ttname"><a href="verbose_8c.html#addc9cef22a1860f5c3a28468a4089893">print_state</a></div><div class="ttdeci">print_state(int state)</div><div class="ttdef"><b>Definition:</b> <a href="verbose_8c_source.html#l00078">verbose.c:78</a></div></div>
 <div class="ttc" id="defs_8h_html_a03678e952288d95a14d5e39bf5ceb2fa"><div class="ttname"><a href="defs_8h.html#a03678e952288d95a14d5e39bf5ceb2fa">verbose_file</a></div><div class="ttdeci">FILE * verbose_file</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00038">main.c:38</a></div></div>
@@ -953,7 +960,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="verbose_8c_source.html#l00005">5</a> of file <a class="el" href="verbose_8c_source.html">verbose.c</a>.</p>
 
-<p>Referenced by <a class="el" href="verbose_8c_source.html#l00176">print_nulls()</a>, and <a class="el" href="verbose_8c_source.html#l00007">verbose()</a>.</p>
+<p>Referenced by <a class="el" href="verbose_8c.html#a099cfea24f994468db50d7eb4bf613f1">print_nulls()</a>, and <a class="el" href="verbose_8c.html#a51c39b5f33bea9632e037e0b94fa0db8">verbose()</a>.</p>
 
 </div>
 </div>
@@ -963,7 +970,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f3719ab9dc939df99ab528ffdebfd726.html">byacc</a></li><li class="navelem"><a class="el" href="verbose_8c.html">verbose.c</a></li>
-    <li class="footer">Generated on Thu Mar 9 2017 13:17:34 for Berkeley YACC by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:13 for Berkeley YACC by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
