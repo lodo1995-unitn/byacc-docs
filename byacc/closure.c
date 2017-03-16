@@ -2,6 +2,14 @@
 
 short *itemset;
 short *itemsetend;
+
+/**
+ *  @brief Bitset of closure items for the current state
+ *
+ *  The n-th bit is set if and only if the n-th rule is part of the closure of the currently analyzed state.
+ *  This variable is allocated in generate_states(), overwritten by each iteration of closure() and deleted in
+ *  finalize_closure().
+ */
 unsigned *ruleset;
 
 /**

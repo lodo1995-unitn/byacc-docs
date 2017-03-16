@@ -38,22 +38,105 @@ FILE *union_file;       /*  a temp file, used to save the union             */
 FILE *verbose_file;     /*  y.output                                        */
 
 int nitems;
+
+/**
+*   @brief The number of rules in the grammar
+*/
 int nrules;
+
+/**
+*   @brief The number of symbols (terminals + non-terminals) in the grammar
+*
+*   All symbols can be uniquely represented using integers in the range [0, nsyms - 1], which is obtained
+*   by joining the range of terminals [0, ntokens - 1] with the range of non-terminals [ntokens, nsyms - 1].
+*
+*   It holds that nsyms = ntokens + nvars.   
+*/
 int nsyms;
+
+/**
+*   @brief The number of tokens (terminals) in the grammar
+*
+*   All tokens can be uniquely represented using integers in the range [0, ntokens - 1].
+*
+*   It holds that nsyms = ntokens + nvars.
+*/
 int ntokens;
+
+/**
+*   @brief The number of variables (non-terminals) in the grammar
+*
+*   All variables can be uniquely represented using integers in the range [ntokens, nsyms - 1], which is equivalent
+*   to the range [ntokens, ntokens + nvars - 1].
+*
+*   It holds that nsyms = ntokens + nvars.
+*/
 int nvars;
 
+/**
+*   @brief Index of the starting symbol of the grammar
+*
+*   It holds that start_symbol = ntokens. In fact, the starting symbol is always placed at the beginning of the
+*   non-terminal range [ntokens, nsyms - 1].
+*/
 int   start_symbol;
+
+/**
+*   @brief Array of symbol names.
+*
+*   Array of strings representing the names of all symbols. All names are allocated in a single contiguous block of
+*   memory to improve locality.
+*/
 char  **symbol_name;
 short *symbol_value;
 short *symbol_prec;
 char  *symbol_assoc;
 
+/**
+*   @brief Representation of all productions (and items)
+*
+*   Typical shape: [1, 12, 21, -1, 2, 3, -2, 1, 4, -3, ...]
+*
+*   All productions are represented in this array as the list of their right-hand side symbols followed by the negation
+*   of their index. So the symbols on the right-hand side of the first rule are followed by -1, then there are the
+*   right-hand side symbols of the second rule and then -2, and so on.
+*
+*   Indices (using short integers) inside this array can represent rules (in that case they point to the first element
+*   after a negative one) or items, in which case they can point to any position; the element in that position is taken
+*   to be the first element after the "point" of the item. If the index points to a negative number, then it represents
+*   a reduction item for the rule whose number is the absolute value of the pointed element.
+*
+*   The array called rrhs contains indices inside this list and is used to associate to each rule the beginning of its
+*   production (that is, the closure item for that rule).
+*/
 short *ritem;
+
+/**
+*   @brief List of left-hand sides of all rules
+*
+*   This array associates to each production its left-hand side symbol.
+*/
 short *rlhs;
+
+/**
+*   @brief List of right-hand sides of all rules
+*
+*   Array of indices inside ritem. It is used record the position inside ritem where each rule begins.
+*/
 short *rrhs;
 short *rprec;
 char  *rassoc;
+
+/**
+*   @brief List of rules that derive each non-terminal
+*
+*   Array of pointers that associates to each symbol the list of productions that have it as the left-hand side. Each
+*   item in those lists is the identifying number of a rule. The first ntokens entries (the ones for terminals) are not
+*   set and should not be accessed. They are only present to make the indexes consistent with other arrays (i.e. this
+*   array can be indexed using the symbol number).
+*
+*   Allocated and filled in set_first_derives().
+*/
 short **derives;
 char *nullable;
 
